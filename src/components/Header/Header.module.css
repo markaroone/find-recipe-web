@@ -1,0 +1,45 @@
+.header {
+  /* width: 100%; */
+
+  padding: 0 2rem;
+  height: 6.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* background-color: #226025;
+  background-color: #22331d;
+  color: #f8f9fa; */
+  color: #212529;
+}
+
+.header button {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.header__buttons--account {
+  display: flex;
+  gap: 2.8rem;
+}
+
+.header__button--signin {
+  /* padding: 0.8rem 2.2rem;
+  background-color: #ebfbee; */
+  /* color: #ebfbee; */
+}
+
+.header__button--signup {
+  padding: 0.8rem 2.2rem;
+  /* background-color: #ebfbee; */
+  background-color: #5c940d;
+  color: #f8f9fa;
+  border-radius: 4px;
+
+  transition: all 300ms;
+}
+
+.header__button--signup:hover {
+  /* color: #226025;
+  color: #22331d; */
+}
