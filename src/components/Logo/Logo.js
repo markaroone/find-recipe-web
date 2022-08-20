@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './Logo.module.css';
 
-const Logo = () => {
+const Logo = ({ className }) => {
   const navigate = useNavigate();
 
   const clickLogoHandler = () => {
@@ -10,7 +10,10 @@ const Logo = () => {
   };
 
   return (
-    <i className={styles.logo} onClick={clickLogoHandler}>
+    <i
+      className={`${styles.logo} ${styles[`${className}`]}`}
+      onClick={clickLogoHandler}
+    >
       Find<span>Recipe</span>
     </i>
   );

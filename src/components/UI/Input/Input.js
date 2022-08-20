@@ -20,7 +20,15 @@ const Input = React.forwardRef((props, ref) => {
         props.isValid === false ? styles.invalid : ''
       }`}
     >
-      <label htmlFor={props.id}>{props.label}</label>
+      <label htmlFor={props.id}>
+        {props.showValid && props.isValid && (
+          <i>
+            <ion-icon name='checkmark-circle'></ion-icon>
+          </i>
+        )}
+        <p>{props.label}</p>
+      </label>
+
       <input
         ref={inputRef}
         type={props.type}
@@ -29,6 +37,10 @@ const Input = React.forwardRef((props, ref) => {
         onChange={props.onChange}
         onBlur={props.onBlur}
       />
+
+      {props.isValid === false && (
+        <p className={styles.message}>{props.invalidMessage}</p>
+      )}
     </div>
   );
 });

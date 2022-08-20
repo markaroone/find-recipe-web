@@ -23,7 +23,7 @@ body {
 }
 
 button {
-  font-family: inherit;
+  font: inherit;
   cursor: pointer;
   background-color: transparent;
   border: none;
@@ -37,4 +37,8 @@ a:link,
 a:visited {
   text-decoration: none;
   color: inherit;
+}
+
+input {
+  font: inherit;
 }
