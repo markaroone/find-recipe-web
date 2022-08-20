@@ -55,10 +55,6 @@ const Signup = () => {
   const { isValid: passwordIsValid } = userInfo.password;
   const formValid = nameIsValid && emailIsValid && passwordIsValid;
 
-  useEffect(() => {
-    nameInputRef.current.focus();
-  }, []);
-
   const formSubmitHandler = async (e) => {
     e.preventDefault();
 
@@ -93,6 +89,10 @@ const Signup = () => {
     }
   };
 
+  const closeModalStatusHandler = () => {
+    setIsFormSubmitted(false);
+  };
+
   const renderUserSubmittedModal = () => {
     return (
       isFormSubmitted && (
@@ -102,6 +102,10 @@ const Signup = () => {
             isSuccessful={isSignupSuccess}
             successMessage='Your account has been created.'
             failMessage='An error occured. Try again later.'
+            redirect={true}
+            redirectName='Sign In'
+            redirectLink='/signin'
+            closeModalHandler={closeModalStatusHandler}
           />
         </Modal>
       )
@@ -161,7 +165,7 @@ const Signup = () => {
       </form>
 
       <p className={styles['signup__link--redirect']}>
-        Already a user? <Link to='/signup'>Log In</Link>
+        Already a user? <Link to='/signin'>Sign In</Link>
       </p>
 
       <p className={styles['signup__footer']}>

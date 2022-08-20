@@ -71,7 +71,6 @@ const Signin = () => {
         'http://localhost:8000/api/v1/users/signin',
         newUser
       );
-      console.log(user);
 
       if (status === 'success') setUserInfo(defaultUserInfo);
     } catch (error) {
@@ -118,7 +117,7 @@ const Signin = () => {
       </form>
 
       <p className={styles['redirect--signin']}>
-        Create an account. <Link to='/signin'>Sign Up</Link>
+        Create an account. <Link to='/signup'>Sign Up</Link>
       </p>
 
       <p className={styles.footer}>
