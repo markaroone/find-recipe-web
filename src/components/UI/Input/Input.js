@@ -26,7 +26,7 @@ const Input = React.forwardRef((props, ref) => {
 
   const renderPasswordShowIcon = () => {
     const showIcon = props.type === 'password' && props.value.length > 0;
-    const eyeIcon = showPassword ? 'eye-off-outline' : 'eye-outline';
+    const eyeIcon = showPassword ? 'eye-outline' : 'eye-off-outline';
     return (
       showIcon && (
         <button
@@ -69,6 +69,7 @@ const Input = React.forwardRef((props, ref) => {
           onChange={props.onChange}
           onBlur={props.onBlur}
           placeholder={props.placeholder}
+          onFocus={props.onFocus}
         />
 
         {renderPasswordShowIcon()}

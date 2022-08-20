@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Logo from '../components/Logo/Logo';
 import Input from '../components/UI/Input/Input';
 import Modal from '../components/UI/Modal/Modal';
-import SignupSuccessful from '../components/Registration/SignupSuccessful';
+import SignupSuccessful from '../components/StatusMessage/SignupSuccessful';
 import styles from './Signup.module.css';
 import validator from 'validator';
 import { Link } from 'react-router-dom';

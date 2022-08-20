@@ -13,14 +13,17 @@ function App() {
   const { user, setUser } = useContext(UserContext);
 
   const isDoneInitializing =
-    user.status === userStatus.LOGGEDOUT || user === userStatus.LOGGEDOUT;
+    user.status === userStatus.LOGGEDIN || user.status === userStatus.LOGGEDOUT;
 
   const getUser = async () => {
     try {
-      const { data } = await axios.get('http://localhost:8000/api/v1/users/me');
-      setUser({ status: userStatus.LOGGEDIN, user: data.user });
+      const {
+        data: {
+          data: { user },
+        },
+      } = await axios.get('http://localhost:8000/api/v1/users/me');
+      setUser({ status: userStatus.LOGGEDIN, user: user });
     } catch (error) {
-      console.log(error);
       (error.response.status === 401 || error.response.status === 0) &&
         setUser((prevUserData) => ({
           ...prevUserData,
