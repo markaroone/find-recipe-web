@@ -20,7 +20,8 @@ function App() {
       const { data } = await axios.get('http://localhost:8000/api/v1/users/me');
       setUser({ status: userStatus.LOGGEDIN, user: data.user });
     } catch (error) {
-      error?.response.status === 401 &&
+      console.log(error);
+      (error.response.status === 401 || error.response.status === 0) &&
         setUser((prevUserData) => ({
           ...prevUserData,
           status: userStatus.LOGGEDOUT,
@@ -47,7 +48,12 @@ function App() {
     );
   };
 
-  return <>{isDoneInitializing && renderApp()}</>;
+  return (
+    <>
+      {isDoneInitializing && renderApp()}
+      {!isDoneInitializing && <Initialize />}
+    </>
+  );
 }
 
 export default App;

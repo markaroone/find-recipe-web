@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useContext } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Logo from '../components/Logo/Logo';
 import Input from '../components/UI/Input/Input';
 import styles from './Signin.module.css';
@@ -9,17 +9,13 @@ import axios from 'axios';
 const MIN_PASSWORD_LENGTH = 8;
 
 const defaultUserInfo = {
-  name: { value: '', isValid: null },
   email: { value: '', isValid: null },
   password: { value: '', isValid: null },
-  passwordConfirm: { value: '', isValid: null },
 };
 
 const Signin = () => {
-  const nameInputRef = useRef();
   const emailInputRef = useRef();
   const passwordInputRef = useRef();
-  const passwordConfirmInputRef = useRef();
 
   const [userInfo, setUserInfo] = useState(defaultUserInfo);
 
@@ -28,10 +24,7 @@ const Signin = () => {
 
     let isValid = false;
 
-    if (id === 'passwordConfirm') {
-      const { value: prevPassword } = userInfo.password;
-      isValid = inputValidator(value, id, prevPassword);
-    } else isValid = inputValidator(value, id);
+    isValid = inputValidator(value, id);
 
     setUserInfo((prev) => ({
       ...prev,
@@ -39,7 +32,7 @@ const Signin = () => {
     }));
   };
 
-  const inputValidator = (value, type, origPassword) => {
+  const inputValidator = (value, type) => {
     if (!value || !type) return false;
 
     if (type === 'name') {
@@ -48,23 +41,13 @@ const Signin = () => {
     }
 
     if (type === 'email') return validator.isEmail(value);
-    if (type === 'password') return value.length >= MIN_PASSWORD_LENGTH;
 
-    if (type === 'passwordConfirm' && !origPassword) return false;
-    else if (type === 'passwordConfirm' && origPassword)
-      return value === origPassword;
+    if (type === 'password') return value.length >= MIN_PASSWORD_LENGTH;
   };
 
-  const { isValid: nameIsValid } = userInfo.name;
   const { isValid: emailIsValid } = userInfo.email;
   const { isValid: passwordIsValid } = userInfo.password;
-  const { isValid: passwordConfirmIsValid } = userInfo.passwordConfirm;
-  const formValid =
-    nameIsValid && emailIsValid && passwordIsValid && passwordConfirmIsValid;
-
-  useEffect(() => {
-    nameInputRef.current.focus();
-  }, []);
+  const formValid = emailIsValid && passwordIsValid;
 
   const formSubmitHandler = async (e) => {
     e.preventDefault();
@@ -75,10 +58,8 @@ const Signin = () => {
       newUser = Object.entries(userInfo).reduce((user, current) => {
         return { ...user, [`${current[0]}`]: current[1].value };
       }, {});
-    else if (!nameIsValid) nameInputRef.current.focus();
     else if (!emailIsValid) emailInputRef.current.focus();
-    else if (!passwordIsValid) passwordConfirmInputRef.current.focus();
-    else if (!passwordConfirmIsValid) passwordConfirmInputRef.current.focus();
+    else if (!passwordIsValid) passwordInputRef.current.focus();
 
     try {
       const {
@@ -87,7 +68,7 @@ const Signin = () => {
           data: { user },
         },
       } = await axios.post(
-        'http://localhost:8000/api/v1/users/signup',
+        'http://localhost:8000/api/v1/users/signin',
         newUser
       );
       console.log(user);
@@ -104,22 +85,9 @@ const Signin = () => {
         <Logo className='larger' />
       </div>
 
-      <h2 className={styles['signin__header']}>Create an Account</h2>
+      <h2 className={styles['signin__header']}>Welcome Back!</h2>
 
       <form onSubmit={formSubmitHandler}>
-        <Input
-          ref={nameInputRef}
-          id='name'
-          label='Name'
-          type='input'
-          isValid={nameIsValid}
-          invalidMessage='Name should not be empty.'
-          value={userInfo.name.value}
-          onChange={userInfoOnChangeHandler}
-          onBlur={userInfoOnChangeHandler}
-          showValid={true}
-        />
-
         <Input
           ref={emailInputRef}
           id='email'
@@ -146,24 +114,11 @@ const Signin = () => {
           showValid={true}
         />
 
-        <Input
-          ref={passwordConfirmInputRef}
-          id='passwordConfirm'
-          label='Confirm Password'
-          type='password'
-          isValid={passwordConfirmIsValid}
-          invalidMessage='Password does not match.'
-          value={userInfo.passwordConfirm.value}
-          onChange={userInfoOnChangeHandler}
-          onBlur={userInfoOnChangeHandler}
-          showValid={true}
-        />
-
-        <button className={styles.submit}>Sign Up</button>
+        <button className={styles.submit}>Sign In</button>
       </form>
 
       <p className={styles['redirect--signin']}>
-        Already a user? <Link to='/signin'>Log In</Link>
+        Create an account. <Link to='/signin'>Sign Up</Link>
       </p>
 
       <p className={styles.footer}>

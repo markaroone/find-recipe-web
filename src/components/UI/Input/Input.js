@@ -1,8 +1,14 @@
-import React, { useRef, useImperativeHandle } from 'react';
+import React, { useState, useRef, useImperativeHandle } from 'react';
 import styles from './Input.module.css';
 
 const Input = React.forwardRef((props, ref) => {
   const inputRef = useRef();
+
+  const [showPassword, setShowPassword] = useState(false);
+
+  const toggleShowPasswordHandler = () => {
+    setShowPassword(!showPassword);
+  };
 
   const activate = () => {
     inputRef.current.focus();
@@ -13,6 +19,31 @@ const Input = React.forwardRef((props, ref) => {
       focus: activate,
     };
   });
+
+  let type = props.type;
+
+  if (showPassword) type = 'text';
+
+  const renderPasswordShowIcon = () => {
+    const showIcon = props.type === 'password' && props.value.length > 0;
+    const eyeIcon = showPassword ? 'eye-off-outline' : 'eye-outline';
+    return (
+      showIcon && (
+        <button
+          type='button'
+          className={styles['control__icon--show-password']}
+          onClick={toggleShowPasswordHandler}
+        >
+          <ion-icon name={eyeIcon}></ion-icon>
+        </button>
+      )
+    );
+  };
+
+  const renderInvalidMessage = () =>
+    props.isValid === false && (
+      <p className={styles.message}>{props.invalidMessage}</p>
+    );
 
   return (
     <div
@@ -26,21 +57,24 @@ const Input = React.forwardRef((props, ref) => {
             <ion-icon name='checkmark-circle'></ion-icon>
           </i>
         )}
-        <p>{props.label}</p>
+        <p>{props.label} </p>
       </label>
 
-      <input
-        ref={inputRef}
-        type={props.type}
-        id={props.id}
-        value={props.value}
-        onChange={props.onChange}
-        onBlur={props.onBlur}
-      />
+      <div className={styles['control__input--container']}>
+        <input
+          ref={inputRef}
+          type={type}
+          id={props.id}
+          value={props.value}
+          onChange={props.onChange}
+          onBlur={props.onBlur}
+          placeholder={props.placeholder}
+        />
 
-      {props.isValid === false && (
-        <p className={styles.message}>{props.invalidMessage}</p>
-      )}
+        {renderPasswordShowIcon()}
+      </div>
+
+      {renderInvalidMessage()}
     </div>
   );
 });
