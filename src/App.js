@@ -8,9 +8,19 @@ import UserSection from './components/User/UserSection';
 import axios from 'axios';
 import UserContext from './context/UserProvider';
 import { userStatus } from './context/UserProvider';
+import useHttp from './hooks/useHttp';
 
 function App() {
   const { user, setUser } = useContext(UserContext);
+
+  const { isLoading, error, sendRequest } = useHttp(
+    { url: 'users/me', method: 'get' },
+    (data) => console.log(data)
+  );
+
+  useEffect(() => {
+    sendRequest();
+  }, []);
 
   const isDoneInitializing =
     user.status === userStatus.LOGGEDIN || user.status === userStatus.LOGGEDOUT;

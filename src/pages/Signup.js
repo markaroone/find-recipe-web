@@ -10,6 +10,17 @@ import axios from 'axios';
 
 const MIN_PASSWORD_LENGTH = 8;
 
+const checkEmail = async (email) => {
+  try {
+    const response = await axios.get(
+      `http://localhost:8000/api/v1/users?email=${email}`
+    );
+    return response;
+  } catch (error) {
+    return false;
+  }
+};
+
 const defaultUserInfo = {
   name: { value: '', isValid: null },
   email: { value: '', isValid: null },
@@ -24,6 +35,7 @@ const Signup = () => {
   const [userInfo, setUserInfo] = useState(defaultUserInfo);
   const [isSignupSuccess, setIsSignupSuccess] = useState(null);
   const [isFormSubmitted, setIsFormSubmitted] = useState(null);
+  const [errorMessage, setErrorMessage] = useState(null);
 
   const userInfoOnChangeHandler = (e) => {
     const { id, value } = e.target;
@@ -38,6 +50,10 @@ const Signup = () => {
     }));
   };
 
+  /* 
+  ! Add validator for duplicate emails 
+  */
+
   const inputValidator = (value, type) => {
     if (!value || !type) return false;
 
@@ -49,6 +65,8 @@ const Signup = () => {
 
     if (type === 'password') return value.length >= MIN_PASSWORD_LENGTH;
   };
+
+  console.log(errorMessage);
 
   const { isValid: nameIsValid } = userInfo.name;
   const { isValid: emailIsValid } = userInfo.email;
@@ -70,6 +88,10 @@ const Signup = () => {
 
     setIsFormSubmitted(true);
 
+    /* 
+    ! Fix error message not closing
+    */
+
     try {
       const {
         data: {
@@ -85,7 +107,10 @@ const Signup = () => {
 
       if (status === 'success') setUserInfo(defaultUserInfo);
     } catch (error) {
+      console.log(error.response);
+      setErrorMessage(error.response.data.message);
       setIsSignupSuccess(false);
+      closeModalStatusHandler();
     }
   };
 
@@ -111,6 +136,10 @@ const Signup = () => {
       )
     );
   };
+
+  // const renderErrorMessage = () => {
+  //   if
+  // }
 
   return (
     <section className={styles.signup}>
