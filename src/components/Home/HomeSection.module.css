@@ -3,3 +3,8 @@
   max-width: 140rem;
   margin: 0 auto;
 }
+
+.home > form,
+.form > div {
+  margin-bottom: 10.8rem;
+}

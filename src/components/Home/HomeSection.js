@@ -1,14 +1,24 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import SearchBar from './SearchBar';
+import RecipeCarousel from './RecipeCarousel';
 import styles from './HomeSection.module.css';
-import UserContext from '../../context/UserProvider';
-import { fetchRecipeStatus } from '../../context/RecipesListProvider';
 import axios from 'axios';
 
-const firstFood = 'chicken';
+const firstFood = 'Chicken';
+
+export const fetchRecipeStatus = {
+  FETCHING: 'fetching',
+  LOADED: 'loaded',
+  ERROR_FETCH: 'error-fetch',
+};
 
 const Home = () => {
-  const { recipes, setRecipes } = useContext(UserContext);
+  const [recipes, setRecipes] = useState({
+    status: fetchRecipeStatus.FETCHING,
+    search: firstFood,
+    recipes: {},
+  });
+
   const [errorMessage, setErrorMessage] = useState(null);
 
   const getRecipes = async (food) => {
@@ -43,7 +53,8 @@ const Home = () => {
 
   return (
     <section className={styles.home}>
-      <SearchBar />
+      <SearchBar food={recipes.search} searchRecipeHandler={getRecipes} />
+      <RecipeCarousel />
       {recipes.status === fetchRecipeStatus.FETCHING && 'Loading'}
     </section>
   );

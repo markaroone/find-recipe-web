@@ -42,3 +42,9 @@ a:visited {
 input {
   font: inherit;
 }
+
+button:focus,
+input:focus,
+a:focus {
+  outline: 5px solid #adb5bd;
+}
