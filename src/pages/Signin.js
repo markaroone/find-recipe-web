@@ -27,6 +27,7 @@ const Signin = () => {
   const [userInfo, setUserInfo] = useState(defaultUserInfo);
   const [isFormSubmitted, setIsFormSubmitted] = useState(null);
   const [isSigninSuccessful, setIsSigninSuccessful] = useState(null);
+  const [errorMessage, setErrorMessage] = useState('An error occured.');
 
   const { isValid: emailIsValid } = userInfo.email;
   const { isValid: passwordIsValid } = userInfo.password;
@@ -94,10 +95,13 @@ const Signin = () => {
       if (status === 'success') setUserInfo(defaultUserInfo);
       setIsSigninSuccessful(true);
     } catch (error) {
-      if (error.response.status === 401) {
-        setIsSigninSuccessful(false);
-        setIsFormSubmitted(null);
-      }
+      if (error.response.status === 401)
+        setErrorMessage(error.response.data.message);
+
+      if (error.response.status === 0) setErrorMessage(error.message);
+
+      setIsSigninSuccessful(false);
+      setIsFormSubmitted(null);
     }
   };
 
@@ -108,9 +112,7 @@ const Signin = () => {
       }, 5000);
 
       return (
-        <p className={styles['signin__message--failed']}>
-          Invalid email or password.
-        </p>
+        <p className={styles['signin__message--failed']}>{errorMessage}</p>
       );
     }
     return null;

@@ -7,20 +7,11 @@ import HomeSection from './components/Home/HomeSection';
 import UserSection from './components/User/UserSection';
 import axios from 'axios';
 import UserContext from './context/UserProvider';
+import RecipeListContext from './context/RecipesListProvider';
 import { userStatus } from './context/UserProvider';
-import useHttp from './hooks/useHttp';
 
 function App() {
   const { user, setUser } = useContext(UserContext);
-
-  const { isLoading, error, sendRequest } = useHttp(
-    { url: 'users/me', method: 'get' },
-    (data) => console.log(data)
-  );
-
-  useEffect(() => {
-    sendRequest();
-  }, []);
 
   const isDoneInitializing =
     user.status === userStatus.LOGGEDIN || user.status === userStatus.LOGGEDOUT;
@@ -32,6 +23,7 @@ function App() {
           data: { user },
         },
       } = await axios.get('http://localhost:8000/api/v1/users/me');
+
       setUser({ status: userStatus.LOGGEDIN, user: user });
     } catch (error) {
       (error.response.status === 401 || error.response.status === 0) &&

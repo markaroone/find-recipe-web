@@ -1,0 +1,13 @@
+.search-bar {
+  margin-top: 6.4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 64rem;
+}

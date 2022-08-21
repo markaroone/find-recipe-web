@@ -6,10 +6,13 @@ export const userStatus = {
   LOGGEDIN: 'loggedin',
 };
 
-const UserContext = createContext({
-  status: '',
-  user: {},
-});
+export const fetchRecipeStatus = {
+  FETCHING: 'fetching',
+  LOADED: 'loaded',
+  ERROR_FETCH: 'error-fetch',
+};
+
+const UserContext = createContext({});
 
 export const UserProvider = ({ children }) => {
   const [user, setUser] = useState({
@@ -17,8 +20,14 @@ export const UserProvider = ({ children }) => {
     user: {},
   });
 
+  const [recipes, setRecipes] = useState({
+    status: fetchRecipeStatus.FETCHING,
+    search: '',
+    recipes: {},
+  });
+
   return (
-    <UserContext.Provider value={{ user, setUser }}>
+    <UserContext.Provider value={{ user, setUser, recipes, setRecipes }}>
       {children}
     </UserContext.Provider>
   );
