@@ -44,7 +44,7 @@ const Home = () => {
   };
 
   useEffect(() => {
-    getRecipes(firstFood);
+    // getRecipes(firstFood);
   }, []);
 
   useEffect(() => {
@@ -54,7 +54,7 @@ const Home = () => {
   return (
     <section className={styles.home}>
       <SearchBar food={recipes.search} searchRecipeHandler={getRecipes} />
-      <RecipeCarousel />
+      <RecipeCarousel searchRecipeHandler={getRecipes} />
       {recipes.status === fetchRecipeStatus.FETCHING && 'Loading'}
     </section>
   );

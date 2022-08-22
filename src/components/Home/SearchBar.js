@@ -15,6 +15,10 @@ const SearchBar = ({ food, searchRecipeHandler }) => {
     searchRecipeHandler(recipeToFind);
   };
 
+  useEffect(() => {
+    setRecipeToFind(food);
+  }, [food]);
+
   return (
     <form className={styles['search-bar']} onSubmit={onSubmitHandler}>
       <h1>What do you want to eat?</h1>
