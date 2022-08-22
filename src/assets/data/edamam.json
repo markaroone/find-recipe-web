@@ -1,0 +1,2153 @@
+{
+  "from": 1,
+  "to": 20,
+  "count": 1551,
+  "_links": {
+    "next": {
+      "href": "https://api.edamam.com/api/recipes/v2?q=sushi&app_key=a8cc1865f185e28cb340c004b2b49d1e&field=label&field=image&field=calories&field=cuisineType&field=dietLabels&field=source&field=url&field=totalTime&field=uri&field=yield&field=ingredients&_cont=CHcVQBtNNQphDmgVQntAEX4BYl1tAgoFSm1GBGIaZlx3AwEAUXlSADMVNVMnAlBSQDNGAzYSa10nBQcAF2VCC2RCa1J7AgEVLnlSVSBMPkd5BgMbUSYRVTdgMgksRlpSAAcRXTVGcV84SU4%3D&type=public&app_id=aa145f41",
+      "title": "Next page"
+    }
+  },
+  "hits": [
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_e2044086d8346319d6c46b4273edf586",
+        "label": "Sushi Rice Recipe",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/f8c/f8c99ba7ac7373d8e4791b0870ea3fb2.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDxh4FT3EvC3bbg0JENGZFELLLgPQ6g9DdpyrbGQW%2FmugIhAItCAFcbV52U7PX%2BOOiDDtD2tpxboVX4p22Kcg1YBBUhKtIECHYQABoMMTg3MDE3MTUwOTg2IgxCW%2BI%2BHiH6kino1acqrwRVG6vVLCWkbz9c9S%2FcYLIRrQoM8Aq8sAQmBKW4DbNOgcXD29PZf4Moo0VbiG%2BCCvC2kb6sk%2B3kRfMgMakcMzOoE5xSzbM%2F7UpNI9Rod9AI1Ruvpo3xkRsAo8KsW5aL%2B4zHru8nqm6%2BE56hHT9eG9%2FDPE%2FI%2B%2FQM%2FSQKiv4CLbQoN6rPtB3ks27ww4WKHNMWcQcIXJ44tXmKlz%2BmbrUbLGugNKWcfN901mOsT1XF80Q6n4POjeeNxRJPBg9fGj3Tte8iewHhYUwPOtDnv8g674jCVnMOjjufvAjeINL4id1QKAabvriXwALdtaBQ21l2MaAG3elhbmsmnYtbuRM%2FHqvWbmyt%2F2IuOfRGi6IoW0UDi9q8oF37xuSzZ2oO720b4yu0981QGeP%2BEPQD7cb4qWTSeSKmCPpA3hCpKqN6EFF81Q5onriwSo1u91UXpmjuiG%2F2g6APntlT2yOrbXPK3WnMOZ857kMuLcSVvdvEEX2xBNeRbK9pZ9qICHcO96ZaSPmW24Wb7Afehi65%2FEP6ihdcQd3z0qFMX5KalbXiJzYN%2F8G5QUq7Xb9fj0y1ZnysT3xFOMvfEveuzAsAUoJMxrf3%2FqprgWoZUJGh%2Br7980IjKrSIRnm8QxvueBOc%2FJBmCRDaUC6x7oERTsOdO9%2FhrmKW5DFZpYc1EMEIh43bUNovP8CqbKx%2By84H2Y712ta8vqaUGvrTEROmlFgVAe%2ByFoN6Zvq1LOa0z97AbgMpb9huMPDqjZgGOqgBtb6uZjGOR1b2rHJ%2B1Aah58TRXAkImhwLH8RxPxnCHay25mk0v3Co0db7ujinlvgeM0s8cVWBHbE4ClcPJYx9HAD5qbz3lPYHyaqIEdj3bxcXw8C%2BEqJMUlxYriYpdVjXj1hEzR4ZAHotvJOauH%2FLctfbnKpAY%2FtIhjSt9bflh1q%2FofHKxBqJXqvxM6PIHbL9XH9IPxVPMRz98tQ5d4k4u8f4xyU%2FjoZP&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220822T132319Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJK7Y5E27%2F20220822%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=a60ff2ae28aa628ed91818bc4221b124934f58b0b3beff8de5e1825ad76e1906",
+        "source": "Chowhound",
+        "url": "https://www.chowhound.com/recipes/sushi-rice-31556",
+        "yield": 6.0,
+        "dietLabels": ["Low-Fat", "Low-Sodium"],
+        "ingredients": [
+          {
+            "text": "1/3 cup seasoned rice vinegar",
+            "quantity": 0.3333333333333333,
+            "measure": "cup",
+            "food": "seasoned rice vinegar",
+            "weight": 79.66666666666666,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_bhk02bwbp4x7kkbeajj2pbnj15cp",
+            "image": "https://www.edamam.com/food-img/c7d/c7dbd1846c5d08e9739930d70a404d50.jpg"
+          },
+          {
+            "text": "1/2 tablespoon sugar",
+            "quantity": 0.5,
+            "measure": "tablespoon",
+            "food": "sugar",
+            "weight": 6.24999999989435,
+            "foodCategory": "sugars",
+            "foodId": "food_axi2ijobrk819yb0adceobnhm1c2",
+            "image": "https://www.edamam.com/food-img/ecb/ecb3f5aaed96d0188c21b8369be07765.jpg"
+          },
+          {
+            "text": "1/4 teaspoon kosher salt",
+            "quantity": 0.25,
+            "measure": "teaspoon",
+            "food": "kosher salt",
+            "weight": 1.2135416667282188,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_a1vgrj1bs8rd1majvmd9ubz8ttkg",
+            "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+          },
+          {
+            "text": "2 cups raw sushi rice",
+            "quantity": 2.0,
+            "measure": "cup",
+            "food": "rice",
+            "weight": 390.0,
+            "foodCategory": "grains",
+            "foodId": "food_bpumdjzb5rtqaeabb0kbgbcgr4t9",
+            "image": "https://www.edamam.com/food-img/0fc/0fc9fa8a3e0276198d75b2e259068f8a.jpg"
+          }
+        ],
+        "calories": 1444.9174999995912,
+        "totalTime": 60.0,
+        "cuisineType": ["japanese"]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/e2044086d8346319d6c46b4273edf586?type=public&app_id=aa145f41&app_key=a8cc1865f185e28cb340c004b2b49d1e",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_16f636c6ef7f82621fa9bc1ab08c1c96",
+        "label": "Sushi rolls",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/524/524b1355041d6a6c74d0481d7b50882a.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDxh4FT3EvC3bbg0JENGZFELLLgPQ6g9DdpyrbGQW%2FmugIhAItCAFcbV52U7PX%2BOOiDDtD2tpxboVX4p22Kcg1YBBUhKtIECHYQABoMMTg3MDE3MTUwOTg2IgxCW%2BI%2BHiH6kino1acqrwRVG6vVLCWkbz9c9S%2FcYLIRrQoM8Aq8sAQmBKW4DbNOgcXD29PZf4Moo0VbiG%2BCCvC2kb6sk%2B3kRfMgMakcMzOoE5xSzbM%2F7UpNI9Rod9AI1Ruvpo3xkRsAo8KsW5aL%2B4zHru8nqm6%2BE56hHT9eG9%2FDPE%2FI%2B%2FQM%2FSQKiv4CLbQoN6rPtB3ks27ww4WKHNMWcQcIXJ44tXmKlz%2BmbrUbLGugNKWcfN901mOsT1XF80Q6n4POjeeNxRJPBg9fGj3Tte8iewHhYUwPOtDnv8g674jCVnMOjjufvAjeINL4id1QKAabvriXwALdtaBQ21l2MaAG3elhbmsmnYtbuRM%2FHqvWbmyt%2F2IuOfRGi6IoW0UDi9q8oF37xuSzZ2oO720b4yu0981QGeP%2BEPQD7cb4qWTSeSKmCPpA3hCpKqN6EFF81Q5onriwSo1u91UXpmjuiG%2F2g6APntlT2yOrbXPK3WnMOZ857kMuLcSVvdvEEX2xBNeRbK9pZ9qICHcO96ZaSPmW24Wb7Afehi65%2FEP6ihdcQd3z0qFMX5KalbXiJzYN%2F8G5QUq7Xb9fj0y1ZnysT3xFOMvfEveuzAsAUoJMxrf3%2FqprgWoZUJGh%2Br7980IjKrSIRnm8QxvueBOc%2FJBmCRDaUC6x7oERTsOdO9%2FhrmKW5DFZpYc1EMEIh43bUNovP8CqbKx%2By84H2Y712ta8vqaUGvrTEROmlFgVAe%2ByFoN6Zvq1LOa0z97AbgMpb9huMPDqjZgGOqgBtb6uZjGOR1b2rHJ%2B1Aah58TRXAkImhwLH8RxPxnCHay25mk0v3Co0db7ujinlvgeM0s8cVWBHbE4ClcPJYx9HAD5qbz3lPYHyaqIEdj3bxcXw8C%2BEqJMUlxYriYpdVjXj1hEzR4ZAHotvJOauH%2FLctfbnKpAY%2FtIhjSt9bflh1q%2FofHKxBqJXqvxM6PIHbL9XH9IPxVPMRz98tQ5d4k4u8f4xyU%2FjoZP&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220822T132319Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJK7Y5E27%2F20220822%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=1c874a5a7282a9bce612b723592c94c5eae86d93117a49299a590791731ef043",
+        "source": "Jamie Oliver",
+        "url": "http://www.jamieoliver.com/recipes/rice-recipes/sushi-rolls/",
+        "yield": 3.0,
+        "dietLabels": ["Low-Fat", "Low-Sodium"],
+        "ingredients": [
+          {
+            "text": "200 g sushi rice",
+            "quantity": 200.0,
+            "measure": "gram",
+            "food": "rice",
+            "weight": 200.0,
+            "foodCategory": "grains",
+            "foodId": "food_bpumdjzb5rtqaeabb0kbgbcgr4t9",
+            "image": "https://www.edamam.com/food-img/0fc/0fc9fa8a3e0276198d75b2e259068f8a.jpg"
+          },
+          {
+            "text": "1 tablespoon rice vinegar",
+            "quantity": 1.0,
+            "measure": "tablespoon",
+            "food": "rice vinegar",
+            "weight": 14.9,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_axlcd4tack2d20bveizm4ayu0h2w",
+            "image": "https://www.edamam.com/food-img/5f6/5f69b84c399d778c4728e9ab4f8065a2.jpg"
+          },
+          {
+            "text": "2 sheets of nori",
+            "quantity": 2.0,
+            "measure": "sheet",
+            "food": "nori",
+            "weight": 5.2,
+            "foodCategory": "vegetables",
+            "foodId": "food_bn5prizbgsrr0tact46ataaj7b5p",
+            "image": "https://www.edamam.com/food-img/193/1935b3e53c576e0f097393084d11b629.jpg"
+          },
+          {
+            "text": "¼ of a cucumber",
+            "quantity": 0.25,
+            "measure": "<unit>",
+            "food": "cucumber",
+            "weight": 75.25,
+            "foodCategory": "vegetables",
+            "foodId": "food_bv7aggjag9rxsaatklqzobca5fzn",
+            "image": "https://www.edamam.com/food-img/501/5015da0e5fc2b384696b3d949aefef86.jpg"
+          },
+          {
+            "text": "¼ of a red pepper",
+            "quantity": 0.25,
+            "measure": "<unit>",
+            "food": "red pepper",
+            "weight": 29.75,
+            "foodCategory": "vegetables",
+            "foodId": "food_a8g63g7ak6bnmvbu7agxibp4a0dy",
+            "image": "https://www.edamam.com/food-img/4dc/4dc48b1a506d334b4ab6671b9d56a18f.jpeg"
+          },
+          {
+            "text": "½ a carrot",
+            "quantity": 0.5,
+            "measure": "<unit>",
+            "food": "carrot",
+            "weight": 30.5,
+            "foodCategory": "vegetables",
+            "foodId": "food_ai215e5b85pdh5ajd4aafa3w2zm8",
+            "image": "https://www.edamam.com/food-img/121/121e33fce0bb9546ed7d060b6c114e29.jpg"
+          },
+          {
+            "text": "½ a small ripe avocado",
+            "quantity": 0.5,
+            "measure": "<unit>",
+            "food": "avocado",
+            "weight": 75.375,
+            "foodCategory": "fruit",
+            "foodId": "food_b0yuze4b1g3afpanijno5abtiu28",
+            "image": "https://www.edamam.com/food-img/984/984a707ea8e9c6bf5f6498970a9e6d9d.jpg"
+          }
+        ],
+        "calories": 878.1170000000001,
+        "totalTime": 50.0,
+        "cuisineType": ["japanese"]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/16f636c6ef7f82621fa9bc1ab08c1c96?type=public&app_id=aa145f41&app_key=a8cc1865f185e28cb340c004b2b49d1e",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_534ecb116061f126cbe973b901a8c8d8",
+        "label": "Perfect Sushi Rice",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/000/0006df8303057087bd63fce084a938f4.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDxh4FT3EvC3bbg0JENGZFELLLgPQ6g9DdpyrbGQW%2FmugIhAItCAFcbV52U7PX%2BOOiDDtD2tpxboVX4p22Kcg1YBBUhKtIECHYQABoMMTg3MDE3MTUwOTg2IgxCW%2BI%2BHiH6kino1acqrwRVG6vVLCWkbz9c9S%2FcYLIRrQoM8Aq8sAQmBKW4DbNOgcXD29PZf4Moo0VbiG%2BCCvC2kb6sk%2B3kRfMgMakcMzOoE5xSzbM%2F7UpNI9Rod9AI1Ruvpo3xkRsAo8KsW5aL%2B4zHru8nqm6%2BE56hHT9eG9%2FDPE%2FI%2B%2FQM%2FSQKiv4CLbQoN6rPtB3ks27ww4WKHNMWcQcIXJ44tXmKlz%2BmbrUbLGugNKWcfN901mOsT1XF80Q6n4POjeeNxRJPBg9fGj3Tte8iewHhYUwPOtDnv8g674jCVnMOjjufvAjeINL4id1QKAabvriXwALdtaBQ21l2MaAG3elhbmsmnYtbuRM%2FHqvWbmyt%2F2IuOfRGi6IoW0UDi9q8oF37xuSzZ2oO720b4yu0981QGeP%2BEPQD7cb4qWTSeSKmCPpA3hCpKqN6EFF81Q5onriwSo1u91UXpmjuiG%2F2g6APntlT2yOrbXPK3WnMOZ857kMuLcSVvdvEEX2xBNeRbK9pZ9qICHcO96ZaSPmW24Wb7Afehi65%2FEP6ihdcQd3z0qFMX5KalbXiJzYN%2F8G5QUq7Xb9fj0y1ZnysT3xFOMvfEveuzAsAUoJMxrf3%2FqprgWoZUJGh%2Br7980IjKrSIRnm8QxvueBOc%2FJBmCRDaUC6x7oERTsOdO9%2FhrmKW5DFZpYc1EMEIh43bUNovP8CqbKx%2By84H2Y712ta8vqaUGvrTEROmlFgVAe%2ByFoN6Zvq1LOa0z97AbgMpb9huMPDqjZgGOqgBtb6uZjGOR1b2rHJ%2B1Aah58TRXAkImhwLH8RxPxnCHay25mk0v3Co0db7ujinlvgeM0s8cVWBHbE4ClcPJYx9HAD5qbz3lPYHyaqIEdj3bxcXw8C%2BEqJMUlxYriYpdVjXj1hEzR4ZAHotvJOauH%2FLctfbnKpAY%2FtIhjSt9bflh1q%2FofHKxBqJXqvxM6PIHbL9XH9IPxVPMRz98tQ5d4k4u8f4xyU%2FjoZP&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220822T132319Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJK7Y5E27%2F20220822%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=c95c5ec2d2d890833a695498c558c1ba02bba9631eb0788b73813737fd823320",
+        "source": "Pioneer Woman",
+        "url": "http://thepioneerwoman.com/cooking/2009/01/perfect-sushi-rice/",
+        "yield": 4.0,
+        "dietLabels": ["Low-Fat", "Low-Sodium"],
+        "ingredients": [
+          {
+            "text": "1 cup Rice Wine Vinegar",
+            "quantity": 1.0,
+            "measure": "cup",
+            "food": "Rice Wine Vinegar",
+            "weight": 238.0,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_axlcd4tack2d20bveizm4ayu0h2w",
+            "image": "https://www.edamam.com/food-img/5f6/5f69b84c399d778c4728e9ab4f8065a2.jpg"
+          },
+          {
+            "text": "1/2 cup Sugar",
+            "quantity": 0.5,
+            "measure": "cup",
+            "food": "Sugar",
+            "weight": 100.0,
+            "foodCategory": "sugars",
+            "foodId": "food_axi2ijobrk819yb0adceobnhm1c2",
+            "image": "https://www.edamam.com/food-img/ecb/ecb3f5aaed96d0188c21b8369be07765.jpg"
+          },
+          {
+            "text": "1/4 cup Sake Or Mirin (a Japanese Rice Wine)",
+            "quantity": 0.25,
+            "measure": "cup",
+            "food": "Sake",
+            "weight": 58.2,
+            "foodCategory": "cocktails and liquors",
+            "foodId": "food_b4lx3glaxob844b6jpzb8ay9men8",
+            "image": "https://www.edamam.com/food-img/bb7/bb76cdd34c080bf65908c09812fd9c8d.jpg"
+          },
+          {
+            "text": "4 cups Short Grain/sushi Rice",
+            "quantity": 4.0,
+            "measure": "grain",
+            "food": "Rice",
+            "weight": 0.8,
+            "foodCategory": "grains",
+            "foodId": "food_bpumdjzb5rtqaeabb0kbgbcgr4t9",
+            "image": "https://www.edamam.com/food-img/0fc/0fc9fa8a3e0276198d75b2e259068f8a.jpg"
+          }
+        ],
+        "calories": 510.70799999999997,
+        "totalTime": 0.0,
+        "cuisineType": ["japanese"]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/534ecb116061f126cbe973b901a8c8d8?type=public&app_id=aa145f41&app_key=a8cc1865f185e28cb340c004b2b49d1e",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_f3b207fdd58daa2c7081b07aec9beaa7",
+        "label": "Easy Salmon Sushi",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/c1c/c1c8c08bbd462bb64ebb6d8e085f7d47.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDxh4FT3EvC3bbg0JENGZFELLLgPQ6g9DdpyrbGQW%2FmugIhAItCAFcbV52U7PX%2BOOiDDtD2tpxboVX4p22Kcg1YBBUhKtIECHYQABoMMTg3MDE3MTUwOTg2IgxCW%2BI%2BHiH6kino1acqrwRVG6vVLCWkbz9c9S%2FcYLIRrQoM8Aq8sAQmBKW4DbNOgcXD29PZf4Moo0VbiG%2BCCvC2kb6sk%2B3kRfMgMakcMzOoE5xSzbM%2F7UpNI9Rod9AI1Ruvpo3xkRsAo8KsW5aL%2B4zHru8nqm6%2BE56hHT9eG9%2FDPE%2FI%2B%2FQM%2FSQKiv4CLbQoN6rPtB3ks27ww4WKHNMWcQcIXJ44tXmKlz%2BmbrUbLGugNKWcfN901mOsT1XF80Q6n4POjeeNxRJPBg9fGj3Tte8iewHhYUwPOtDnv8g674jCVnMOjjufvAjeINL4id1QKAabvriXwALdtaBQ21l2MaAG3elhbmsmnYtbuRM%2FHqvWbmyt%2F2IuOfRGi6IoW0UDi9q8oF37xuSzZ2oO720b4yu0981QGeP%2BEPQD7cb4qWTSeSKmCPpA3hCpKqN6EFF81Q5onriwSo1u91UXpmjuiG%2F2g6APntlT2yOrbXPK3WnMOZ857kMuLcSVvdvEEX2xBNeRbK9pZ9qICHcO96ZaSPmW24Wb7Afehi65%2FEP6ihdcQd3z0qFMX5KalbXiJzYN%2F8G5QUq7Xb9fj0y1ZnysT3xFOMvfEveuzAsAUoJMxrf3%2FqprgWoZUJGh%2Br7980IjKrSIRnm8QxvueBOc%2FJBmCRDaUC6x7oERTsOdO9%2FhrmKW5DFZpYc1EMEIh43bUNovP8CqbKx%2By84H2Y712ta8vqaUGvrTEROmlFgVAe%2ByFoN6Zvq1LOa0z97AbgMpb9huMPDqjZgGOqgBtb6uZjGOR1b2rHJ%2B1Aah58TRXAkImhwLH8RxPxnCHay25mk0v3Co0db7ujinlvgeM0s8cVWBHbE4ClcPJYx9HAD5qbz3lPYHyaqIEdj3bxcXw8C%2BEqJMUlxYriYpdVjXj1hEzR4ZAHotvJOauH%2FLctfbnKpAY%2FtIhjSt9bflh1q%2FofHKxBqJXqvxM6PIHbL9XH9IPxVPMRz98tQ5d4k4u8f4xyU%2FjoZP&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220822T132319Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJK7Y5E27%2F20220822%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=0059c08c42ca2dec72d614571a21110a99e06cb4e5ac80509f8efaf639bf2df0",
+        "source": "BBC Good Food",
+        "url": "http://www.bbcgoodfood.com/recipes/4956/",
+        "yield": 6.0,
+        "dietLabels": ["Low-Fat"],
+        "ingredients": [
+          {
+            "text": "300.0g sushi rice (See know-how below)",
+            "quantity": 300.0,
+            "measure": "gram",
+            "food": "rice",
+            "weight": 300.0,
+            "foodCategory": "grains",
+            "foodId": "food_bpumdjzb5rtqaeabb0kbgbcgr4t9",
+            "image": "https://www.edamam.com/food-img/0fc/0fc9fa8a3e0276198d75b2e259068f8a.jpg"
+          },
+          {
+            "text": "200.0g pack smoked salmon slices",
+            "quantity": 200.0,
+            "measure": "gram",
+            "food": "smoked salmon",
+            "weight": 200.0,
+            "foodCategory": "seafood",
+            "foodId": "food_a6rqub2a7zak4tb5v5s1saf99j1b",
+            "image": "https://www.edamam.com/food-img/c91/c918b85b824c85e231e13a2b831d6d18.gif"
+          },
+          {
+            "text": "4.0 tbsp rice wine vinegar (see know-how below)",
+            "quantity": 4.0,
+            "measure": "tablespoon",
+            "food": "rice wine vinegar",
+            "weight": 59.6,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_axlcd4tack2d20bveizm4ayu0h2w",
+            "image": "https://www.edamam.com/food-img/5f6/5f69b84c399d778c4728e9ab4f8065a2.jpg"
+          },
+          {
+            "text": "1.0 tbsp caster sugar",
+            "quantity": 1.0,
+            "measure": "tablespoon",
+            "food": "caster sugar",
+            "weight": 11.9999999997971,
+            "foodCategory": "sugars",
+            "foodId": "food_b83hz1dbrydiwzag8btahb15lu4l",
+            "image": "https://www.edamam.com/food-img/ecb/ecb3f5aaed96d0188c21b8369be07765.jpg"
+          }
+        ],
+        "calories": 1371.1679999992148,
+        "totalTime": 0.0,
+        "cuisineType": ["nordic"]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/f3b207fdd58daa2c7081b07aec9beaa7?type=public&app_id=aa145f41&app_key=a8cc1865f185e28cb340c004b2b49d1e",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_6d9ecee1d2017d69a566be434c2603c9",
+        "label": "Perfect Sushi Rice",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/21b/21b0b2f0fcb7f523ce54148e8047a012.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDxh4FT3EvC3bbg0JENGZFELLLgPQ6g9DdpyrbGQW%2FmugIhAItCAFcbV52U7PX%2BOOiDDtD2tpxboVX4p22Kcg1YBBUhKtIECHYQABoMMTg3MDE3MTUwOTg2IgxCW%2BI%2BHiH6kino1acqrwRVG6vVLCWkbz9c9S%2FcYLIRrQoM8Aq8sAQmBKW4DbNOgcXD29PZf4Moo0VbiG%2BCCvC2kb6sk%2B3kRfMgMakcMzOoE5xSzbM%2F7UpNI9Rod9AI1Ruvpo3xkRsAo8KsW5aL%2B4zHru8nqm6%2BE56hHT9eG9%2FDPE%2FI%2B%2FQM%2FSQKiv4CLbQoN6rPtB3ks27ww4WKHNMWcQcIXJ44tXmKlz%2BmbrUbLGugNKWcfN901mOsT1XF80Q6n4POjeeNxRJPBg9fGj3Tte8iewHhYUwPOtDnv8g674jCVnMOjjufvAjeINL4id1QKAabvriXwALdtaBQ21l2MaAG3elhbmsmnYtbuRM%2FHqvWbmyt%2F2IuOfRGi6IoW0UDi9q8oF37xuSzZ2oO720b4yu0981QGeP%2BEPQD7cb4qWTSeSKmCPpA3hCpKqN6EFF81Q5onriwSo1u91UXpmjuiG%2F2g6APntlT2yOrbXPK3WnMOZ857kMuLcSVvdvEEX2xBNeRbK9pZ9qICHcO96ZaSPmW24Wb7Afehi65%2FEP6ihdcQd3z0qFMX5KalbXiJzYN%2F8G5QUq7Xb9fj0y1ZnysT3xFOMvfEveuzAsAUoJMxrf3%2FqprgWoZUJGh%2Br7980IjKrSIRnm8QxvueBOc%2FJBmCRDaUC6x7oERTsOdO9%2FhrmKW5DFZpYc1EMEIh43bUNovP8CqbKx%2By84H2Y712ta8vqaUGvrTEROmlFgVAe%2ByFoN6Zvq1LOa0z97AbgMpb9huMPDqjZgGOqgBtb6uZjGOR1b2rHJ%2B1Aah58TRXAkImhwLH8RxPxnCHay25mk0v3Co0db7ujinlvgeM0s8cVWBHbE4ClcPJYx9HAD5qbz3lPYHyaqIEdj3bxcXw8C%2BEqJMUlxYriYpdVjXj1hEzR4ZAHotvJOauH%2FLctfbnKpAY%2FtIhjSt9bflh1q%2FofHKxBqJXqvxM6PIHbL9XH9IPxVPMRz98tQ5d4k4u8f4xyU%2FjoZP&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220822T132319Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJK7Y5E27%2F20220822%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=a4e6aa9b732a0d3f5014e1a23b32fe9691d4a701ecc5594a71678c47261c46ba",
+        "source": "Real Simple",
+        "url": "https://www.realsimple.com/food-recipes/browse-all-recipes/perfect-sushi-rice",
+        "yield": 4.0,
+        "dietLabels": ["Low-Fat", "Low-Sodium"],
+        "ingredients": [
+          {
+            "text": "1 cup sushi rice",
+            "quantity": 1.0,
+            "measure": "cup",
+            "food": "rice",
+            "weight": 195.0,
+            "foodCategory": "grains",
+            "foodId": "food_bpumdjzb5rtqaeabb0kbgbcgr4t9",
+            "image": "https://www.edamam.com/food-img/0fc/0fc9fa8a3e0276198d75b2e259068f8a.jpg"
+          },
+          {
+            "text": "Kosher salt",
+            "quantity": 0.0,
+            "measure": null,
+            "food": "Kosher salt",
+            "weight": 1.17,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_a1vgrj1bs8rd1majvmd9ubz8ttkg",
+            "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+          }
+        ],
+        "calories": 702.0,
+        "totalTime": 25.0,
+        "cuisineType": ["japanese"]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/6d9ecee1d2017d69a566be434c2603c9?type=public&app_id=aa145f41&app_key=a8cc1865f185e28cb340c004b2b49d1e",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_bd86fac5e3c10c12e7a9fb8095df4d65",
+        "label": "Nigiri Sushi",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/d9d/d9dd4def0e806fd0432e7ccc7623b594.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDxh4FT3EvC3bbg0JENGZFELLLgPQ6g9DdpyrbGQW%2FmugIhAItCAFcbV52U7PX%2BOOiDDtD2tpxboVX4p22Kcg1YBBUhKtIECHYQABoMMTg3MDE3MTUwOTg2IgxCW%2BI%2BHiH6kino1acqrwRVG6vVLCWkbz9c9S%2FcYLIRrQoM8Aq8sAQmBKW4DbNOgcXD29PZf4Moo0VbiG%2BCCvC2kb6sk%2B3kRfMgMakcMzOoE5xSzbM%2F7UpNI9Rod9AI1Ruvpo3xkRsAo8KsW5aL%2B4zHru8nqm6%2BE56hHT9eG9%2FDPE%2FI%2B%2FQM%2FSQKiv4CLbQoN6rPtB3ks27ww4WKHNMWcQcIXJ44tXmKlz%2BmbrUbLGugNKWcfN901mOsT1XF80Q6n4POjeeNxRJPBg9fGj3Tte8iewHhYUwPOtDnv8g674jCVnMOjjufvAjeINL4id1QKAabvriXwALdtaBQ21l2MaAG3elhbmsmnYtbuRM%2FHqvWbmyt%2F2IuOfRGi6IoW0UDi9q8oF37xuSzZ2oO720b4yu0981QGeP%2BEPQD7cb4qWTSeSKmCPpA3hCpKqN6EFF81Q5onriwSo1u91UXpmjuiG%2F2g6APntlT2yOrbXPK3WnMOZ857kMuLcSVvdvEEX2xBNeRbK9pZ9qICHcO96ZaSPmW24Wb7Afehi65%2FEP6ihdcQd3z0qFMX5KalbXiJzYN%2F8G5QUq7Xb9fj0y1ZnysT3xFOMvfEveuzAsAUoJMxrf3%2FqprgWoZUJGh%2Br7980IjKrSIRnm8QxvueBOc%2FJBmCRDaUC6x7oERTsOdO9%2FhrmKW5DFZpYc1EMEIh43bUNovP8CqbKx%2By84H2Y712ta8vqaUGvrTEROmlFgVAe%2ByFoN6Zvq1LOa0z97AbgMpb9huMPDqjZgGOqgBtb6uZjGOR1b2rHJ%2B1Aah58TRXAkImhwLH8RxPxnCHay25mk0v3Co0db7ujinlvgeM0s8cVWBHbE4ClcPJYx9HAD5qbz3lPYHyaqIEdj3bxcXw8C%2BEqJMUlxYriYpdVjXj1hEzR4ZAHotvJOauH%2FLctfbnKpAY%2FtIhjSt9bflh1q%2FofHKxBqJXqvxM6PIHbL9XH9IPxVPMRz98tQ5d4k4u8f4xyU%2FjoZP&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220822T132319Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJK7Y5E27%2F20220822%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=1968cdf679c7b2a8b7afb511b86dfd8eb740bb7409a417fc3074ea30d772af61",
+        "source": "The Daily Meal",
+        "url": "http://www.thedailymeal.com/recipes/nigiri-sushi-recipe-0",
+        "yield": 6.0,
+        "dietLabels": ["Low-Fat"],
+        "ingredients": [
+          {
+            "text": "3 1/3 Cups short-grain sushi rice, rinsed",
+            "quantity": 3.3333333333333335,
+            "measure": "cup",
+            "food": "rice",
+            "weight": 650.0,
+            "foodCategory": "grains",
+            "foodId": "food_bpumdjzb5rtqaeabb0kbgbcgr4t9",
+            "image": "https://www.edamam.com/food-img/0fc/0fc9fa8a3e0276198d75b2e259068f8a.jpg"
+          },
+          {
+            "text": "4 Cups water",
+            "quantity": 4.0,
+            "measure": "cup",
+            "food": "water",
+            "weight": 948.0,
+            "foodCategory": "water",
+            "foodId": "food_a99vzubbk1ayrsad318rvbzr3dh0",
+            "image": "https://www.edamam.com/food-img/5dd/5dd9d1361847b2ca53c4b19a8f92627e.jpg"
+          },
+          {
+            "text": "5 1/3 Tablespoons sushi vinegar",
+            "quantity": 5.333333333333333,
+            "measure": "tablespoon",
+            "food": "sushi vinegar",
+            "weight": 79.66666666532,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_bot0mjyb2tvaugbdj6pd5b0571yj",
+            "image": "https://www.edamam.com/food-img/c7d/c7dbd1846c5d08e9739930d70a404d50.jpg"
+          },
+          {
+            "text": "5 Ounces sushi-grade tuna or salmon",
+            "quantity": 5.0,
+            "measure": "ounce",
+            "food": "tuna",
+            "weight": 141.747615625,
+            "foodCategory": "seafood",
+            "foodId": "food_bu5s7alaj4fjv8bf9qxvnba38oay",
+            "image": "https://www.edamam.com/food-img/022/022db6571bd5b3dfbd3ef8941c775d12.jpg"
+          },
+          {
+            "text": "Salt",
+            "quantity": 0.0,
+            "measure": null,
+            "food": "Salt",
+            "weight": 10.91648569374192,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+            "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+          }
+        ],
+        "calories": 2511.234901030967,
+        "totalTime": 0.0,
+        "cuisineType": ["japanese"]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/bd86fac5e3c10c12e7a9fb8095df4d65?type=public&app_id=aa145f41&app_key=a8cc1865f185e28cb340c004b2b49d1e",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_dd8ded08ba8f5171bc793e6f43f17943",
+        "label": "Nigiri Sushi",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/ec5/ec506cfc3082920ac9dd513a252fc9b5.jpeg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDxh4FT3EvC3bbg0JENGZFELLLgPQ6g9DdpyrbGQW%2FmugIhAItCAFcbV52U7PX%2BOOiDDtD2tpxboVX4p22Kcg1YBBUhKtIECHYQABoMMTg3MDE3MTUwOTg2IgxCW%2BI%2BHiH6kino1acqrwRVG6vVLCWkbz9c9S%2FcYLIRrQoM8Aq8sAQmBKW4DbNOgcXD29PZf4Moo0VbiG%2BCCvC2kb6sk%2B3kRfMgMakcMzOoE5xSzbM%2F7UpNI9Rod9AI1Ruvpo3xkRsAo8KsW5aL%2B4zHru8nqm6%2BE56hHT9eG9%2FDPE%2FI%2B%2FQM%2FSQKiv4CLbQoN6rPtB3ks27ww4WKHNMWcQcIXJ44tXmKlz%2BmbrUbLGugNKWcfN901mOsT1XF80Q6n4POjeeNxRJPBg9fGj3Tte8iewHhYUwPOtDnv8g674jCVnMOjjufvAjeINL4id1QKAabvriXwALdtaBQ21l2MaAG3elhbmsmnYtbuRM%2FHqvWbmyt%2F2IuOfRGi6IoW0UDi9q8oF37xuSzZ2oO720b4yu0981QGeP%2BEPQD7cb4qWTSeSKmCPpA3hCpKqN6EFF81Q5onriwSo1u91UXpmjuiG%2F2g6APntlT2yOrbXPK3WnMOZ857kMuLcSVvdvEEX2xBNeRbK9pZ9qICHcO96ZaSPmW24Wb7Afehi65%2FEP6ihdcQd3z0qFMX5KalbXiJzYN%2F8G5QUq7Xb9fj0y1ZnysT3xFOMvfEveuzAsAUoJMxrf3%2FqprgWoZUJGh%2Br7980IjKrSIRnm8QxvueBOc%2FJBmCRDaUC6x7oERTsOdO9%2FhrmKW5DFZpYc1EMEIh43bUNovP8CqbKx%2By84H2Y712ta8vqaUGvrTEROmlFgVAe%2ByFoN6Zvq1LOa0z97AbgMpb9huMPDqjZgGOqgBtb6uZjGOR1b2rHJ%2B1Aah58TRXAkImhwLH8RxPxnCHay25mk0v3Co0db7ujinlvgeM0s8cVWBHbE4ClcPJYx9HAD5qbz3lPYHyaqIEdj3bxcXw8C%2BEqJMUlxYriYpdVjXj1hEzR4ZAHotvJOauH%2FLctfbnKpAY%2FtIhjSt9bflh1q%2FofHKxBqJXqvxM6PIHbL9XH9IPxVPMRz98tQ5d4k4u8f4xyU%2FjoZP&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220822T132319Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJK7Y5E27%2F20220822%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=0a69c728f488098d6e6cdb3dfa7acb87325b69a2604ca158ac4cac33f90479b6",
+        "source": "Food Network",
+        "url": "https://www.foodnetwork.com/recipes/nigiri-sushi-recipe-1939785",
+        "yield": 6.0,
+        "dietLabels": ["Low-Fat"],
+        "ingredients": [
+          {
+            "text": "3 1/3 cup short-grain sushi rice, rinsed",
+            "quantity": 3.3333333333333335,
+            "measure": "cup",
+            "food": "rice",
+            "weight": 650.0,
+            "foodCategory": "grains",
+            "foodId": "food_bpumdjzb5rtqaeabb0kbgbcgr4t9",
+            "image": "https://www.edamam.com/food-img/0fc/0fc9fa8a3e0276198d75b2e259068f8a.jpg"
+          },
+          {
+            "text": "4 cups water",
+            "quantity": 4.0,
+            "measure": "cup",
+            "food": "water",
+            "weight": 948.0,
+            "foodCategory": "water",
+            "foodId": "food_a99vzubbk1ayrsad318rvbzr3dh0",
+            "image": "https://www.edamam.com/food-img/5dd/5dd9d1361847b2ca53c4b19a8f92627e.jpg"
+          },
+          {
+            "text": "5 1/3 tablespoons sushi vinegar, or 5 1/3 tablespoons rice vinegar, 5 tablespoons sugar and 3 tablespoons",
+            "quantity": 5.333333333333333,
+            "measure": "tablespoon",
+            "food": "sushi vinegar",
+            "weight": 79.66666666532,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_bot0mjyb2tvaugbdj6pd5b0571yj",
+            "image": "https://www.edamam.com/food-img/c7d/c7dbd1846c5d08e9739930d70a404d50.jpg"
+          },
+          {
+            "text": "Salt",
+            "quantity": 0.0,
+            "measure": null,
+            "food": "Salt",
+            "weight": 10.91648569374192,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+            "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+          },
+          {
+            "text": "1 (4 to 6 ounce) piece sushi-grade tuna or salmon",
+            "quantity": 5.0,
+            "measure": "ounce",
+            "food": "tuna",
+            "weight": 141.747615625,
+            "foodCategory": "seafood",
+            "foodId": "food_bu5s7alaj4fjv8bf9qxvnba38oay",
+            "image": "https://www.edamam.com/food-img/022/022db6571bd5b3dfbd3ef8941c775d12.jpg"
+          }
+        ],
+        "calories": 2511.234901030967,
+        "totalTime": 100.0,
+        "cuisineType": ["japanese"]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/dd8ded08ba8f5171bc793e6f43f17943?type=public&app_id=aa145f41&app_key=a8cc1865f185e28cb340c004b2b49d1e",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_9919d7d98ed2e393e2dc89a0c90190f1",
+        "label": "Veggie Sushi Rolls",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/568/5682dc76eb37c476b87c5d13f9738b71.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDxh4FT3EvC3bbg0JENGZFELLLgPQ6g9DdpyrbGQW%2FmugIhAItCAFcbV52U7PX%2BOOiDDtD2tpxboVX4p22Kcg1YBBUhKtIECHYQABoMMTg3MDE3MTUwOTg2IgxCW%2BI%2BHiH6kino1acqrwRVG6vVLCWkbz9c9S%2FcYLIRrQoM8Aq8sAQmBKW4DbNOgcXD29PZf4Moo0VbiG%2BCCvC2kb6sk%2B3kRfMgMakcMzOoE5xSzbM%2F7UpNI9Rod9AI1Ruvpo3xkRsAo8KsW5aL%2B4zHru8nqm6%2BE56hHT9eG9%2FDPE%2FI%2B%2FQM%2FSQKiv4CLbQoN6rPtB3ks27ww4WKHNMWcQcIXJ44tXmKlz%2BmbrUbLGugNKWcfN901mOsT1XF80Q6n4POjeeNxRJPBg9fGj3Tte8iewHhYUwPOtDnv8g674jCVnMOjjufvAjeINL4id1QKAabvriXwALdtaBQ21l2MaAG3elhbmsmnYtbuRM%2FHqvWbmyt%2F2IuOfRGi6IoW0UDi9q8oF37xuSzZ2oO720b4yu0981QGeP%2BEPQD7cb4qWTSeSKmCPpA3hCpKqN6EFF81Q5onriwSo1u91UXpmjuiG%2F2g6APntlT2yOrbXPK3WnMOZ857kMuLcSVvdvEEX2xBNeRbK9pZ9qICHcO96ZaSPmW24Wb7Afehi65%2FEP6ihdcQd3z0qFMX5KalbXiJzYN%2F8G5QUq7Xb9fj0y1ZnysT3xFOMvfEveuzAsAUoJMxrf3%2FqprgWoZUJGh%2Br7980IjKrSIRnm8QxvueBOc%2FJBmCRDaUC6x7oERTsOdO9%2FhrmKW5DFZpYc1EMEIh43bUNovP8CqbKx%2By84H2Y712ta8vqaUGvrTEROmlFgVAe%2ByFoN6Zvq1LOa0z97AbgMpb9huMPDqjZgGOqgBtb6uZjGOR1b2rHJ%2B1Aah58TRXAkImhwLH8RxPxnCHay25mk0v3Co0db7ujinlvgeM0s8cVWBHbE4ClcPJYx9HAD5qbz3lPYHyaqIEdj3bxcXw8C%2BEqJMUlxYriYpdVjXj1hEzR4ZAHotvJOauH%2FLctfbnKpAY%2FtIhjSt9bflh1q%2FofHKxBqJXqvxM6PIHbL9XH9IPxVPMRz98tQ5d4k4u8f4xyU%2FjoZP&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220822T132319Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJK7Y5E27%2F20220822%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=1b6bfd2732bd36ddfa4e43ab8e0fd854dbc1046aef124d1fd9f1d1d2f62fee3f",
+        "source": "Epicurious",
+        "url": "https://www.epicurious.com/recipes/food/views/veggie-sushi-rolls-367009",
+        "yield": 1.0,
+        "dietLabels": [],
+        "ingredients": [
+          {
+            "text": "cooked sushi rice 1 1/4 cups (6 oz/185 g)",
+            "quantity": 6.0,
+            "measure": "ounce",
+            "food": "cooked sushi rice",
+            "weight": 170.09713875,
+            "foodCategory": "grains",
+            "foodId": "food_brqcp7fardef20b44y8riax4k0yz",
+            "image": "https://www.edamam.com/food-img/43e/43e669c6de11504972da1ae1898ac19e.jpg"
+          },
+          {
+            "text": "unseasoned rice vinegar 1 teaspoon",
+            "quantity": 1.0,
+            "measure": "teaspoon",
+            "food": "rice vinegar",
+            "weight": 5.0,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_axlcd4tack2d20bveizm4ayu0h2w",
+            "image": "https://www.edamam.com/food-img/5f6/5f69b84c399d778c4728e9ab4f8065a2.jpg"
+          },
+          {
+            "text": "toasted nori seaweed 1 sheet, about 7 by 8 inches (18 by 20 cm)",
+            "quantity": 1.0,
+            "measure": "sheet",
+            "food": "nori",
+            "weight": 2.6,
+            "foodCategory": "vegetables",
+            "foodId": "food_bn5prizbgsrr0tact46ataaj7b5p",
+            "image": "https://www.edamam.com/food-img/193/1935b3e53c576e0f097393084d11b629.jpg"
+          },
+          {
+            "text": "toasted sesame seeds 1 tablespoon, plus more for sprinkling",
+            "quantity": 1.0,
+            "measure": "tablespoon",
+            "food": "sesame seeds",
+            "weight": 9.0,
+            "foodCategory": "plant-based protein",
+            "foodId": "food_bvxfnx8bwz2q3abs04kd6bbuf9w8",
+            "image": "https://www.edamam.com/food-img/291/291b355a7a0948716243164427697279.jpg"
+          },
+          {
+            "text": "English cucumber 1/4, peeled and cut into thin matchsticks",
+            "quantity": 0.25,
+            "measure": "<unit>",
+            "food": "English cucumber",
+            "weight": 75.25,
+            "foodCategory": "vegetables",
+            "foodId": "food_bv7aggjag9rxsaatklqzobca5fzn",
+            "image": "https://www.edamam.com/food-img/501/5015da0e5fc2b384696b3d949aefef86.jpg"
+          },
+          {
+            "text": "carrot 1/2, peeled and cut into thin matchsticks",
+            "quantity": 0.5,
+            "measure": "<unit>",
+            "food": "carrot",
+            "weight": 30.5,
+            "foodCategory": "vegetables",
+            "foodId": "food_ai215e5b85pdh5ajd4aafa3w2zm8",
+            "image": "https://www.edamam.com/food-img/121/121e33fce0bb9546ed7d060b6c114e29.jpg"
+          },
+          {
+            "text": "ripe avocado 1/4, thinly sliced",
+            "quantity": 0.25,
+            "measure": "<unit>",
+            "food": "avocado",
+            "weight": 50.25,
+            "foodCategory": "fruit",
+            "foodId": "food_b0yuze4b1g3afpanijno5abtiu28",
+            "image": "https://www.edamam.com/food-img/984/984a707ea8e9c6bf5f6498970a9e6d9d.jpg"
+          },
+          {
+            "text": "soy sauce and pickled ginger slices for serving (optional)",
+            "quantity": 0.0,
+            "measure": null,
+            "food": "soy sauce",
+            "weight": 0.0,
+            "foodCategory": "plant-based protein",
+            "foodId": "food_a5g9yevb1iactoaiimbvjbkrxueh",
+            "image": "https://www.edamam.com/food-img/f56/f562e461eb0618f367f538b836c17b82.jpg"
+          },
+          {
+            "text": "soy sauce and pickled ginger slices for serving (optional)",
+            "quantity": 0.0,
+            "measure": null,
+            "food": "ginger",
+            "weight": 6.853942775,
+            "foodCategory": "vegetables",
+            "foodId": "food_bi2ki2xb5zmmvbaiwf7ztbgktzp6",
+            "image": "https://www.edamam.com/food-img/b9c/b9c06ef451ef29513880af0a53ebbaa6.jpg"
+          }
+        ],
+        "calories": 384.1819345950001,
+        "totalTime": 0.0,
+        "cuisineType": ["japanese"]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/9919d7d98ed2e393e2dc89a0c90190f1?type=public&app_id=aa145f41&app_key=a8cc1865f185e28cb340c004b2b49d1e",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_147116f702710fa427a9ff7ef29bcb52",
+        "label": "Sushi Rice And Seasoning",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/b3a/b3a796bfc5abcf8fa5dc443625b528f5.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDxh4FT3EvC3bbg0JENGZFELLLgPQ6g9DdpyrbGQW%2FmugIhAItCAFcbV52U7PX%2BOOiDDtD2tpxboVX4p22Kcg1YBBUhKtIECHYQABoMMTg3MDE3MTUwOTg2IgxCW%2BI%2BHiH6kino1acqrwRVG6vVLCWkbz9c9S%2FcYLIRrQoM8Aq8sAQmBKW4DbNOgcXD29PZf4Moo0VbiG%2BCCvC2kb6sk%2B3kRfMgMakcMzOoE5xSzbM%2F7UpNI9Rod9AI1Ruvpo3xkRsAo8KsW5aL%2B4zHru8nqm6%2BE56hHT9eG9%2FDPE%2FI%2B%2FQM%2FSQKiv4CLbQoN6rPtB3ks27ww4WKHNMWcQcIXJ44tXmKlz%2BmbrUbLGugNKWcfN901mOsT1XF80Q6n4POjeeNxRJPBg9fGj3Tte8iewHhYUwPOtDnv8g674jCVnMOjjufvAjeINL4id1QKAabvriXwALdtaBQ21l2MaAG3elhbmsmnYtbuRM%2FHqvWbmyt%2F2IuOfRGi6IoW0UDi9q8oF37xuSzZ2oO720b4yu0981QGeP%2BEPQD7cb4qWTSeSKmCPpA3hCpKqN6EFF81Q5onriwSo1u91UXpmjuiG%2F2g6APntlT2yOrbXPK3WnMOZ857kMuLcSVvdvEEX2xBNeRbK9pZ9qICHcO96ZaSPmW24Wb7Afehi65%2FEP6ihdcQd3z0qFMX5KalbXiJzYN%2F8G5QUq7Xb9fj0y1ZnysT3xFOMvfEveuzAsAUoJMxrf3%2FqprgWoZUJGh%2Br7980IjKrSIRnm8QxvueBOc%2FJBmCRDaUC6x7oERTsOdO9%2FhrmKW5DFZpYc1EMEIh43bUNovP8CqbKx%2By84H2Y712ta8vqaUGvrTEROmlFgVAe%2ByFoN6Zvq1LOa0z97AbgMpb9huMPDqjZgGOqgBtb6uZjGOR1b2rHJ%2B1Aah58TRXAkImhwLH8RxPxnCHay25mk0v3Co0db7ujinlvgeM0s8cVWBHbE4ClcPJYx9HAD5qbz3lPYHyaqIEdj3bxcXw8C%2BEqJMUlxYriYpdVjXj1hEzR4ZAHotvJOauH%2FLctfbnKpAY%2FtIhjSt9bflh1q%2FofHKxBqJXqvxM6PIHbL9XH9IPxVPMRz98tQ5d4k4u8f4xyU%2FjoZP&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220822T132319Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJK7Y5E27%2F20220822%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=5d83ef73f7bc2015e9416543669acc40db210cac111366ef443889ef240e5900",
+        "source": "Donal Skehan",
+        "url": "http://www.donalskehan.com/2011/03/sushi-rice-and-seasoning/",
+        "yield": 6.0,
+        "dietLabels": ["Low-Fat"],
+        "ingredients": [
+          {
+            "text": "250 g sushi rice",
+            "quantity": 250.0,
+            "measure": "gram",
+            "food": "rice",
+            "weight": 250.0,
+            "foodCategory": "grains",
+            "foodId": "food_bpumdjzb5rtqaeabb0kbgbcgr4t9",
+            "image": "https://www.edamam.com/food-img/0fc/0fc9fa8a3e0276198d75b2e259068f8a.jpg"
+          },
+          {
+            "text": "325 ml water",
+            "quantity": 325.0,
+            "measure": "milliliter",
+            "food": "water",
+            "weight": 325.0,
+            "foodCategory": "water",
+            "foodId": "food_a99vzubbk1ayrsad318rvbzr3dh0",
+            "image": "https://www.edamam.com/food-img/5dd/5dd9d1361847b2ca53c4b19a8f92627e.jpg"
+          },
+          {
+            "text": "2 tbsps sushi rice seasoning",
+            "quantity": 2.0,
+            "measure": "tablespoon",
+            "food": "seasoning",
+            "weight": 8.8,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_aj7w3xab0epj7cbgkbkpwadysovd",
+            "image": "https://www.edamam.com/food-img/c23/c23e20823b442067307aa436969358f1.jpg"
+          },
+          {
+            "text": "500 ml rice vinegar",
+            "quantity": 500.0,
+            "measure": "milliliter",
+            "food": "rice vinegar",
+            "weight": 502.9835876899146,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_axlcd4tack2d20bveizm4ayu0h2w",
+            "image": "https://www.edamam.com/food-img/5f6/5f69b84c399d778c4728e9ab4f8065a2.jpg"
+          },
+          {
+            "text": "300 g sugar",
+            "quantity": 300.0,
+            "measure": "gram",
+            "food": "sugar",
+            "weight": 300.0,
+            "foodCategory": "sugars",
+            "foodId": "food_axi2ijobrk819yb0adceobnhm1c2",
+            "image": "https://www.edamam.com/food-img/ecb/ecb3f5aaed96d0188c21b8369be07765.jpg"
+          },
+          {
+            "text": "150 g salt",
+            "quantity": 150.0,
+            "measure": "gram",
+            "food": "salt",
+            "weight": 150.0,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+            "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+          }
+        ],
+        "calories": 2178.5530457841846,
+        "totalTime": 0.0,
+        "cuisineType": ["japanese"]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/147116f702710fa427a9ff7ef29bcb52?type=public&app_id=aa145f41&app_key=a8cc1865f185e28cb340c004b2b49d1e",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_feae839eb15c7959e1fbafa8ffb2c7df",
+        "label": "Crisp Sushi-Rice Cakes",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/c4a/c4aae567585c5799437bd36190cf0db3.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDxh4FT3EvC3bbg0JENGZFELLLgPQ6g9DdpyrbGQW%2FmugIhAItCAFcbV52U7PX%2BOOiDDtD2tpxboVX4p22Kcg1YBBUhKtIECHYQABoMMTg3MDE3MTUwOTg2IgxCW%2BI%2BHiH6kino1acqrwRVG6vVLCWkbz9c9S%2FcYLIRrQoM8Aq8sAQmBKW4DbNOgcXD29PZf4Moo0VbiG%2BCCvC2kb6sk%2B3kRfMgMakcMzOoE5xSzbM%2F7UpNI9Rod9AI1Ruvpo3xkRsAo8KsW5aL%2B4zHru8nqm6%2BE56hHT9eG9%2FDPE%2FI%2B%2FQM%2FSQKiv4CLbQoN6rPtB3ks27ww4WKHNMWcQcIXJ44tXmKlz%2BmbrUbLGugNKWcfN901mOsT1XF80Q6n4POjeeNxRJPBg9fGj3Tte8iewHhYUwPOtDnv8g674jCVnMOjjufvAjeINL4id1QKAabvriXwALdtaBQ21l2MaAG3elhbmsmnYtbuRM%2FHqvWbmyt%2F2IuOfRGi6IoW0UDi9q8oF37xuSzZ2oO720b4yu0981QGeP%2BEPQD7cb4qWTSeSKmCPpA3hCpKqN6EFF81Q5onriwSo1u91UXpmjuiG%2F2g6APntlT2yOrbXPK3WnMOZ857kMuLcSVvdvEEX2xBNeRbK9pZ9qICHcO96ZaSPmW24Wb7Afehi65%2FEP6ihdcQd3z0qFMX5KalbXiJzYN%2F8G5QUq7Xb9fj0y1ZnysT3xFOMvfEveuzAsAUoJMxrf3%2FqprgWoZUJGh%2Br7980IjKrSIRnm8QxvueBOc%2FJBmCRDaUC6x7oERTsOdO9%2FhrmKW5DFZpYc1EMEIh43bUNovP8CqbKx%2By84H2Y712ta8vqaUGvrTEROmlFgVAe%2ByFoN6Zvq1LOa0z97AbgMpb9huMPDqjZgGOqgBtb6uZjGOR1b2rHJ%2B1Aah58TRXAkImhwLH8RxPxnCHay25mk0v3Co0db7ujinlvgeM0s8cVWBHbE4ClcPJYx9HAD5qbz3lPYHyaqIEdj3bxcXw8C%2BEqJMUlxYriYpdVjXj1hEzR4ZAHotvJOauH%2FLctfbnKpAY%2FtIhjSt9bflh1q%2FofHKxBqJXqvxM6PIHbL9XH9IPxVPMRz98tQ5d4k4u8f4xyU%2FjoZP&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220822T132319Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJK7Y5E27%2F20220822%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=a58744a02e77459e7369f760bfc5e69fd5890bfbe873fceb11612b63c28121cf",
+        "source": "Food & Wine",
+        "url": "http://www.foodandwine.com/recipes/crisp-sushi-rice-cakes",
+        "yield": 4.0,
+        "dietLabels": [],
+        "ingredients": [
+          {
+            "text": "1 cup sushi rice, rinsed",
+            "quantity": 1.0,
+            "measure": "cup",
+            "food": "rice",
+            "weight": 195.0,
+            "foodCategory": "grains",
+            "foodId": "food_bpumdjzb5rtqaeabb0kbgbcgr4t9",
+            "image": "https://www.edamam.com/food-img/0fc/0fc9fa8a3e0276198d75b2e259068f8a.jpg"
+          },
+          {
+            "text": "1 1/2 cups water",
+            "quantity": 1.5,
+            "measure": "cup",
+            "food": "water",
+            "weight": 355.5,
+            "foodCategory": "water",
+            "foodId": "food_a99vzubbk1ayrsad318rvbzr3dh0",
+            "image": "https://www.edamam.com/food-img/5dd/5dd9d1361847b2ca53c4b19a8f92627e.jpg"
+          },
+          {
+            "text": "1/2 tablespoon mirin",
+            "quantity": 0.5,
+            "measure": "tablespoon",
+            "food": "mirin",
+            "weight": 7.274999999877,
+            "foodCategory": "cocktails and liquors",
+            "foodId": "food_bm83c4ob7z5q3xac1potzakndqbv",
+            "image": "https://www.edamam.com/food-img/bb7/bb76cdd34c080bf65908c09812fd9c8d.jpg"
+          },
+          {
+            "text": "1/2 teaspoon rice vinegar",
+            "quantity": 0.5,
+            "measure": "teaspoon",
+            "food": "rice vinegar",
+            "weight": 2.5,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_axlcd4tack2d20bveizm4ayu0h2w",
+            "image": "https://www.edamam.com/food-img/5f6/5f69b84c399d778c4728e9ab4f8065a2.jpg"
+          },
+          {
+            "text": "1/2 teaspoon sugar",
+            "quantity": 0.5,
+            "measure": "teaspoon",
+            "food": "sugar",
+            "weight": 2.1,
+            "foodCategory": "sugars",
+            "foodId": "food_axi2ijobrk819yb0adceobnhm1c2",
+            "image": "https://www.edamam.com/food-img/ecb/ecb3f5aaed96d0188c21b8369be07765.jpg"
+          },
+          {
+            "text": "Salt",
+            "quantity": 0.0,
+            "measure": null,
+            "food": "Salt",
+            "weight": 3.374249999999262,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+            "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+          },
+          {
+            "text": "Vegetable oil, for frying",
+            "quantity": 0.0,
+            "measure": null,
+            "food": "Vegetable oil",
+            "weight": 7.6482999999983265,
+            "foodCategory": "Oils",
+            "foodId": "food_bt1mzi2ah2sfg8bv7no1qai83w8s",
+            "image": "https://www.edamam.com/food-img/6e5/6e51a63a6300a8ea1b4c4cc68dfaba33.jpg"
+          }
+        ],
+        "calories": 999.116005499671,
+        "totalTime": 0.0,
+        "cuisineType": ["japanese"]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/feae839eb15c7959e1fbafa8ffb2c7df?type=public&app_id=aa145f41&app_key=a8cc1865f185e28cb340c004b2b49d1e",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_9e1db9afabb90e4bc3918ac600465135",
+        "label": "Smoked Salmon Sushi",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/140/14097dfe05a2ecb23bfa922fbde5c891.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDxh4FT3EvC3bbg0JENGZFELLLgPQ6g9DdpyrbGQW%2FmugIhAItCAFcbV52U7PX%2BOOiDDtD2tpxboVX4p22Kcg1YBBUhKtIECHYQABoMMTg3MDE3MTUwOTg2IgxCW%2BI%2BHiH6kino1acqrwRVG6vVLCWkbz9c9S%2FcYLIRrQoM8Aq8sAQmBKW4DbNOgcXD29PZf4Moo0VbiG%2BCCvC2kb6sk%2B3kRfMgMakcMzOoE5xSzbM%2F7UpNI9Rod9AI1Ruvpo3xkRsAo8KsW5aL%2B4zHru8nqm6%2BE56hHT9eG9%2FDPE%2FI%2B%2FQM%2FSQKiv4CLbQoN6rPtB3ks27ww4WKHNMWcQcIXJ44tXmKlz%2BmbrUbLGugNKWcfN901mOsT1XF80Q6n4POjeeNxRJPBg9fGj3Tte8iewHhYUwPOtDnv8g674jCVnMOjjufvAjeINL4id1QKAabvriXwALdtaBQ21l2MaAG3elhbmsmnYtbuRM%2FHqvWbmyt%2F2IuOfRGi6IoW0UDi9q8oF37xuSzZ2oO720b4yu0981QGeP%2BEPQD7cb4qWTSeSKmCPpA3hCpKqN6EFF81Q5onriwSo1u91UXpmjuiG%2F2g6APntlT2yOrbXPK3WnMOZ857kMuLcSVvdvEEX2xBNeRbK9pZ9qICHcO96ZaSPmW24Wb7Afehi65%2FEP6ihdcQd3z0qFMX5KalbXiJzYN%2F8G5QUq7Xb9fj0y1ZnysT3xFOMvfEveuzAsAUoJMxrf3%2FqprgWoZUJGh%2Br7980IjKrSIRnm8QxvueBOc%2FJBmCRDaUC6x7oERTsOdO9%2FhrmKW5DFZpYc1EMEIh43bUNovP8CqbKx%2By84H2Y712ta8vqaUGvrTEROmlFgVAe%2ByFoN6Zvq1LOa0z97AbgMpb9huMPDqjZgGOqgBtb6uZjGOR1b2rHJ%2B1Aah58TRXAkImhwLH8RxPxnCHay25mk0v3Co0db7ujinlvgeM0s8cVWBHbE4ClcPJYx9HAD5qbz3lPYHyaqIEdj3bxcXw8C%2BEqJMUlxYriYpdVjXj1hEzR4ZAHotvJOauH%2FLctfbnKpAY%2FtIhjSt9bflh1q%2FofHKxBqJXqvxM6PIHbL9XH9IPxVPMRz98tQ5d4k4u8f4xyU%2FjoZP&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220822T132319Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJK7Y5E27%2F20220822%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=615edfe265a4f25b6eaa173c8e9c766c4ff7f2ed5332fe6b9516809481694b90",
+        "source": "Donna Hay",
+        "url": "http://www.donnahay.com.au/recipes/fastfood/nibbles/smoked-salmon-sushi",
+        "yield": 6.0,
+        "dietLabels": [],
+        "ingredients": [
+          {
+            "text": "1⅔ cups (330g) sushi rice",
+            "quantity": 330.0,
+            "measure": "gram",
+            "food": "rice",
+            "weight": 330.0,
+            "foodCategory": "grains",
+            "foodId": "food_bpumdjzb5rtqaeabb0kbgbcgr4t9",
+            "image": "https://www.edamam.com/food-img/0fc/0fc9fa8a3e0276198d75b2e259068f8a.jpg"
+          },
+          {
+            "text": "1¾ cups (435ml) water",
+            "quantity": 435.0,
+            "measure": "milliliter",
+            "food": "water",
+            "weight": 435.0,
+            "foodCategory": "water",
+            "foodId": "food_a99vzubbk1ayrsad318rvbzr3dh0",
+            "image": "https://www.edamam.com/food-img/5dd/5dd9d1361847b2ca53c4b19a8f92627e.jpg"
+          },
+          {
+            "text": "¼ cup (60ml) rice wine vinegar",
+            "quantity": 60.0,
+            "measure": "milliliter",
+            "food": "rice wine vinegar",
+            "weight": 60.35803052278975,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_axlcd4tack2d20bveizm4ayu0h2w",
+            "image": "https://www.edamam.com/food-img/5f6/5f69b84c399d778c4728e9ab4f8065a2.jpg"
+          },
+          {
+            "text": "2 tablespoons caster (superfine) sugar",
+            "quantity": 2.0,
+            "measure": "tablespoon",
+            "food": "sugar",
+            "weight": 24.9999999995774,
+            "foodCategory": "sugars",
+            "foodId": "food_axi2ijobrk819yb0adceobnhm1c2",
+            "image": "https://www.edamam.com/food-img/ecb/ecb3f5aaed96d0188c21b8369be07765.jpg"
+          },
+          {
+            "text": "2 teaspoons sea salt flakes",
+            "quantity": 2.0,
+            "measure": "teaspoon",
+            "food": "sea salt",
+            "weight": 9.70833333382575,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_a1vgrj1bs8rd1majvmd9ubz8ttkg",
+            "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+          },
+          {
+            "text": "200 g sliced smoked salmon",
+            "quantity": 200.0,
+            "measure": "gram",
+            "food": "smoked salmon",
+            "weight": 200.0,
+            "foodCategory": "seafood",
+            "foodId": "food_a6rqub2a7zak4tb5v5s1saf99j1b",
+            "image": "https://www.edamam.com/food-img/c91/c918b85b824c85e231e13a2b831d6d18.gif"
+          },
+          {
+            "text": "1 teaspoon wasabi paste",
+            "quantity": 1.0,
+            "measure": "teaspoon",
+            "food": "wasabi paste",
+            "weight": 2.7083333334707,
+            "foodCategory": "vegetables",
+            "foodId": "food_b18ctxdbw2ktnpbejotkwbnalyrj",
+            "image": "https://www.edamam.com/food-img/0c6/0c67d35d19e2e49178846d3afa89ccd5.jpg"
+          },
+          {
+            "text": "2 sheets nori",
+            "quantity": 2.0,
+            "measure": "sheet",
+            "food": "nori",
+            "weight": 5.2,
+            "foodCategory": "vegetables",
+            "foodId": "food_bn5prizbgsrr0tact46ataaj7b5p",
+            "image": "https://www.edamam.com/food-img/193/1935b3e53c576e0f097393084d11b629.jpg"
+          },
+          {
+            "text": "soy sauce, to serve",
+            "quantity": 0.0,
+            "measure": null,
+            "food": "soy sauce",
+            "weight": 0.0,
+            "foodCategory": "plant-based protein",
+            "foodId": "food_a5g9yevb1iactoaiimbvjbkrxueh",
+            "image": "https://www.edamam.com/food-img/f56/f562e461eb0618f367f538b836c17b82.jpg"
+          }
+        ],
+        "calories": 1534.3865288259497,
+        "totalTime": 0.0,
+        "cuisineType": ["nordic"]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/9e1db9afabb90e4bc3918ac600465135?type=public&app_id=aa145f41&app_key=a8cc1865f185e28cb340c004b2b49d1e",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_50e1af68abf29021c802f21514bd9e28",
+        "label": "Almost Radish Sushi",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/096/09609d43cffff9e72d5487c0ace27899.JPG?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDxh4FT3EvC3bbg0JENGZFELLLgPQ6g9DdpyrbGQW%2FmugIhAItCAFcbV52U7PX%2BOOiDDtD2tpxboVX4p22Kcg1YBBUhKtIECHYQABoMMTg3MDE3MTUwOTg2IgxCW%2BI%2BHiH6kino1acqrwRVG6vVLCWkbz9c9S%2FcYLIRrQoM8Aq8sAQmBKW4DbNOgcXD29PZf4Moo0VbiG%2BCCvC2kb6sk%2B3kRfMgMakcMzOoE5xSzbM%2F7UpNI9Rod9AI1Ruvpo3xkRsAo8KsW5aL%2B4zHru8nqm6%2BE56hHT9eG9%2FDPE%2FI%2B%2FQM%2FSQKiv4CLbQoN6rPtB3ks27ww4WKHNMWcQcIXJ44tXmKlz%2BmbrUbLGugNKWcfN901mOsT1XF80Q6n4POjeeNxRJPBg9fGj3Tte8iewHhYUwPOtDnv8g674jCVnMOjjufvAjeINL4id1QKAabvriXwALdtaBQ21l2MaAG3elhbmsmnYtbuRM%2FHqvWbmyt%2F2IuOfRGi6IoW0UDi9q8oF37xuSzZ2oO720b4yu0981QGeP%2BEPQD7cb4qWTSeSKmCPpA3hCpKqN6EFF81Q5onriwSo1u91UXpmjuiG%2F2g6APntlT2yOrbXPK3WnMOZ857kMuLcSVvdvEEX2xBNeRbK9pZ9qICHcO96ZaSPmW24Wb7Afehi65%2FEP6ihdcQd3z0qFMX5KalbXiJzYN%2F8G5QUq7Xb9fj0y1ZnysT3xFOMvfEveuzAsAUoJMxrf3%2FqprgWoZUJGh%2Br7980IjKrSIRnm8QxvueBOc%2FJBmCRDaUC6x7oERTsOdO9%2FhrmKW5DFZpYc1EMEIh43bUNovP8CqbKx%2By84H2Y712ta8vqaUGvrTEROmlFgVAe%2ByFoN6Zvq1LOa0z97AbgMpb9huMPDqjZgGOqgBtb6uZjGOR1b2rHJ%2B1Aah58TRXAkImhwLH8RxPxnCHay25mk0v3Co0db7ujinlvgeM0s8cVWBHbE4ClcPJYx9HAD5qbz3lPYHyaqIEdj3bxcXw8C%2BEqJMUlxYriYpdVjXj1hEzR4ZAHotvJOauH%2FLctfbnKpAY%2FtIhjSt9bflh1q%2FofHKxBqJXqvxM6PIHbL9XH9IPxVPMRz98tQ5d4k4u8f4xyU%2FjoZP&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220822T132319Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJK7Y5E27%2F20220822%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=c885cf1d2c3a6471e6e800a22d47db1128e1d365774a9fbbc204134a1b394579",
+        "source": "Food52",
+        "url": "https://food52.com/recipes/17630-almost-radish-sushi",
+        "yield": 4.0,
+        "dietLabels": [],
+        "ingredients": [
+          {
+            "text": "1 cup sushi rice, thoroughly rinsed",
+            "quantity": 1.0,
+            "measure": "cup",
+            "food": "rice",
+            "weight": 195.0,
+            "foodCategory": "grains",
+            "foodId": "food_bpumdjzb5rtqaeabb0kbgbcgr4t9",
+            "image": "https://www.edamam.com/food-img/0fc/0fc9fa8a3e0276198d75b2e259068f8a.jpg"
+          },
+          {
+            "text": "1 cup water",
+            "quantity": 1.0,
+            "measure": "cup",
+            "food": "water",
+            "weight": 237.0,
+            "foodCategory": "water",
+            "foodId": "food_a99vzubbk1ayrsad318rvbzr3dh0",
+            "image": "https://www.edamam.com/food-img/5dd/5dd9d1361847b2ca53c4b19a8f92627e.jpg"
+          },
+          {
+            "text": "1 tablespoon granulated sugar",
+            "quantity": 1.0,
+            "measure": "tablespoon",
+            "food": "granulated sugar",
+            "weight": 12.4999999997887,
+            "foodCategory": "sugars",
+            "foodId": "food_axi2ijobrk819yb0adceobnhm1c2",
+            "image": "https://www.edamam.com/food-img/ecb/ecb3f5aaed96d0188c21b8369be07765.jpg"
+          },
+          {
+            "text": "1 tablespoon unseasoned rice vinegar",
+            "quantity": 1.0,
+            "measure": "tablespoon",
+            "food": "rice vinegar",
+            "weight": 14.9,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_axlcd4tack2d20bveizm4ayu0h2w",
+            "image": "https://www.edamam.com/food-img/5f6/5f69b84c399d778c4728e9ab4f8065a2.jpg"
+          },
+          {
+            "text": "1 teaspoon salt",
+            "quantity": 1.0,
+            "measure": "teaspoon",
+            "food": "salt",
+            "weight": 6.0,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+            "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+          },
+          {
+            "text": "3/4 cups grated daikon radish (use the large holes of a box grater) packed",
+            "quantity": 0.75,
+            "measure": "cup",
+            "food": "daikon",
+            "weight": 87.0,
+            "foodCategory": "vegetables",
+            "foodId": "food_bwctyrwb3acpvdat4ef8gakhgad9",
+            "image": "https://www.edamam.com/food-img/a9a/a9af5113b79c90f1ca9d4eb981e24931.jpg"
+          },
+          {
+            "text": "3/4 cups grated red radish (use the large holes of a box grater) packed",
+            "quantity": 0.75,
+            "measure": "cup",
+            "food": "radish",
+            "weight": 87.0,
+            "foodCategory": "vegetables",
+            "foodId": "food_bs6xkukbtd85e7b2lh5zfazpe45y",
+            "image": "https://www.edamam.com/food-img/ad7/ad78f4315cdba1dc26ccef0d7dba464b.jpg"
+          },
+          {
+            "text": "3 tablespoons granulated sugar",
+            "quantity": 3.0,
+            "measure": "tablespoon",
+            "food": "granulated sugar",
+            "weight": 37.4999999993661,
+            "foodCategory": "sugars",
+            "foodId": "food_axi2ijobrk819yb0adceobnhm1c2",
+            "image": "https://www.edamam.com/food-img/ecb/ecb3f5aaed96d0188c21b8369be07765.jpg"
+          },
+          {
+            "text": "3 tablespoons unseasoned rice vinegar",
+            "quantity": 3.0,
+            "measure": "tablespoon",
+            "food": "rice vinegar",
+            "weight": 44.7,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_axlcd4tack2d20bveizm4ayu0h2w",
+            "image": "https://www.edamam.com/food-img/5f6/5f69b84c399d778c4728e9ab4f8065a2.jpg"
+          },
+          {
+            "text": "1/4 cup soy sauce",
+            "quantity": 0.25,
+            "measure": "cup",
+            "food": "soy sauce",
+            "weight": 63.75,
+            "foodCategory": "plant-based protein",
+            "foodId": "food_a5g9yevb1iactoaiimbvjbkrxueh",
+            "image": "https://www.edamam.com/food-img/f56/f562e461eb0618f367f538b836c17b82.jpg"
+          },
+          {
+            "text": "The sticky rice",
+            "quantity": 0.0,
+            "measure": null,
+            "food": "rice",
+            "weight": 0.0,
+            "foodCategory": "grains",
+            "foodId": "food_bpumdjzb5rtqaeabb0kbgbcgr4t9",
+            "image": "https://www.edamam.com/food-img/0fc/0fc9fa8a3e0276198d75b2e259068f8a.jpg"
+          },
+          {
+            "text": "1/4 to 3/4 teaspoon wasabi paste (depending on your tolerance for heat)",
+            "quantity": 0.5,
+            "measure": "teaspoon",
+            "food": "wasabi paste",
+            "weight": 1.35416666673535,
+            "foodCategory": "vegetables",
+            "foodId": "food_b18ctxdbw2ktnpbejotkwbnalyrj",
+            "image": "https://www.edamam.com/food-img/0c6/0c67d35d19e2e49178846d3afa89ccd5.jpg"
+          },
+          {
+            "text": "4 heads of belgian endive",
+            "quantity": 4.0,
+            "measure": "head",
+            "food": "belgian endive",
+            "weight": 212.0,
+            "foodCategory": "vegetables",
+            "foodId": "food_a62ic8jbisg999a11qxfxaf5ibav",
+            "image": "https://www.edamam.com/food-img/684/6842d6cae4c640e786fd5b5ec374c292.jpg"
+          },
+          {
+            "text": "Pickled ginger",
+            "quantity": 0.0,
+            "measure": null,
+            "food": "ginger",
+            "weight": 19.9740833333178,
+            "foodCategory": "vegetables",
+            "foodId": "food_bi2ki2xb5zmmvbaiwf7ztbgktzp6",
+            "image": "https://www.edamam.com/food-img/b9c/b9c06ef451ef29513880af0a53ebbaa6.jpg"
+          }
+        ],
+        "calories": 1023.0908083301248,
+        "totalTime": 131.0,
+        "cuisineType": ["japanese"]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/50e1af68abf29021c802f21514bd9e28?type=public&app_id=aa145f41&app_key=a8cc1865f185e28cb340c004b2b49d1e",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_d536a537bcb4407c9605f16abede8897",
+        "label": "Vegan Sushi",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/f48/f481bf825397c078f4ca7f94666e803f.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDxh4FT3EvC3bbg0JENGZFELLLgPQ6g9DdpyrbGQW%2FmugIhAItCAFcbV52U7PX%2BOOiDDtD2tpxboVX4p22Kcg1YBBUhKtIECHYQABoMMTg3MDE3MTUwOTg2IgxCW%2BI%2BHiH6kino1acqrwRVG6vVLCWkbz9c9S%2FcYLIRrQoM8Aq8sAQmBKW4DbNOgcXD29PZf4Moo0VbiG%2BCCvC2kb6sk%2B3kRfMgMakcMzOoE5xSzbM%2F7UpNI9Rod9AI1Ruvpo3xkRsAo8KsW5aL%2B4zHru8nqm6%2BE56hHT9eG9%2FDPE%2FI%2B%2FQM%2FSQKiv4CLbQoN6rPtB3ks27ww4WKHNMWcQcIXJ44tXmKlz%2BmbrUbLGugNKWcfN901mOsT1XF80Q6n4POjeeNxRJPBg9fGj3Tte8iewHhYUwPOtDnv8g674jCVnMOjjufvAjeINL4id1QKAabvriXwALdtaBQ21l2MaAG3elhbmsmnYtbuRM%2FHqvWbmyt%2F2IuOfRGi6IoW0UDi9q8oF37xuSzZ2oO720b4yu0981QGeP%2BEPQD7cb4qWTSeSKmCPpA3hCpKqN6EFF81Q5onriwSo1u91UXpmjuiG%2F2g6APntlT2yOrbXPK3WnMOZ857kMuLcSVvdvEEX2xBNeRbK9pZ9qICHcO96ZaSPmW24Wb7Afehi65%2FEP6ihdcQd3z0qFMX5KalbXiJzYN%2F8G5QUq7Xb9fj0y1ZnysT3xFOMvfEveuzAsAUoJMxrf3%2FqprgWoZUJGh%2Br7980IjKrSIRnm8QxvueBOc%2FJBmCRDaUC6x7oERTsOdO9%2FhrmKW5DFZpYc1EMEIh43bUNovP8CqbKx%2By84H2Y712ta8vqaUGvrTEROmlFgVAe%2ByFoN6Zvq1LOa0z97AbgMpb9huMPDqjZgGOqgBtb6uZjGOR1b2rHJ%2B1Aah58TRXAkImhwLH8RxPxnCHay25mk0v3Co0db7ujinlvgeM0s8cVWBHbE4ClcPJYx9HAD5qbz3lPYHyaqIEdj3bxcXw8C%2BEqJMUlxYriYpdVjXj1hEzR4ZAHotvJOauH%2FLctfbnKpAY%2FtIhjSt9bflh1q%2FofHKxBqJXqvxM6PIHbL9XH9IPxVPMRz98tQ5d4k4u8f4xyU%2FjoZP&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220822T132319Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJK7Y5E27%2F20220822%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=3128926d13f76a83c1c64153277ab1ea29d8cec3cdca93d581c1215b38c760f3",
+        "source": "Martha Stewart",
+        "url": "https://www.marthastewart.com/1150339/healthy-vegetable-sushi",
+        "yield": 6.0,
+        "dietLabels": ["Low-Fat"],
+        "ingredients": [
+          {
+            "text": "1 1/4 cups uncooked Japanese sushi rice",
+            "quantity": 1.25,
+            "measure": "cup",
+            "food": "rice",
+            "weight": 243.75,
+            "foodCategory": "grains",
+            "foodId": "food_bpumdjzb5rtqaeabb0kbgbcgr4t9",
+            "image": "https://www.edamam.com/food-img/0fc/0fc9fa8a3e0276198d75b2e259068f8a.jpg"
+          },
+          {
+            "text": "5 tablespoons plus 1 teaspoon rice-wine vinegar",
+            "quantity": 5.0,
+            "measure": "tablespoon",
+            "food": "rice-wine vinegar",
+            "weight": 74.5,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_axlcd4tack2d20bveizm4ayu0h2w",
+            "image": "https://www.edamam.com/food-img/5f6/5f69b84c399d778c4728e9ab4f8065a2.jpg"
+          },
+          {
+            "text": "5 tablespoons plus 1 teaspoon rice-wine vinegar",
+            "quantity": 1.0,
+            "measure": "teaspoon",
+            "food": "rice-wine vinegar",
+            "weight": 5.0,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_axlcd4tack2d20bveizm4ayu0h2w",
+            "image": "https://www.edamam.com/food-img/5f6/5f69b84c399d778c4728e9ab4f8065a2.jpg"
+          },
+          {
+            "text": "4 tablespoons sugar",
+            "quantity": 4.0,
+            "measure": "tablespoon",
+            "food": "sugar",
+            "weight": 49.9999999991548,
+            "foodCategory": "sugars",
+            "foodId": "food_axi2ijobrk819yb0adceobnhm1c2",
+            "image": "https://www.edamam.com/food-img/ecb/ecb3f5aaed96d0188c21b8369be07765.jpg"
+          },
+          {
+            "text": "3/4 teaspoon salt",
+            "quantity": 0.75,
+            "measure": "teaspoon",
+            "food": "salt",
+            "weight": 4.5,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+            "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+          },
+          {
+            "text": "3 tablespoons low-sodium soy sauce",
+            "quantity": 3.0,
+            "measure": "tablespoon",
+            "food": "low-sodium soy sauce",
+            "weight": 42.599999999999994,
+            "foodCategory": "plant-based protein",
+            "foodId": "food_af8xwhdbq4vg0tbqfqjysafu339b",
+            "image": "https://www.edamam.com/food-img/4bc/4bccc4c294a8dddb62020c62935e6fd8.jpg"
+          },
+          {
+            "text": "1 tablespoon plus 1 teaspoon mirin (Japanese cooking wine)",
+            "quantity": 1.0,
+            "measure": "tablespoon",
+            "food": "mirin",
+            "weight": 14.549999999754,
+            "foodCategory": "cocktails and liquors",
+            "foodId": "food_bm83c4ob7z5q3xac1potzakndqbv",
+            "image": "https://www.edamam.com/food-img/bb7/bb76cdd34c080bf65908c09812fd9c8d.jpg"
+          },
+          {
+            "text": "1 tablespoon plus 1 teaspoon mirin (Japanese cooking wine)",
+            "quantity": 1.0,
+            "measure": "teaspoon",
+            "food": "mirin",
+            "weight": 4.8500000002459975,
+            "foodCategory": "cocktails and liquors",
+            "foodId": "food_bm83c4ob7z5q3xac1potzakndqbv",
+            "image": "https://www.edamam.com/food-img/bb7/bb76cdd34c080bf65908c09812fd9c8d.jpg"
+          },
+          {
+            "text": "2 carrots, peeled and cut lengthwise into quarters",
+            "quantity": 2.0,
+            "measure": "<unit>",
+            "food": "carrots",
+            "weight": 122.0,
+            "foodCategory": "vegetables",
+            "foodId": "food_ai215e5b85pdh5ajd4aafa3w2zm8",
+            "image": "https://www.edamam.com/food-img/121/121e33fce0bb9546ed7d060b6c114e29.jpg"
+          },
+          {
+            "text": "1/2 cucumber, cut in half lengthwise, seeded, and cut into 1/4-inch-thick strips",
+            "quantity": 0.5,
+            "measure": "<unit>",
+            "food": "cucumber",
+            "weight": 150.5,
+            "foodCategory": "vegetables",
+            "foodId": "food_bv7aggjag9rxsaatklqzobca5fzn",
+            "image": "https://www.edamam.com/food-img/501/5015da0e5fc2b384696b3d949aefef86.jpg"
+          },
+          {
+            "text": "4 sheets nori",
+            "quantity": 4.0,
+            "measure": "sheet",
+            "food": "nori",
+            "weight": 10.4,
+            "foodCategory": "vegetables",
+            "foodId": "food_bn5prizbgsrr0tact46ataaj7b5p",
+            "image": "https://www.edamam.com/food-img/193/1935b3e53c576e0f097393084d11b629.jpg"
+          },
+          {
+            "text": "2 tablespoons sesame seeds",
+            "quantity": 2.0,
+            "measure": "tablespoon",
+            "food": "sesame seeds",
+            "weight": 18.0,
+            "foodCategory": "plant-based protein",
+            "foodId": "food_bvxfnx8bwz2q3abs04kd6bbuf9w8",
+            "image": "https://www.edamam.com/food-img/291/291b355a7a0948716243164427697279.jpg"
+          },
+          {
+            "text": "3 tablespoons wasabi paste",
+            "quantity": 3.0,
+            "measure": "tablespoon",
+            "food": "wasabi paste",
+            "weight": 24.374999999587892,
+            "foodCategory": "vegetables",
+            "foodId": "food_b18ctxdbw2ktnpbejotkwbnalyrj",
+            "image": "https://www.edamam.com/food-img/0c6/0c67d35d19e2e49178846d3afa89ccd5.jpg"
+          },
+          {
+            "text": "1 two-inch-long piece daikon radish, about 2 inches in diameter, peeled and julienned",
+            "quantity": 1.0,
+            "measure": "<unit>",
+            "food": "daikon",
+            "weight": 338.0,
+            "foodCategory": "vegetables",
+            "foodId": "food_bwctyrwb3acpvdat4ef8gakhgad9",
+            "image": "https://www.edamam.com/food-img/a9a/a9af5113b79c90f1ca9d4eb981e24931.jpg"
+          },
+          {
+            "text": "16 leaves red-leaf lettuce, such as Lolla Rossa",
+            "quantity": 16.0,
+            "measure": "leaf",
+            "food": "red-leaf lettuce",
+            "weight": 41.6,
+            "foodCategory": "vegetables",
+            "foodId": "food_ayez7zcapafdy3a4ammmfasxvw6k",
+            "image": "https://www.edamam.com/food-img/da0/da0805be6053c9671a35a3d244e3f0c0.jpeg"
+          },
+          {
+            "text": "2 ounces pea shoots",
+            "quantity": 2.0,
+            "measure": "ounce",
+            "food": "pea shoots",
+            "weight": 56.69904625,
+            "foodCategory": "vegetables",
+            "foodId": "food_aoceuc6bshdej1bbsdammbnj6l6o",
+            "image": "https://www.edamam.com/food-img/e6e/e6e4be375c4554ce01c8ea75232efaa6.jpg"
+          },
+          {
+            "text": "1/4 cup pickled ginger (optional)",
+            "quantity": 0.25,
+            "measure": "cup",
+            "food": "ginger",
+            "weight": 24.0,
+            "foodCategory": "vegetables",
+            "foodId": "food_bi2ki2xb5zmmvbaiwf7ztbgktzp6",
+            "image": "https://www.edamam.com/food-img/b9c/b9c06ef451ef29513880af0a53ebbaa6.jpg"
+          },
+          {
+            "text": "6 shiso leaves, for garnish (optional)",
+            "quantity": 6.0,
+            "measure": "leaf",
+            "food": "shiso",
+            "weight": 0.8999999999999999,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_bxl4xoga4owdkeay51sy8anesxj5",
+            "image": "https://www.edamam.com/food-img/7f0/7f01cc4f71c5c6ad31051ed74b9c058b.jpg"
+          }
+        ],
+        "calories": 1441.6645306337798,
+        "totalTime": 0.0,
+        "cuisineType": ["japanese"]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/d536a537bcb4407c9605f16abede8897?type=public&app_id=aa145f41&app_key=a8cc1865f185e28cb340c004b2b49d1e",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_c8f112c1ea40430c628fe0e6f0710161",
+        "label": "Crisp Sushi-Rice Cakes",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/565/5650ef1877c696a4e7ba2a74bc95b48c.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDxh4FT3EvC3bbg0JENGZFELLLgPQ6g9DdpyrbGQW%2FmugIhAItCAFcbV52U7PX%2BOOiDDtD2tpxboVX4p22Kcg1YBBUhKtIECHYQABoMMTg3MDE3MTUwOTg2IgxCW%2BI%2BHiH6kino1acqrwRVG6vVLCWkbz9c9S%2FcYLIRrQoM8Aq8sAQmBKW4DbNOgcXD29PZf4Moo0VbiG%2BCCvC2kb6sk%2B3kRfMgMakcMzOoE5xSzbM%2F7UpNI9Rod9AI1Ruvpo3xkRsAo8KsW5aL%2B4zHru8nqm6%2BE56hHT9eG9%2FDPE%2FI%2B%2FQM%2FSQKiv4CLbQoN6rPtB3ks27ww4WKHNMWcQcIXJ44tXmKlz%2BmbrUbLGugNKWcfN901mOsT1XF80Q6n4POjeeNxRJPBg9fGj3Tte8iewHhYUwPOtDnv8g674jCVnMOjjufvAjeINL4id1QKAabvriXwALdtaBQ21l2MaAG3elhbmsmnYtbuRM%2FHqvWbmyt%2F2IuOfRGi6IoW0UDi9q8oF37xuSzZ2oO720b4yu0981QGeP%2BEPQD7cb4qWTSeSKmCPpA3hCpKqN6EFF81Q5onriwSo1u91UXpmjuiG%2F2g6APntlT2yOrbXPK3WnMOZ857kMuLcSVvdvEEX2xBNeRbK9pZ9qICHcO96ZaSPmW24Wb7Afehi65%2FEP6ihdcQd3z0qFMX5KalbXiJzYN%2F8G5QUq7Xb9fj0y1ZnysT3xFOMvfEveuzAsAUoJMxrf3%2FqprgWoZUJGh%2Br7980IjKrSIRnm8QxvueBOc%2FJBmCRDaUC6x7oERTsOdO9%2FhrmKW5DFZpYc1EMEIh43bUNovP8CqbKx%2By84H2Y712ta8vqaUGvrTEROmlFgVAe%2ByFoN6Zvq1LOa0z97AbgMpb9huMPDqjZgGOqgBtb6uZjGOR1b2rHJ%2B1Aah58TRXAkImhwLH8RxPxnCHay25mk0v3Co0db7ujinlvgeM0s8cVWBHbE4ClcPJYx9HAD5qbz3lPYHyaqIEdj3bxcXw8C%2BEqJMUlxYriYpdVjXj1hEzR4ZAHotvJOauH%2FLctfbnKpAY%2FtIhjSt9bflh1q%2FofHKxBqJXqvxM6PIHbL9XH9IPxVPMRz98tQ5d4k4u8f4xyU%2FjoZP&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220822T132319Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJK7Y5E27%2F20220822%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=132f00fead6e42bf1f8889c9f4cc92d9c7299216ab9ed1e044f63de0990abb79",
+        "source": "Delish",
+        "url": "http://www.delish.com/cooking/recipe-ideas/recipes/a14355/crisp-sushi-rice-cakes-recipe-fw0211/",
+        "yield": 8.0,
+        "dietLabels": ["Low-Fat"],
+        "ingredients": [
+          {
+            "text": "1 c. sushi rice",
+            "quantity": 1.0,
+            "measure": "cup",
+            "food": "rice",
+            "weight": 195.0,
+            "foodCategory": "grains",
+            "foodId": "food_bpumdjzb5rtqaeabb0kbgbcgr4t9",
+            "image": "https://www.edamam.com/food-img/0fc/0fc9fa8a3e0276198d75b2e259068f8a.jpg"
+          },
+          {
+            "text": "1½ c. water",
+            "quantity": 1.5,
+            "measure": "cup",
+            "food": "water",
+            "weight": 355.5,
+            "foodCategory": "water",
+            "foodId": "food_a99vzubbk1ayrsad318rvbzr3dh0",
+            "image": "https://www.edamam.com/food-img/5dd/5dd9d1361847b2ca53c4b19a8f92627e.jpg"
+          },
+          {
+            "text": "½ tbsp. mirin",
+            "quantity": 0.5,
+            "measure": "tablespoon",
+            "food": "mirin",
+            "weight": 7.274999999877,
+            "foodCategory": "cocktails and liquors",
+            "foodId": "food_bm83c4ob7z5q3xac1potzakndqbv",
+            "image": "https://www.edamam.com/food-img/bb7/bb76cdd34c080bf65908c09812fd9c8d.jpg"
+          },
+          {
+            "text": "½ tsp. rice vinegar",
+            "quantity": 0.5,
+            "measure": "teaspoon",
+            "food": "rice vinegar",
+            "weight": 2.5,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_axlcd4tack2d20bveizm4ayu0h2w",
+            "image": "https://www.edamam.com/food-img/5f6/5f69b84c399d778c4728e9ab4f8065a2.jpg"
+          },
+          {
+            "text": "½ tsp. sugar",
+            "quantity": 0.5,
+            "measure": "teaspoon",
+            "food": "sugar",
+            "weight": 2.1,
+            "foodCategory": "sugars",
+            "foodId": "food_axi2ijobrk819yb0adceobnhm1c2",
+            "image": "https://www.edamam.com/food-img/ecb/ecb3f5aaed96d0188c21b8369be07765.jpg"
+          },
+          {
+            "text": "salt",
+            "quantity": 0.0,
+            "measure": null,
+            "food": "salt",
+            "weight": 3.374249999999262,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+            "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+          },
+          {
+            "text": "vegetable oil",
+            "quantity": 0.0,
+            "measure": null,
+            "food": "vegetable oil",
+            "weight": 7.6482999999983265,
+            "foodCategory": "Oils",
+            "foodId": "food_bt1mzi2ah2sfg8bv7no1qai83w8s",
+            "image": "https://www.edamam.com/food-img/6e5/6e51a63a6300a8ea1b4c4cc68dfaba33.jpg"
+          }
+        ],
+        "calories": 787.9364719998204,
+        "totalTime": 45.0,
+        "cuisineType": ["japanese"]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/c8f112c1ea40430c628fe0e6f0710161?type=public&app_id=aa145f41&app_key=a8cc1865f185e28cb340c004b2b49d1e",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_0ec26450ae470702e7057b5a4ae54fe2",
+        "label": "Sushi Bowl recipes",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/6bf/6bf4a0a00bd6e793bf536c8d37b0fc88?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDxh4FT3EvC3bbg0JENGZFELLLgPQ6g9DdpyrbGQW%2FmugIhAItCAFcbV52U7PX%2BOOiDDtD2tpxboVX4p22Kcg1YBBUhKtIECHYQABoMMTg3MDE3MTUwOTg2IgxCW%2BI%2BHiH6kino1acqrwRVG6vVLCWkbz9c9S%2FcYLIRrQoM8Aq8sAQmBKW4DbNOgcXD29PZf4Moo0VbiG%2BCCvC2kb6sk%2B3kRfMgMakcMzOoE5xSzbM%2F7UpNI9Rod9AI1Ruvpo3xkRsAo8KsW5aL%2B4zHru8nqm6%2BE56hHT9eG9%2FDPE%2FI%2B%2FQM%2FSQKiv4CLbQoN6rPtB3ks27ww4WKHNMWcQcIXJ44tXmKlz%2BmbrUbLGugNKWcfN901mOsT1XF80Q6n4POjeeNxRJPBg9fGj3Tte8iewHhYUwPOtDnv8g674jCVnMOjjufvAjeINL4id1QKAabvriXwALdtaBQ21l2MaAG3elhbmsmnYtbuRM%2FHqvWbmyt%2F2IuOfRGi6IoW0UDi9q8oF37xuSzZ2oO720b4yu0981QGeP%2BEPQD7cb4qWTSeSKmCPpA3hCpKqN6EFF81Q5onriwSo1u91UXpmjuiG%2F2g6APntlT2yOrbXPK3WnMOZ857kMuLcSVvdvEEX2xBNeRbK9pZ9qICHcO96ZaSPmW24Wb7Afehi65%2FEP6ihdcQd3z0qFMX5KalbXiJzYN%2F8G5QUq7Xb9fj0y1ZnysT3xFOMvfEveuzAsAUoJMxrf3%2FqprgWoZUJGh%2Br7980IjKrSIRnm8QxvueBOc%2FJBmCRDaUC6x7oERTsOdO9%2FhrmKW5DFZpYc1EMEIh43bUNovP8CqbKx%2By84H2Y712ta8vqaUGvrTEROmlFgVAe%2ByFoN6Zvq1LOa0z97AbgMpb9huMPDqjZgGOqgBtb6uZjGOR1b2rHJ%2B1Aah58TRXAkImhwLH8RxPxnCHay25mk0v3Co0db7ujinlvgeM0s8cVWBHbE4ClcPJYx9HAD5qbz3lPYHyaqIEdj3bxcXw8C%2BEqJMUlxYriYpdVjXj1hEzR4ZAHotvJOauH%2FLctfbnKpAY%2FtIhjSt9bflh1q%2FofHKxBqJXqvxM6PIHbL9XH9IPxVPMRz98tQ5d4k4u8f4xyU%2FjoZP&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220822T132319Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJK7Y5E27%2F20220822%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=008bf0ec3e0ce3cfe2cedf6b4b9d6a19dd50e4d229d7339f1b797e368d2d5e31",
+        "source": "101 Cookbooks",
+        "url": "http://www.101cookbooks.com/archives/sushi-bowl-recipe.html",
+        "yield": 5.0,
+        "dietLabels": [],
+        "ingredients": [
+          {
+            "text": "2 cups short-grain brown rice",
+            "quantity": 2.0,
+            "measure": "cup",
+            "food": "brown rice",
+            "weight": 380.0,
+            "foodCategory": "grains",
+            "foodId": "food_aro09r9avsklizbsberuoaegj0uh",
+            "image": "https://www.edamam.com/food-img/c45/c453c255234a6f7f798d3f2aaa74bbcd.jpg"
+          },
+          {
+            "text": "3 1/2 cups water",
+            "quantity": 3.5,
+            "measure": "cup",
+            "food": "water",
+            "weight": 829.5,
+            "foodCategory": "water",
+            "foodId": "food_a99vzubbk1ayrsad318rvbzr3dh0",
+            "image": "https://www.edamam.com/food-img/5dd/5dd9d1361847b2ca53c4b19a8f92627e.jpg"
+          },
+          {
+            "text": "2 teaspoons fine grain sea salt",
+            "quantity": 2.0,
+            "measure": "teaspoon",
+            "food": "fine grain sea salt",
+            "weight": 12.0,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+            "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+          },
+          {
+            "text": "2 (4-inch) square sheets nori seaweed",
+            "quantity": 2.0,
+            "measure": "sheet",
+            "food": "seaweed",
+            "weight": 5.2,
+            "foodCategory": "vegetables",
+            "foodId": "food_bn5prizbgsrr0tact46ataaj7b5p",
+            "image": "https://www.edamam.com/food-img/193/1935b3e53c576e0f097393084d11b629.jpg"
+          },
+          {
+            "text": "6 ounces extra-firm tofu",
+            "quantity": 6.0,
+            "measure": "ounce",
+            "food": "tofu",
+            "weight": 170.09713875,
+            "foodCategory": "plant-based protein",
+            "foodId": "food_a269ixea1yf51xbfwgnq2boiwc7x",
+            "image": "https://www.edamam.com/food-img/b6a/b6ae13c3cfe37e16f820840f90231bff.jpg"
+          },
+          {
+            "text": "grated zest and juice of one orange",
+            "quantity": 1.0,
+            "measure": "<unit>",
+            "food": "orange",
+            "weight": 131.0,
+            "foodCategory": "fruit",
+            "foodId": "food_b0bnl8oayiqhs2at63ifxbm6i3o3",
+            "image": "https://www.edamam.com/food-img/8ea/8ea264a802d6e643c1a340a77863c6ef.jpg"
+          },
+          {
+            "text": "grated zest and juice of 1/2 lemon",
+            "quantity": 0.5,
+            "measure": "<unit>",
+            "food": "lemon",
+            "weight": 29.0,
+            "foodCategory": "fruit",
+            "foodId": "food_a6uzc62astrxcgbtzyq59b6fncrr",
+            "image": "https://www.edamam.com/food-img/70a/70acba3d4c734d7c70ef4efeed85dc8f.jpg"
+          },
+          {
+            "text": "2 tablespoons (raw) brown sugar (reg. sugar is ok too)",
+            "quantity": 2.0,
+            "measure": "tablespoon",
+            "food": "brown sugar",
+            "weight": 18.12499999969356,
+            "foodCategory": "sugars",
+            "foodId": "food_aodgtqwbmeu5f6bxeffn0art3bga",
+            "image": "https://www.edamam.com/food-img/8c6/8c6662bd73900645c6385b51a95d9b03.jpg"
+          },
+          {
+            "text": "2 tablespoons shoyu sauce (or soy sauce)",
+            "quantity": 2.0,
+            "measure": "tablespoon",
+            "food": "soy sauce",
+            "weight": 32.0,
+            "foodCategory": "plant-based protein",
+            "foodId": "food_a5g9yevb1iactoaiimbvjbkrxueh",
+            "image": "https://www.edamam.com/food-img/f56/f562e461eb0618f367f538b836c17b82.jpg"
+          },
+          {
+            "text": "brown rice vinegar",
+            "quantity": 0.0,
+            "measure": null,
+            "food": "brown rice",
+            "weight": 0.0,
+            "foodCategory": "grains",
+            "foodId": "food_aro09r9avsklizbsberuoaegj0uh",
+            "image": "https://www.edamam.com/food-img/c45/c453c255234a6f7f798d3f2aaa74bbcd.jpg"
+          },
+          {
+            "text": "brown rice vinegar",
+            "quantity": 0.0,
+            "measure": null,
+            "food": "vinegar",
+            "weight": 0.0,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_am3vwadag9arxtadrwyfcau2w3b2",
+            "image": "https://www.edamam.com/food-img/5f6/5f69b84c399d778c4728e9ab4f8065a2.jpg"
+          },
+          {
+            "text": "4 green onions, chopped",
+            "quantity": 4.0,
+            "measure": "<unit>",
+            "food": "green onions",
+            "weight": 60.0,
+            "foodCategory": "vegetables",
+            "foodId": "food_bknlkyzbuzo27pb11whr4bttkuy6",
+            "image": "https://www.edamam.com/food-img/b89/b89986ed6aa466285bdd99bac34b3c46.jpg"
+          },
+          {
+            "text": "1 avocado, peeled, pitted, and thinly sliced",
+            "quantity": 1.0,
+            "measure": "<unit>",
+            "food": "avocado",
+            "weight": 201.0,
+            "foodCategory": "fruit",
+            "foodId": "food_b0yuze4b1g3afpanijno5abtiu28",
+            "image": "https://www.edamam.com/food-img/984/984a707ea8e9c6bf5f6498970a9e6d9d.jpg"
+          },
+          {
+            "text": "3 tablespoons sesame seeds, toasted",
+            "quantity": 3.0,
+            "measure": "tablespoon",
+            "food": "sesame seeds",
+            "weight": 27.0,
+            "foodCategory": "plant-based protein",
+            "foodId": "food_bvxfnx8bwz2q3abs04kd6bbuf9w8",
+            "image": "https://www.edamam.com/food-img/291/291b355a7a0948716243164427697279.jpg"
+          }
+        ],
+        "calories": 2147.812997123836,
+        "totalTime": 80.0,
+        "cuisineType": ["japanese"]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/0ec26450ae470702e7057b5a4ae54fe2?type=public&app_id=aa145f41&app_key=a8cc1865f185e28cb340c004b2b49d1e",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_f5c20dbcf281363ba334bf8327a58f40",
+        "label": "Smoked salmon & avocado sushi",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/c7f/c7f4e8e142396950de33053968311bec.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDxh4FT3EvC3bbg0JENGZFELLLgPQ6g9DdpyrbGQW%2FmugIhAItCAFcbV52U7PX%2BOOiDDtD2tpxboVX4p22Kcg1YBBUhKtIECHYQABoMMTg3MDE3MTUwOTg2IgxCW%2BI%2BHiH6kino1acqrwRVG6vVLCWkbz9c9S%2FcYLIRrQoM8Aq8sAQmBKW4DbNOgcXD29PZf4Moo0VbiG%2BCCvC2kb6sk%2B3kRfMgMakcMzOoE5xSzbM%2F7UpNI9Rod9AI1Ruvpo3xkRsAo8KsW5aL%2B4zHru8nqm6%2BE56hHT9eG9%2FDPE%2FI%2B%2FQM%2FSQKiv4CLbQoN6rPtB3ks27ww4WKHNMWcQcIXJ44tXmKlz%2BmbrUbLGugNKWcfN901mOsT1XF80Q6n4POjeeNxRJPBg9fGj3Tte8iewHhYUwPOtDnv8g674jCVnMOjjufvAjeINL4id1QKAabvriXwALdtaBQ21l2MaAG3elhbmsmnYtbuRM%2FHqvWbmyt%2F2IuOfRGi6IoW0UDi9q8oF37xuSzZ2oO720b4yu0981QGeP%2BEPQD7cb4qWTSeSKmCPpA3hCpKqN6EFF81Q5onriwSo1u91UXpmjuiG%2F2g6APntlT2yOrbXPK3WnMOZ857kMuLcSVvdvEEX2xBNeRbK9pZ9qICHcO96ZaSPmW24Wb7Afehi65%2FEP6ihdcQd3z0qFMX5KalbXiJzYN%2F8G5QUq7Xb9fj0y1ZnysT3xFOMvfEveuzAsAUoJMxrf3%2FqprgWoZUJGh%2Br7980IjKrSIRnm8QxvueBOc%2FJBmCRDaUC6x7oERTsOdO9%2FhrmKW5DFZpYc1EMEIh43bUNovP8CqbKx%2By84H2Y712ta8vqaUGvrTEROmlFgVAe%2ByFoN6Zvq1LOa0z97AbgMpb9huMPDqjZgGOqgBtb6uZjGOR1b2rHJ%2B1Aah58TRXAkImhwLH8RxPxnCHay25mk0v3Co0db7ujinlvgeM0s8cVWBHbE4ClcPJYx9HAD5qbz3lPYHyaqIEdj3bxcXw8C%2BEqJMUlxYriYpdVjXj1hEzR4ZAHotvJOauH%2FLctfbnKpAY%2FtIhjSt9bflh1q%2FofHKxBqJXqvxM6PIHbL9XH9IPxVPMRz98tQ5d4k4u8f4xyU%2FjoZP&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220822T132319Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJK7Y5E27%2F20220822%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=0bb90af51b2c88c5b706612bd9bed7344fdc28d85dcbd580ebe36f5258b28e8d",
+        "source": "BBC Good Food",
+        "url": "http://www.bbcgoodfood.com/recipes/1813661/smoked-salmon-and-avocado-sushi",
+        "yield": 32.0,
+        "dietLabels": [],
+        "ingredients": [
+          {
+            "text": "300g sushi rice",
+            "quantity": 300.0,
+            "measure": "gram",
+            "food": "rice",
+            "weight": 300.0,
+            "foodCategory": "grains",
+            "foodId": "food_bpumdjzb5rtqaeabb0kbgbcgr4t9",
+            "image": "https://www.edamam.com/food-img/0fc/0fc9fa8a3e0276198d75b2e259068f8a.jpg"
+          },
+          {
+            "text": "2 tbsp rice or white wine vinegar",
+            "quantity": 2.0,
+            "measure": "tablespoon",
+            "food": "white wine vinegar",
+            "weight": 29.8,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_ai77igmb8f0rj6blsokr8bxx5n2n",
+            "image": "https://www.edamam.com/food-img/5f6/5f69b84c399d778c4728e9ab4f8065a2.jpg"
+          },
+          {
+            "text": "1 tsp caster sugar",
+            "quantity": 1.0,
+            "measure": "teaspoon",
+            "food": "caster sugar",
+            "weight": 4.000000000202885,
+            "foodCategory": "sugars",
+            "foodId": "food_b83hz1dbrydiwzag8btahb15lu4l",
+            "image": "https://www.edamam.com/food-img/ecb/ecb3f5aaed96d0188c21b8369be07765.jpg"
+          },
+          {
+            "text": "1 large avocado",
+            "quantity": 1.0,
+            "measure": "<unit>",
+            "food": "avocado",
+            "weight": 251.25,
+            "foodCategory": "fruit",
+            "foodId": "food_b0yuze4b1g3afpanijno5abtiu28",
+            "image": "https://www.edamam.com/food-img/984/984a707ea8e9c6bf5f6498970a9e6d9d.jpg"
+          },
+          {
+            "text": "juice ½ lemon",
+            "quantity": 0.5,
+            "measure": "<unit>",
+            "food": "lemon",
+            "weight": 29.0,
+            "foodCategory": "fruit",
+            "foodId": "food_a6uzc62astrxcgbtzyq59b6fncrr",
+            "image": "https://www.edamam.com/food-img/70a/70acba3d4c734d7c70ef4efeed85dc8f.jpg"
+          },
+          {
+            "text": "4 sheets nori seaweed",
+            "quantity": 4.0,
+            "measure": "sheet",
+            "food": "seaweed",
+            "weight": 10.4,
+            "foodCategory": "vegetables",
+            "foodId": "food_bn5prizbgsrr0tact46ataaj7b5p",
+            "image": "https://www.edamam.com/food-img/193/1935b3e53c576e0f097393084d11b629.jpg"
+          },
+          {
+            "text": "4 large slices smoked salmon",
+            "quantity": 4.0,
+            "measure": "slice",
+            "food": "smoked salmon",
+            "weight": 141.75,
+            "foodCategory": "seafood",
+            "foodId": "food_a6rqub2a7zak4tb5v5s1saf99j1b",
+            "image": "https://www.edamam.com/food-img/c91/c918b85b824c85e231e13a2b831d6d18.gif"
+          },
+          {
+            "text": "1 bunch chives",
+            "quantity": 1.0,
+            "measure": "bunch",
+            "food": "chives",
+            "weight": 12.0,
+            "foodCategory": "vegetables",
+            "foodId": "food_btg1uzjak79lawbirsitkaeai60l",
+            "image": "https://www.edamam.com/food-img/f3f/f3f48643a924ba174b894e979cb48620.jpg"
+          },
+          {
+            "text": "sweet soy sauce (kecap manis), to serve",
+            "quantity": 0.0,
+            "measure": null,
+            "food": "soy sauce",
+            "weight": 0.0,
+            "foodCategory": "plant-based protein",
+            "foodId": "food_a5g9yevb1iactoaiimbvjbkrxueh",
+            "image": "https://www.edamam.com/food-img/f56/f562e461eb0618f367f538b836c17b82.jpg"
+          },
+          {
+            "text": "sweet soy sauce (kecap manis), to serve",
+            "quantity": 0.0,
+            "measure": null,
+            "food": "kecap",
+            "weight": 0.0,
+            "foodCategory": "plant-based protein",
+            "foodId": "food_a5g9yevb1iactoaiimbvjbkrxueh",
+            "image": "https://www.edamam.com/food-img/f56/f562e461eb0618f367f538b836c17b82.jpg"
+          }
+        ],
+        "calories": 1684.3415000007853,
+        "totalTime": 30.0,
+        "cuisineType": ["nordic"]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/f5c20dbcf281363ba334bf8327a58f40?type=public&app_id=aa145f41&app_key=a8cc1865f185e28cb340c004b2b49d1e",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_a7c260669298d65e17d39297a15a5115",
+        "label": "Tuna Sushi Salad And Wasabi Avocado recipes",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/c13/c13f3a46ea7020be92e6ee74c9e6ef37?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDxh4FT3EvC3bbg0JENGZFELLLgPQ6g9DdpyrbGQW%2FmugIhAItCAFcbV52U7PX%2BOOiDDtD2tpxboVX4p22Kcg1YBBUhKtIECHYQABoMMTg3MDE3MTUwOTg2IgxCW%2BI%2BHiH6kino1acqrwRVG6vVLCWkbz9c9S%2FcYLIRrQoM8Aq8sAQmBKW4DbNOgcXD29PZf4Moo0VbiG%2BCCvC2kb6sk%2B3kRfMgMakcMzOoE5xSzbM%2F7UpNI9Rod9AI1Ruvpo3xkRsAo8KsW5aL%2B4zHru8nqm6%2BE56hHT9eG9%2FDPE%2FI%2B%2FQM%2FSQKiv4CLbQoN6rPtB3ks27ww4WKHNMWcQcIXJ44tXmKlz%2BmbrUbLGugNKWcfN901mOsT1XF80Q6n4POjeeNxRJPBg9fGj3Tte8iewHhYUwPOtDnv8g674jCVnMOjjufvAjeINL4id1QKAabvriXwALdtaBQ21l2MaAG3elhbmsmnYtbuRM%2FHqvWbmyt%2F2IuOfRGi6IoW0UDi9q8oF37xuSzZ2oO720b4yu0981QGeP%2BEPQD7cb4qWTSeSKmCPpA3hCpKqN6EFF81Q5onriwSo1u91UXpmjuiG%2F2g6APntlT2yOrbXPK3WnMOZ857kMuLcSVvdvEEX2xBNeRbK9pZ9qICHcO96ZaSPmW24Wb7Afehi65%2FEP6ihdcQd3z0qFMX5KalbXiJzYN%2F8G5QUq7Xb9fj0y1ZnysT3xFOMvfEveuzAsAUoJMxrf3%2FqprgWoZUJGh%2Br7980IjKrSIRnm8QxvueBOc%2FJBmCRDaUC6x7oERTsOdO9%2FhrmKW5DFZpYc1EMEIh43bUNovP8CqbKx%2By84H2Y712ta8vqaUGvrTEROmlFgVAe%2ByFoN6Zvq1LOa0z97AbgMpb9huMPDqjZgGOqgBtb6uZjGOR1b2rHJ%2B1Aah58TRXAkImhwLH8RxPxnCHay25mk0v3Co0db7ujinlvgeM0s8cVWBHbE4ClcPJYx9HAD5qbz3lPYHyaqIEdj3bxcXw8C%2BEqJMUlxYriYpdVjXj1hEzR4ZAHotvJOauH%2FLctfbnKpAY%2FtIhjSt9bflh1q%2FofHKxBqJXqvxM6PIHbL9XH9IPxVPMRz98tQ5d4k4u8f4xyU%2FjoZP&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220822T132319Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJK7Y5E27%2F20220822%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=895d1cc97253215253d38def7baaaa3346aa99ab49b96b1131b8f63f987492e9",
+        "source": "Food Republic",
+        "url": "http://www.foodrepublic.com/recipes/tuna-sushi-salad-wasabi-avocado/",
+        "yield": 2.0,
+        "dietLabels": ["High-Fiber"],
+        "ingredients": [
+          {
+            "text": "1/2 small ripe avocado",
+            "quantity": 0.5,
+            "measure": "<unit>",
+            "food": "avocado",
+            "weight": 75.375,
+            "foodCategory": "fruit",
+            "foodId": "food_b0yuze4b1g3afpanijno5abtiu28",
+            "image": "https://www.edamam.com/food-img/984/984a707ea8e9c6bf5f6498970a9e6d9d.jpg"
+          },
+          {
+            "text": "1/2 teaspoon wasabi paste",
+            "quantity": 0.5,
+            "measure": "teaspoon",
+            "food": "wasabi paste",
+            "weight": 1.35416666673535,
+            "foodCategory": "vegetables",
+            "foodId": "food_b18ctxdbw2ktnpbejotkwbnalyrj",
+            "image": "https://www.edamam.com/food-img/0c6/0c67d35d19e2e49178846d3afa89ccd5.jpg"
+          },
+          {
+            "text": "3 tablespoons lime juice",
+            "quantity": 3.0,
+            "measure": "tablespoon",
+            "food": "lime juice",
+            "weight": 46.199999999218896,
+            "foodCategory": "fruit",
+            "foodId": "food_b0iywbmaujvd4eblrooo9bsvn7e6",
+            "image": "https://www.edamam.com/food-img/8f0/8f0c10eb3dbf476a05e61018e76ea220.jpg"
+          },
+          {
+            "text": "1 teaspoon toasted sesame oil",
+            "quantity": 1.0,
+            "measure": "teaspoon",
+            "food": "toasted sesame oil",
+            "weight": 4.5,
+            "foodCategory": "Oils",
+            "foodId": "food_b2id9opa0l5afvbw2do5xa1fnz4q",
+            "image": "https://www.edamam.com/food-img/b87/b874ddcfb6770adc7a155355a902ffb8.jpg"
+          },
+          {
+            "text": "2 teaspoons soy sauce",
+            "quantity": 2.0,
+            "measure": "teaspoon",
+            "food": "soy sauce",
+            "weight": 10.6,
+            "foodCategory": "plant-based protein",
+            "foodId": "food_a5g9yevb1iactoaiimbvjbkrxueh",
+            "image": "https://www.edamam.com/food-img/f56/f562e461eb0618f367f538b836c17b82.jpg"
+          },
+          {
+            "text": "2 teaspoons yuzu (optional)",
+            "quantity": 2.0,
+            "measure": "teaspoon",
+            "food": "yuzu",
+            "weight": 8.83333333378137,
+            "foodCategory": "fruit",
+            "foodId": "food_a6uzc62astrxcgbtzyq59b6fncrr",
+            "image": "https://www.edamam.com/food-img/70a/70acba3d4c734d7c70ef4efeed85dc8f.jpg"
+          },
+          {
+            "text": "sea salt",
+            "quantity": 0.0,
+            "measure": null,
+            "food": "sea salt",
+            "weight": 6.278599248747805,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_a1vgrj1bs8rd1majvmd9ubz8ttkg",
+            "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+          },
+          {
+            "text": "freshly ground black pepper",
+            "quantity": 0.0,
+            "measure": null,
+            "food": "black pepper",
+            "weight": 3.1392996243739026,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_b6ywzluaaxv02wad7s1r9ag4py89",
+            "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+          },
+          {
+            "text": "3/4 cup frozen edamame beans",
+            "quantity": 0.75,
+            "measure": "cup",
+            "food": "edamame beans",
+            "weight": 88.5,
+            "foodCategory": "vegetables",
+            "foodId": "food_bx3fkcubyl2t7ha8jfdm5anoirlx",
+            "image": "https://www.edamam.com/food-img/325/325e012901331f9860df07f755adf197.jpg"
+          },
+          {
+            "text": "1 1/4 cups cooked brown rice (or a mix of brown and wild rice)",
+            "quantity": 1.25,
+            "measure": "cup",
+            "food": "cooked brown rice",
+            "weight": 243.75,
+            "foodCategory": "grains",
+            "foodId": "food_ba1rpjwbtcmkura61h9o0a7rw8u0",
+            "image": "https://www.edamam.com/food-img/9e6/9e6d4be8790db75855b4e971b0cad269.jpg"
+          },
+          {
+            "text": "3/4 cup sugar snap peas, sliced",
+            "quantity": 0.75,
+            "measure": "cup",
+            "food": "sugar snap peas",
+            "weight": 73.5,
+            "foodCategory": "vegetables",
+            "foodId": "food_axypy6pakiktpcb6151czakqj1sd",
+            "image": "https://www.edamam.com/food-img/d69/d6979db01580bcc6b32ad9a83cb5148c.jpg"
+          },
+          {
+            "text": "1 tablespoon pickled ginger, drained and shredded",
+            "quantity": 1.0,
+            "measure": "tablespoon",
+            "food": "ginger",
+            "weight": 5.99999999989856,
+            "foodCategory": "vegetables",
+            "foodId": "food_bi2ki2xb5zmmvbaiwf7ztbgktzp6",
+            "image": "https://www.edamam.com/food-img/b9c/b9c06ef451ef29513880af0a53ebbaa6.jpg"
+          },
+          {
+            "text": "1/2 small ripe avocado, sliced",
+            "quantity": 0.5,
+            "measure": "<unit>",
+            "food": "avocado",
+            "weight": 75.375,
+            "foodCategory": "fruit",
+            "foodId": "food_b0yuze4b1g3afpanijno5abtiu28",
+            "image": "https://www.edamam.com/food-img/984/984a707ea8e9c6bf5f6498970a9e6d9d.jpg"
+          },
+          {
+            "text": "3/4 cup radishes, finely sliced",
+            "quantity": 0.75,
+            "measure": "cup",
+            "food": "radishes",
+            "weight": 87.0,
+            "foodCategory": "vegetables",
+            "foodId": "food_bs6xkukbtd85e7b2lh5zfazpe45y",
+            "image": "https://www.edamam.com/food-img/ad7/ad78f4315cdba1dc26ccef0d7dba464b.jpg"
+          },
+          {
+            "text": "4 scallions, finely sliced",
+            "quantity": 4.0,
+            "measure": "<unit>",
+            "food": "scallions",
+            "weight": 60.0,
+            "foodCategory": "vegetables",
+            "foodId": "food_bknlkyzbuzo27pb11whr4bttkuy6",
+            "image": "https://www.edamam.com/food-img/b89/b89986ed6aa466285bdd99bac34b3c46.jpg"
+          },
+          {
+            "text": "1 tablespoon each black and white sesame seeds",
+            "quantity": 1.0,
+            "measure": "tablespoon",
+            "food": "sesame seeds",
+            "weight": 9.0,
+            "foodCategory": "plant-based protein",
+            "foodId": "food_bvxfnx8bwz2q3abs04kd6bbuf9w8",
+            "image": "https://www.edamam.com/food-img/291/291b355a7a0948716243164427697279.jpg"
+          },
+          {
+            "text": "9 ounces tuna steak",
+            "quantity": 9.0,
+            "measure": "ounce",
+            "food": "tuna steak",
+            "weight": 255.145708125,
+            "foodCategory": "seafood",
+            "foodId": "food_bu5s7alaj4fjv8bf9qxvnba38oay",
+            "image": "https://www.edamam.com/food-img/022/022db6571bd5b3dfbd3ef8941c775d12.jpg"
+          },
+          {
+            "text": "1/2 sheet sushi nori, snipped into pieces (optional)",
+            "quantity": 0.5,
+            "measure": "sheet",
+            "food": "nori",
+            "weight": 1.3,
+            "foodCategory": "vegetables",
+            "foodId": "food_bn5prizbgsrr0tact46ataaj7b5p",
+            "image": "https://www.edamam.com/food-img/193/1935b3e53c576e0f097393084d11b629.jpg"
+          }
+        ],
+        "calories": 1079.3391722466904,
+        "totalTime": 20.0,
+        "cuisineType": ["japanese"]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/a7c260669298d65e17d39297a15a5115?type=public&app_id=aa145f41&app_key=a8cc1865f185e28cb340c004b2b49d1e",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_22c4179bf5d1a71ce5cd26c1daf4df0a",
+        "label": "Simple sushi salad",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/0bf/0bf67e4f4386437ce1a3ba2b7eea3537.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDxh4FT3EvC3bbg0JENGZFELLLgPQ6g9DdpyrbGQW%2FmugIhAItCAFcbV52U7PX%2BOOiDDtD2tpxboVX4p22Kcg1YBBUhKtIECHYQABoMMTg3MDE3MTUwOTg2IgxCW%2BI%2BHiH6kino1acqrwRVG6vVLCWkbz9c9S%2FcYLIRrQoM8Aq8sAQmBKW4DbNOgcXD29PZf4Moo0VbiG%2BCCvC2kb6sk%2B3kRfMgMakcMzOoE5xSzbM%2F7UpNI9Rod9AI1Ruvpo3xkRsAo8KsW5aL%2B4zHru8nqm6%2BE56hHT9eG9%2FDPE%2FI%2B%2FQM%2FSQKiv4CLbQoN6rPtB3ks27ww4WKHNMWcQcIXJ44tXmKlz%2BmbrUbLGugNKWcfN901mOsT1XF80Q6n4POjeeNxRJPBg9fGj3Tte8iewHhYUwPOtDnv8g674jCVnMOjjufvAjeINL4id1QKAabvriXwALdtaBQ21l2MaAG3elhbmsmnYtbuRM%2FHqvWbmyt%2F2IuOfRGi6IoW0UDi9q8oF37xuSzZ2oO720b4yu0981QGeP%2BEPQD7cb4qWTSeSKmCPpA3hCpKqN6EFF81Q5onriwSo1u91UXpmjuiG%2F2g6APntlT2yOrbXPK3WnMOZ857kMuLcSVvdvEEX2xBNeRbK9pZ9qICHcO96ZaSPmW24Wb7Afehi65%2FEP6ihdcQd3z0qFMX5KalbXiJzYN%2F8G5QUq7Xb9fj0y1ZnysT3xFOMvfEveuzAsAUoJMxrf3%2FqprgWoZUJGh%2Br7980IjKrSIRnm8QxvueBOc%2FJBmCRDaUC6x7oERTsOdO9%2FhrmKW5DFZpYc1EMEIh43bUNovP8CqbKx%2By84H2Y712ta8vqaUGvrTEROmlFgVAe%2ByFoN6Zvq1LOa0z97AbgMpb9huMPDqjZgGOqgBtb6uZjGOR1b2rHJ%2B1Aah58TRXAkImhwLH8RxPxnCHay25mk0v3Co0db7ujinlvgeM0s8cVWBHbE4ClcPJYx9HAD5qbz3lPYHyaqIEdj3bxcXw8C%2BEqJMUlxYriYpdVjXj1hEzR4ZAHotvJOauH%2FLctfbnKpAY%2FtIhjSt9bflh1q%2FofHKxBqJXqvxM6PIHbL9XH9IPxVPMRz98tQ5d4k4u8f4xyU%2FjoZP&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220822T132319Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJK7Y5E27%2F20220822%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=06b89ed064b2b56a2e51bfa4a19a0024467777523e7856fa2985e609fd783b99",
+        "source": "Jamie Oliver",
+        "url": "http://www.jamieoliver.com/recipes/fish-recipes/simple-sushi-salad/",
+        "yield": 2.0,
+        "dietLabels": ["Balanced", "High-Fiber"],
+        "ingredients": [
+          {
+            "text": "80 g sushi rice",
+            "quantity": 80.0,
+            "measure": "gram",
+            "food": "rice",
+            "weight": 80.0,
+            "foodCategory": "grains",
+            "foodId": "food_bpumdjzb5rtqaeabb0kbgbcgr4t9",
+            "image": "https://www.edamam.com/food-img/0fc/0fc9fa8a3e0276198d75b2e259068f8a.jpg"
+          },
+          {
+            "text": "½ a small head of broccoli",
+            "quantity": 0.5,
+            "measure": "head",
+            "food": "broccoli",
+            "weight": 228.0,
+            "foodCategory": "vegetables",
+            "foodId": "food_aahw0jha9f8337ajbopx9aec6z7i",
+            "image": "https://www.edamam.com/food-img/3e4/3e47317a3dd54dc911b9c44122285df1.jpg"
+          },
+          {
+            "text": "1 large handful of kale",
+            "quantity": 1.0,
+            "measure": "handful",
+            "food": "kale",
+            "weight": 2.5,
+            "foodCategory": "vegetables",
+            "foodId": "food_avmg2xfbv1p91yavoxjg7bddvfaz",
+            "image": "https://www.edamam.com/food-img/8e9/8e9c5417fa012e5ca068fddc5f8d3d6c.jpg"
+          },
+          {
+            "text": "1 ripe avocado",
+            "quantity": 1.0,
+            "measure": "<unit>",
+            "food": "avocado",
+            "weight": 201.0,
+            "foodCategory": "fruit",
+            "foodId": "food_b0yuze4b1g3afpanijno5abtiu28",
+            "image": "https://www.edamam.com/food-img/984/984a707ea8e9c6bf5f6498970a9e6d9d.jpg"
+          },
+          {
+            "text": "low-salt soy sauce",
+            "quantity": 0.0,
+            "measure": null,
+            "food": "salt",
+            "weight": 5.395250000000824,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+            "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+          },
+          {
+            "text": "1 teaspoon wasabi paste",
+            "quantity": 1.0,
+            "measure": "teaspoon",
+            "food": "wasabi paste",
+            "weight": 2.7083333334707,
+            "foodCategory": "vegetables",
+            "foodId": "food_b18ctxdbw2ktnpbejotkwbnalyrj",
+            "image": "https://www.edamam.com/food-img/0c6/0c67d35d19e2e49178846d3afa89ccd5.jpg"
+          },
+          {
+            "text": "2 limes",
+            "quantity": 2.0,
+            "measure": "<unit>",
+            "food": "limes",
+            "weight": 134.0,
+            "foodCategory": "fruit",
+            "foodId": "food_av58muyb8kg92fbk0g8g8aui5knv",
+            "image": "https://www.edamam.com/food-img/48a/48a123c9576647c4ada6a41df5eeb22a.jpg"
+          },
+          {
+            "text": "1 tablespoon runny honey",
+            "quantity": 1.0,
+            "measure": "tablespoon",
+            "food": "honey",
+            "weight": 21.0,
+            "foodCategory": null,
+            "foodId": "food_bn6aoj9atkqx8fbkli859bbbxx62",
+            "image": "https://www.edamam.com/food-img/198/198c7b25c23b4235b4cc33818c7b335f.jpg"
+          },
+          {
+            "text": "1 cm piece of ginger",
+            "quantity": 1.0,
+            "measure": "<unit>",
+            "food": "piece of ginger",
+            "weight": 60.0,
+            "foodCategory": "vegetables",
+            "foodId": "food_bi2ki2xb5zmmvbaiwf7ztbgktzp6",
+            "image": "https://www.edamam.com/food-img/b9c/b9c06ef451ef29513880af0a53ebbaa6.jpg"
+          },
+          {
+            "text": "120 g hot-smoked salmon, from sustainable sources",
+            "quantity": 120.0,
+            "measure": "gram",
+            "food": "salmon",
+            "weight": 120.0,
+            "foodCategory": "seafood",
+            "foodId": "food_bhncugnadgibupafbeeapbislbom",
+            "image": "https://www.edamam.com/food-img/9a0/9a0f38422e9f21dcedbc2dca0d8209ac.jpg"
+          },
+          {
+            "text": "50 g pea shoots or 20 g cress",
+            "quantity": 50.0,
+            "measure": "gram",
+            "food": "pea shoots",
+            "weight": 50.0,
+            "foodCategory": "vegetables",
+            "foodId": "food_aoceuc6bshdej1bbsdammbnj6l6o",
+            "image": "https://www.edamam.com/food-img/e6e/e6e4be375c4554ce01c8ea75232efaa6.jpg"
+          }
+        ],
+        "calories": 1104.437083333483,
+        "totalTime": 35.0,
+        "cuisineType": ["japanese"]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/22c4179bf5d1a71ce5cd26c1daf4df0a?type=public&app_id=aa145f41&app_key=a8cc1865f185e28cb340c004b2b49d1e",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_5400d7f12556768989e94723f707659a",
+        "label": "Turkey and Cranberry Sushi recipes",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/174/17440c8a5fe9c2bafbfff9550436f34f?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDxh4FT3EvC3bbg0JENGZFELLLgPQ6g9DdpyrbGQW%2FmugIhAItCAFcbV52U7PX%2BOOiDDtD2tpxboVX4p22Kcg1YBBUhKtIECHYQABoMMTg3MDE3MTUwOTg2IgxCW%2BI%2BHiH6kino1acqrwRVG6vVLCWkbz9c9S%2FcYLIRrQoM8Aq8sAQmBKW4DbNOgcXD29PZf4Moo0VbiG%2BCCvC2kb6sk%2B3kRfMgMakcMzOoE5xSzbM%2F7UpNI9Rod9AI1Ruvpo3xkRsAo8KsW5aL%2B4zHru8nqm6%2BE56hHT9eG9%2FDPE%2FI%2B%2FQM%2FSQKiv4CLbQoN6rPtB3ks27ww4WKHNMWcQcIXJ44tXmKlz%2BmbrUbLGugNKWcfN901mOsT1XF80Q6n4POjeeNxRJPBg9fGj3Tte8iewHhYUwPOtDnv8g674jCVnMOjjufvAjeINL4id1QKAabvriXwALdtaBQ21l2MaAG3elhbmsmnYtbuRM%2FHqvWbmyt%2F2IuOfRGi6IoW0UDi9q8oF37xuSzZ2oO720b4yu0981QGeP%2BEPQD7cb4qWTSeSKmCPpA3hCpKqN6EFF81Q5onriwSo1u91UXpmjuiG%2F2g6APntlT2yOrbXPK3WnMOZ857kMuLcSVvdvEEX2xBNeRbK9pZ9qICHcO96ZaSPmW24Wb7Afehi65%2FEP6ihdcQd3z0qFMX5KalbXiJzYN%2F8G5QUq7Xb9fj0y1ZnysT3xFOMvfEveuzAsAUoJMxrf3%2FqprgWoZUJGh%2Br7980IjKrSIRnm8QxvueBOc%2FJBmCRDaUC6x7oERTsOdO9%2FhrmKW5DFZpYc1EMEIh43bUNovP8CqbKx%2By84H2Y712ta8vqaUGvrTEROmlFgVAe%2ByFoN6Zvq1LOa0z97AbgMpb9huMPDqjZgGOqgBtb6uZjGOR1b2rHJ%2B1Aah58TRXAkImhwLH8RxPxnCHay25mk0v3Co0db7ujinlvgeM0s8cVWBHbE4ClcPJYx9HAD5qbz3lPYHyaqIEdj3bxcXw8C%2BEqJMUlxYriYpdVjXj1hEzR4ZAHotvJOauH%2FLctfbnKpAY%2FtIhjSt9bflh1q%2FofHKxBqJXqvxM6PIHbL9XH9IPxVPMRz98tQ5d4k4u8f4xyU%2FjoZP&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220822T132319Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJK7Y5E27%2F20220822%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=8e76337d05d2989f84b3c5a698ccd2f2d87898ad6320ddbb979d625ad425beee",
+        "source": "Closet Cooking",
+        "url": "http://www.closetcooking.com/2009/01/turkey-and-cranberry-sushi.html",
+        "yield": 4.0,
+        "dietLabels": [],
+        "ingredients": [
+          {
+            "text": "2 tablespoons rice wine vinegar",
+            "quantity": 2.0,
+            "measure": "tablespoon",
+            "food": "rice wine vinegar",
+            "weight": 29.8,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_axlcd4tack2d20bveizm4ayu0h2w",
+            "image": "https://www.edamam.com/food-img/5f6/5f69b84c399d778c4728e9ab4f8065a2.jpg"
+          },
+          {
+            "text": "1 tablespoon sugar",
+            "quantity": 1.0,
+            "measure": "tablespoon",
+            "food": "sugar",
+            "weight": 12.4999999997887,
+            "foodCategory": "sugars",
+            "foodId": "food_axi2ijobrk819yb0adceobnhm1c2",
+            "image": "https://www.edamam.com/food-img/ecb/ecb3f5aaed96d0188c21b8369be07765.jpg"
+          },
+          {
+            "text": "1/2 teaspoon salt",
+            "quantity": 0.5,
+            "measure": "teaspoon",
+            "food": "salt",
+            "weight": 3.0,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+            "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+          },
+          {
+            "text": "1 cup rice short grain rice (sushi rice) (cooked as directed)",
+            "quantity": 1.0,
+            "measure": "grain",
+            "food": "rice",
+            "weight": 0.2,
+            "foodCategory": "grains",
+            "foodId": "food_bpumdjzb5rtqaeabb0kbgbcgr4t9",
+            "image": "https://www.edamam.com/food-img/0fc/0fc9fa8a3e0276198d75b2e259068f8a.jpg"
+          },
+          {
+            "text": "4 sheets nori",
+            "quantity": 4.0,
+            "measure": "sheet",
+            "food": "nori",
+            "weight": 10.4,
+            "foodCategory": "vegetables",
+            "foodId": "food_bn5prizbgsrr0tact46ataaj7b5p",
+            "image": "https://www.edamam.com/food-img/193/1935b3e53c576e0f097393084d11b629.jpg"
+          },
+          {
+            "text": "1 cup turkey (cooked and shredded)",
+            "quantity": 1.0,
+            "measure": "cup",
+            "food": "turkey",
+            "weight": 140.0,
+            "foodCategory": "Poultry",
+            "foodId": "food_a9m7tjlaizm6qwb80yipna6dvd20",
+            "image": "https://www.edamam.com/food-img/45b/45ba5c5df6da8dbc4d19f2bd7d04d345.jpg"
+          },
+          {
+            "text": "1 tablespoon mayonnaise",
+            "quantity": 1.0,
+            "measure": "tablespoon",
+            "food": "mayonnaise",
+            "weight": 14.4374999997559,
+            "foodCategory": "condiments and sauces",
+            "foodId": "food_bu8t61zaplle7dbrzk81dbygq0qj",
+            "image": "https://www.edamam.com/food-img/577/577308a0422357885c94cc9b5f1f1862.jpg"
+          },
+          {
+            "text": "4 tablespoons cranberry sauce",
+            "quantity": 4.0,
+            "measure": "tablespoon",
+            "food": "cranberry sauce",
+            "weight": 69.2499999988292,
+            "foodCategory": "canned fruit",
+            "foodId": "food_asvapqhatz4wejanlapyzbmov2k1",
+            "image": "https://www.edamam.com/food-img/52c/52cd53c02e0d777330aa795c56230581.jpg"
+          },
+          {
+            "text": "1 avocado (stoned, scooped and cut into thin strips)",
+            "quantity": 1.0,
+            "measure": "strip",
+            "food": "avocado",
+            "weight": 34.0,
+            "foodCategory": "fruit",
+            "foodId": "food_b0yuze4b1g3afpanijno5abtiu28",
+            "image": "https://www.edamam.com/food-img/984/984a707ea8e9c6bf5f6498970a9e6d9d.jpg"
+          }
+        ],
+        "calories": 503.0299999957251,
+        "totalTime": 30.0,
+        "cuisineType": ["american"]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/5400d7f12556768989e94723f707659a?type=public&app_id=aa145f41&app_key=a8cc1865f185e28cb340c004b2b49d1e",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_99108913a82294bb61543d534ea06b43",
+        "label": "Spicy Tuna & Avocado Chirashi",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/e77/e7731d9ee6236b941c6df6a751b6990c.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDxh4FT3EvC3bbg0JENGZFELLLgPQ6g9DdpyrbGQW%2FmugIhAItCAFcbV52U7PX%2BOOiDDtD2tpxboVX4p22Kcg1YBBUhKtIECHYQABoMMTg3MDE3MTUwOTg2IgxCW%2BI%2BHiH6kino1acqrwRVG6vVLCWkbz9c9S%2FcYLIRrQoM8Aq8sAQmBKW4DbNOgcXD29PZf4Moo0VbiG%2BCCvC2kb6sk%2B3kRfMgMakcMzOoE5xSzbM%2F7UpNI9Rod9AI1Ruvpo3xkRsAo8KsW5aL%2B4zHru8nqm6%2BE56hHT9eG9%2FDPE%2FI%2B%2FQM%2FSQKiv4CLbQoN6rPtB3ks27ww4WKHNMWcQcIXJ44tXmKlz%2BmbrUbLGugNKWcfN901mOsT1XF80Q6n4POjeeNxRJPBg9fGj3Tte8iewHhYUwPOtDnv8g674jCVnMOjjufvAjeINL4id1QKAabvriXwALdtaBQ21l2MaAG3elhbmsmnYtbuRM%2FHqvWbmyt%2F2IuOfRGi6IoW0UDi9q8oF37xuSzZ2oO720b4yu0981QGeP%2BEPQD7cb4qWTSeSKmCPpA3hCpKqN6EFF81Q5onriwSo1u91UXpmjuiG%2F2g6APntlT2yOrbXPK3WnMOZ857kMuLcSVvdvEEX2xBNeRbK9pZ9qICHcO96ZaSPmW24Wb7Afehi65%2FEP6ihdcQd3z0qFMX5KalbXiJzYN%2F8G5QUq7Xb9fj0y1ZnysT3xFOMvfEveuzAsAUoJMxrf3%2FqprgWoZUJGh%2Br7980IjKrSIRnm8QxvueBOc%2FJBmCRDaUC6x7oERTsOdO9%2FhrmKW5DFZpYc1EMEIh43bUNovP8CqbKx%2By84H2Y712ta8vqaUGvrTEROmlFgVAe%2ByFoN6Zvq1LOa0z97AbgMpb9huMPDqjZgGOqgBtb6uZjGOR1b2rHJ%2B1Aah58TRXAkImhwLH8RxPxnCHay25mk0v3Co0db7ujinlvgeM0s8cVWBHbE4ClcPJYx9HAD5qbz3lPYHyaqIEdj3bxcXw8C%2BEqJMUlxYriYpdVjXj1hEzR4ZAHotvJOauH%2FLctfbnKpAY%2FtIhjSt9bflh1q%2FofHKxBqJXqvxM6PIHbL9XH9IPxVPMRz98tQ5d4k4u8f4xyU%2FjoZP&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220822T132319Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJK7Y5E27%2F20220822%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=a687a62d65debe881591d0f8d0545078433a42cb91cac49f732f277edb54c6d2",
+        "source": "Running With Tweezers",
+        "url": "http://www.runningwithtweezers.com/tuna-chirashi/",
+        "yield": 6.0,
+        "dietLabels": ["Low-Carb"],
+        "ingredients": [
+          {
+            "text": "6 ounces very fresh sushi grade tuna, cut into small dice",
+            "quantity": 6.0,
+            "measure": "ounce",
+            "food": "tuna",
+            "weight": 170.09713875,
+            "foodCategory": "seafood",
+            "foodId": "food_bu5s7alaj4fjv8bf9qxvnba38oay",
+            "image": "https://www.edamam.com/food-img/022/022db6571bd5b3dfbd3ef8941c775d12.jpg"
+          },
+          {
+            "text": "1 large ripe avocado, diced",
+            "quantity": 1.0,
+            "measure": "<unit>",
+            "food": "avocado",
+            "weight": 251.25,
+            "foodCategory": "fruit",
+            "foodId": "food_b0yuze4b1g3afpanijno5abtiu28",
+            "image": "https://www.edamam.com/food-img/984/984a707ea8e9c6bf5f6498970a9e6d9d.jpg"
+          },
+          {
+            "text": "1/2 cup short grain sushi rice",
+            "quantity": 0.5,
+            "measure": "grain",
+            "food": "rice",
+            "weight": 0.1,
+            "foodCategory": "grains",
+            "foodId": "food_bpumdjzb5rtqaeabb0kbgbcgr4t9",
+            "image": "https://www.edamam.com/food-img/0fc/0fc9fa8a3e0276198d75b2e259068f8a.jpg"
+          },
+          {
+            "text": "1 tsp. sushi vinegar",
+            "quantity": 1.0,
+            "measure": "teaspoon",
+            "food": "sushi vinegar",
+            "weight": 4.97916666691922,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_bot0mjyb2tvaugbdj6pd5b0571yj",
+            "image": "https://www.edamam.com/food-img/c7d/c7dbd1846c5d08e9739930d70a404d50.jpg"
+          },
+          {
+            "text": "4 tablespoons Japanese or good quality basic mayonnaise",
+            "quantity": 4.0,
+            "measure": "tablespoon",
+            "food": "mayonnaise",
+            "weight": 57.7499999990236,
+            "foodCategory": "condiments and sauces",
+            "foodId": "food_bu8t61zaplle7dbrzk81dbygq0qj",
+            "image": "https://www.edamam.com/food-img/577/577308a0422357885c94cc9b5f1f1862.jpg"
+          },
+          {
+            "text": "2 tablespoons Sriracha sauce",
+            "quantity": 2.0,
+            "measure": "tablespoon",
+            "food": "Sriracha sauce",
+            "weight": 28.19999999809289,
+            "foodCategory": "canned soup",
+            "foodId": "food_a6201h1bu1m0tfbrvis6ma6nvhzv",
+            "image": "https://www.edamam.com/food-img/946/946c38a4c278da4361d2615d653d685a.jpg"
+          },
+          {
+            "text": "small handful crisp radish sprouts – to garnish",
+            "quantity": 1.0,
+            "measure": "handful",
+            "food": "sprouts",
+            "weight": 3.09375,
+            "foodCategory": "vegetables",
+            "foodId": "food_ag5cc6rb107kz7ataxks1ah5n5qd",
+            "image": "https://www.edamam.com/food-img/c76/c76a72667fcb45bc354eabb4ad7876a7.jpg"
+          }
+        ],
+        "calories": 992.2550687305867,
+        "totalTime": 0.0,
+        "cuisineType": ["japanese"]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/99108913a82294bb61543d534ea06b43?type=public&app_id=aa145f41&app_key=a8cc1865f185e28cb340c004b2b49d1e",
+          "title": "Self"
+        }
+      }
+    }
+  ]
+}

@@ -5,7 +5,7 @@ import styles from './Initialize.module.css';
 const Initialize = () => {
   return (
     <section className={styles.initialize}>
-      <Logo />
+      <Logo className='larger' />
     </section>
   );
 };

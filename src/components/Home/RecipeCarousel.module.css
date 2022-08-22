@@ -1,5 +1,9 @@
 .recipe-carousel {
+  padding: 10.8rem 0;
   position: relative;
+  background-color: #e9ecef;
+  box-shadow: 0 0 0 100vmax #e9ecef;
+  clip-path: inset(0 -100vmax);
 }
 
 .recipe-carousel__list {
@@ -22,7 +26,7 @@
   display: flex;
   justify-content: center;
   gap: 2.8rem;
-  transition: transform 1s;
+  transition: transform 1000ms;
 }
 
 .recipe-carousel__card {
@@ -51,11 +55,11 @@
   font-size: 2.8rem;
   font-weight: 600;
   text-transform: capitalize;
+  text-align: center;
   color: #fff;
 }
 
-.recipe-carousel__button--prev,
-.recipe-carousel__button--next {
+.recipe-carousel button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -65,13 +69,14 @@
   width: 4.2rem;
   height: 4.2rem;
 
-  border: 3px solid #82c91e;
   border-radius: 50%;
+  font-size: 2.4rem;
+  background-color: #82c91eb6;
+  color: #f8f9fa;
+}
 
-  font-size: 3.4rem;
-  /* color: black; */
-  background-color: #e9ecefaa;
-  color: #82c91e;
+.recipe-carousel button:focus {
+  outline: none;
 }
 
 .recipe-carousel__button--prev {
