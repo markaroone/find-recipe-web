@@ -2,7 +2,7 @@ import React from 'react';
 import RecipeCard from './RecipeCard';
 import styles from './RecipeList.module.css';
 
-const RecipeList = ({ recipes }) => {
+const RecipeList = ({ recipes, currentPage }) => {
   const count = recipes.recipes.count.toLocaleString();
   return (
     <div className={styles['recipe-list__container']}>

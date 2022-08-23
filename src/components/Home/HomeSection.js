@@ -4,10 +4,13 @@ import RecipeCarousel from './RecipeCarousel';
 import styles from './HomeSection.module.css';
 import axios from 'axios';
 import RecipeList from './RecipeList';
-import edamam from '../../assets/data/edamam.json';
-import { resolvePath } from 'react-router-dom';
+import edamamData from '../../assets/data/edamamData.json';
+import Pagination from './Pagination';
 
-const firstFood = 'Burger';
+const firstFood = 'Sushi';
+
+const edamamBaseUrl =
+  'https://api.edamam.com/api/recipes/v2?type=public&app_id=aa145f41&app_key=a8cc1865f185e28cb340c004b2b49d1e&field=label&field=image&field=calories&field=cuisineType&field=dietLabels&field=source&field=url&field=totalTime&field=uri&field=yield&field=ingredients';
 
 export const fetchRecipeStatus = {
   FETCHING: 'fetching',
@@ -18,7 +21,7 @@ export const fetchRecipeStatus = {
 const simulateFetch = function (seconds) {
   return new Promise(function (resolve) {
     setTimeout(() => {
-      resolve(edamam);
+      resolve(edamamData);
     }, seconds * 1000);
   });
 };
@@ -30,8 +33,11 @@ const Home = () => {
     recipes: {},
   });
   const [pageNumber, setPageNumber] = useState(1);
-  const [previousLink, setPreviousLink] = useState('');
-  const [nextLink, setNextLink] = useState('');
+  const [previousLink, setPreviousLink] = useState(null);
+
+  const [previousLinks, setPreviousLinks] = useState([]);
+  const [currentLink, setCurrentLink] = useState(`&q=${firstFood}`);
+  const [nextLink, setNextLink] = useState(null);
   const [errorMessage, setErrorMessage] = useState(null);
 
   const getRecipes = async (food) => {
@@ -41,16 +47,88 @@ const Home = () => {
       search: food,
     }));
 
+    setPageNumber(1);
+
     try {
-      const { data } = await axios.get(
-        `https://api.edamam.com/api/recipes/v2?type=public&q=${food}&app_id=aa145f41&app_key=a8cc1865f185e28cb340c004b2b49d1e&field=label&field=image&field=calories&field=cuisineType&field=dietLabels&field=source&field=url&field=totalTime&field=uri&field=yield&field=ingredients`
-      );
+      const { data } = await axios.get(`${edamamBaseUrl}&q=${food}`);
 
       setRecipes((prev) => ({
         ...prev,
         status: fetchRecipeStatus.LOADED,
         recipes: { ...data },
       }));
+
+      setNextLink(getShortenedNextUrl(data._links.next.href));
+
+      setRecipes((prev) => ({
+        ...prev,
+        status: fetchRecipeStatus.LOADED,
+        recipes: { ...data },
+      }));
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const nextRecipes = async (link) => {
+    setRecipes((prev) => ({
+      ...prev,
+      status: fetchRecipeStatus.FETCHING,
+    }));
+
+    try {
+      const { data } = await axios.get(link);
+
+      setRecipes((prev) => ({
+        ...prev,
+        status: fetchRecipeStatus.LOADED,
+        recipes: { ...data },
+      }));
+
+      setPreviousLinks((prev) => {
+        const previous = [...prev];
+        previous.push(currentLink);
+        return previous;
+      });
+
+      setPreviousLink(currentLink);
+
+      setCurrentLink(nextLink);
+
+      setNextLink(getShortenedNextUrl(data._links.next.href));
+
+      setRecipes((prev) => ({
+        ...prev,
+        status: fetchRecipeStatus.LOADED,
+        recipes: { ...data },
+      }));
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const prevRecipes = async (link) => {
+    setRecipes((prev) => ({
+      ...prev,
+      status: fetchRecipeStatus.FETCHING,
+    }));
+
+    try {
+      const { data } = await axios.get(link);
+
+      setRecipes((prev) => ({
+        ...prev,
+        status: fetchRecipeStatus.LOADED,
+        recipes: { ...data },
+      }));
+
+      setPreviousLink(previousLinks[pageNumber - 2]);
+
+      setCurrentLink(nextLink);
+
+      setNextLink(data._links.next.href);
+
+      pageNumber >= previousLink.length && setPreviousLink();
 
       setRecipes((prev) => ({
         ...prev,
@@ -77,19 +155,41 @@ const Home = () => {
         status: fetchRecipeStatus.LOADED,
         recipes: { ...data },
       }));
+
+      setPreviousLink(
+        pageNumber === 1 ? [`&q=${food}`] : previousLink[pageNumber + 1]
+      );
+
+      setNextLink(getShortenedNextUrl(data._links.next.href));
     } catch (error) {
       console.log(error);
     }
   };
 
-  const updatePageNumberHandler = () => {};
+  const getShortenedNextUrl = (url) =>
+    url.slice(url.indexOf('_cont'), url.indexOf('&type'));
+
+  const onNextPageHandler = () => {
+    nextRecipes(`${edamamBaseUrl}&${nextLink}&q=${recipes.search}`);
+    setPageNumber((prev) => prev + 1);
+  };
+
+  const onPrevPageHandler = () => {
+    if (pageNumber - 1 <= 0) return;
+
+    prevRecipes(`${edamamBaseUrl}&${previousLink}&q=${recipes.search}`);
+    setPageNumber((prev) => prev - 1);
+  };
 
   useEffect(() => {
-    initRecipes(firstFood);
+    (async () => {
+      // await initRecipes(firstFood);
+      await getRecipes(firstFood);
+    })();
   }, []);
 
   useEffect(() => {
-    console.log(recipes);
+    // console.log(recipes);
   }, [recipes]);
 
   return (
@@ -98,8 +198,13 @@ const Home = () => {
       <RecipeCarousel searchRecipeHandler={getRecipes} />
       {recipes.status === fetchRecipeStatus.FETCHING && 'Loading'}
       {recipes.status === fetchRecipeStatus.LOADED && (
-        <RecipeList recipes={recipes} />
+        <RecipeList recipes={recipes} currentPage={pageNumber} />
       )}
+      <Pagination
+        currentPage={pageNumber}
+        onNextPage={onNextPageHandler}
+        onPreviousPage={onPrevPageHandler}
+      />
     </section>
   );
 };
