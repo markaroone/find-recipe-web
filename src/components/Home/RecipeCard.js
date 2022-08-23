@@ -1,7 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import slugify from 'slugify';
 import styles from './RecipeCard.module.css';
 
-const RecipeCard = ({ recipe }) => {
+const RecipeCard = ({ recipe, type }) => {
+  const navigate = useNavigate();
+
   const {
     image,
     label,
@@ -13,6 +17,10 @@ const RecipeCard = ({ recipe }) => {
     yield: servings,
     ingredients,
   } = recipe;
+
+  const recipeId = uri.slice(uri.indexOf('_') + 1);
+
+  const slug = slugify(label, { lower: true, remove: /[*+~.()'"!:@]/g });
 
   let caloriesPerServing = (calories / servings).toFixed();
 
@@ -62,15 +70,26 @@ const RecipeCard = ({ recipe }) => {
     </div>
   );
 
+  const onClickRecipe = () => {
+    navigate(`/recipe/${type.toLowerCase()}/${slug}/${recipeId}`, {
+      replace: true,
+    });
+  };
+
   return (
     <li className={styles['recipe-card']}>
-      <div className={styles['recipe-card__container--image']}>
+      <div
+        className={styles['recipe-card__container--image']}
+        onClick={onClickRecipe}
+      >
         <img src={image} alt={label} />
       </div>
       <div className={styles['recipe-card__container--texts']}>
         {renderDietLabels()}
 
-        <p className={styles['recipe-card__name']}>{label}</p>
+        <p className={styles['recipe-card__name']} onClick={onClickRecipe}>
+          {label}
+        </p>
 
         <div className={styles['recipe-card__list--detail']}>
           {renderCaloriesDetails()}

@@ -12,7 +12,7 @@ const RecipeList = ({ recipes, currentPage }) => {
 
       <ul className={styles['recipe-list__list']}>
         {recipes.recipes.hits.map((recipe, i) => (
-          <RecipeCard key={i} recipe={recipe.recipe} />
+          <RecipeCard key={i} recipe={recipe.recipe} type={recipes.search} />
         ))}
       </ul>
     </div>

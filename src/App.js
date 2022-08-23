@@ -9,6 +9,7 @@ import axios from 'axios';
 import UserContext from './context/UserProvider';
 import RecipeListContext from './context/RecipesListProvider';
 import { userStatus } from './context/UserProvider';
+import RecipeSection from './components/Recipe/RecipeSection';
 
 function App() {
   const { user, setUser } = useContext(UserContext);
@@ -44,6 +45,7 @@ function App() {
         <Route path='/' element={<Content />}>
           <Route path='/' element={<HomeSection />} />
           <Route path='/user-profile' element={<UserSection />} />
+          <Route path='/recipe/:type/:slug/:id' element={<RecipeSection />} />
         </Route>
 
         <Route path='/signin' element={<Signin />} />
