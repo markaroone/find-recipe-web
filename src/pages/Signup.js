@@ -66,8 +66,6 @@ const Signup = () => {
     if (type === 'password') return value.length >= MIN_PASSWORD_LENGTH;
   };
 
-  console.log(errorMessage);
-
   const { isValid: nameIsValid } = userInfo.name;
   const { isValid: emailIsValid } = userInfo.email;
   const { isValid: passwordIsValid } = userInfo.password;
@@ -103,9 +101,10 @@ const Signup = () => {
         newUser
       );
 
-      if (status === 'success') setIsSignupSuccess(true);
-
-      if (status === 'success') setUserInfo(defaultUserInfo);
+      if (status === 'success') {
+        setIsSignupSuccess(true);
+        setUserInfo(defaultUserInfo);
+      }
     } catch (error) {
       console.log(error.response);
       setErrorMessage(error.response.data.message);

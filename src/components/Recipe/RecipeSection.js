@@ -18,26 +18,12 @@ const RecipeSection = () => {
   const [recipe, setRecipe] = useState(null);
   const [relatedRecipes, setRelatedRecipes] = useState([]);
 
-  const getFiveRelatedRecipes = (array) => {
-    const output = [];
-
-    for (let i = 0; i < 5; i++) {
-      output.push(array[i]);
-    }
-
-    return output;
-  };
-
   const getRecipeDetails = async () => {
     try {
       setIsLoading(true);
       const url = baseUrl.replace('<ID>', id);
 
       const relatedUrl = baseUrlAll.replace('<TYPE>', type);
-
-      console.log(type);
-
-      console.log(relatedUrl);
 
       const {
         data: { recipe },
@@ -63,10 +49,6 @@ const RecipeSection = () => {
   useEffect(() => {
     getRecipeDetails();
   }, [id]);
-
-  useEffect(() => {
-    recipe && console.log(recipe);
-  }, [recipe]);
 
   return (
     <section className={styles.recipe}>

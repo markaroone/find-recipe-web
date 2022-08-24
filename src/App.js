@@ -7,7 +7,6 @@ import HomeSection from './components/Home/HomeSection';
 import UserSection from './components/User/UserSection';
 import axios from 'axios';
 import UserContext from './context/UserProvider';
-import RecipeListContext from './context/RecipesListProvider';
 import { userStatus } from './context/UserProvider';
 import RecipeSection from './components/Recipe/RecipeSection';
 
