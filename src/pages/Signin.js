@@ -69,8 +69,8 @@ const Signin = () => {
       newUser = Object.entries(userInfo).reduce((user, current) => {
         return { ...user, [`${current[0]}`]: current[1].value };
       }, {});
-    else if (!emailIsValid) emailInputRef.current.focus();
-    else if (!passwordIsValid) passwordInputRef.current.focus();
+    else if (!emailIsValid) return emailInputRef.current.focus();
+    else if (!passwordIsValid) return passwordInputRef.current.focus();
 
     setIsFormSubmitted(true);
 
