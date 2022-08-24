@@ -2,7 +2,11 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import RecipeCard from '../Home/RecipeCard';
+import RecipeCardSkeleton from '../Home/RecipeCardSkeleton';
+import MainContent from './MainContent';
+import MainContentSkeleton from './MainContentSkeleton';
 import styles from './RecipeSection.module.css';
+import RelatedContent from './RelatedContent';
 
 const baseUrl =
   'https://api.edamam.com/api/recipes/v2/<ID>?type=public&app_id=aa145f41&app_key=a8cc1865f185e28cb340c004b2b49d1e';
@@ -52,96 +56,10 @@ const RecipeSection = () => {
 
   return (
     <section className={styles.recipe}>
-      {recipe && (
-        <div className={styles['recipe__container--content']}>
-          <h1 className={styles['recipe__title']}>{recipe.label}</h1>
+      {recipe && <MainContent recipe={recipe} />}
+      {!recipe && <MainContentSkeleton />}
 
-          <div className={styles['recipe__container--image']}>
-            <img
-              src={recipe.images.LARGE?.url || recipe.image}
-              alt={recipe.label}
-            />
-          </div>
-
-          <div className={styles['recipe__container--section']}>
-            <h4>Ingredients</h4>
-            <ul className={styles['recipe__list--ingredients']}>
-              {recipe.ingredients.map((el, i) => (
-                <li key={i} className={styles['recipe__item--ingredients']}>
-                  {el.text}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className={styles['recipe__container--section']}>
-            <h4>Preparation</h4>
-            <div className={styles['recipe__container--instructions']}>
-              <a
-                href={recipe.url}
-                className={styles['recipe__btn-link--instruction']}
-              >
-                Instructions
-              </a>
-              <p>
-                by{' '}
-                <a
-                  href={recipe.url}
-                  className={styles['recipe__link--instructions']}
-                >
-                  {recipe.source}
-                </a>
-              </p>
-            </div>
-          </div>
-
-          <div className={styles['recipe__container--section']}>
-            <h4>Nutrition</h4>
-            <ul className={styles['recipe__list--nutrition']}>
-              <li className={styles['recipe__item--nutrition']}>
-                <p>
-                  {(+(recipe.calories / recipe.yield).toFixed()).toLocaleString(
-                    'en-US'
-                  )}
-                </p>
-                <small>CAL/SERV</small>
-              </li>
-
-              <li className={styles['recipe__item--nutrition']}>
-                <p>{(+recipe.calories.toFixed()).toLocaleString('en-US')}</p>
-                <small>TOTAL CAL</small>
-              </li>
-
-              <li className={styles['recipe__item--nutrition']}>
-                <p>{recipe.yield}</p>
-                <small>{recipe.yield > 1 ? 'SERVINGS' : 'SERVING'}</small>
-              </li>
-            </ul>
-          </div>
-
-          <div className={styles['recipe__container--section']}>
-            <h4>Health Labels</h4>
-            <ul className={styles['recipe__list--health-labels']}>
-              {recipe.healthLabels.map((el, i) => (
-                <li key={i} className={styles['recipe__item--health-labels']}>
-                  {el}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      )}
-
-      {relatedRecipes.length > 0 && (
-        <div className={styles['recipe__container--related']}>
-          <h2>More {type} Recipes</h2>
-          <ul className={styles['recipe__list--related']}>
-            {relatedRecipes.slice(0, 3).map((el, i) => (
-              <RecipeCard key={i} recipe={el.recipe} type={type} />
-            ))}
-          </ul>
-        </div>
-      )}
+      {<RelatedContent relatedRecipes={relatedRecipes} type={type} />}
     </section>
   );
 };

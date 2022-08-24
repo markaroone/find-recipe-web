@@ -11,12 +11,10 @@
   max-width: 128rem;
   margin: 0 auto;
   height: 12rem;
-  gap: 1.4rem;
 
   position: relative;
   display: block;
   overflow: hidden;
-  /* background-color: #adb5bd; */
 }
 
 .recipe-carousel__item {

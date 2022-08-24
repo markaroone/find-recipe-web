@@ -1,0 +1,117 @@
+.recipe__container--content {
+  width: 100%;
+  margin: 4.8rem 0 6.4rem 0;
+  display: flex;
+  max-width: 64rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3.6rem;
+  padding: 0 2.8rem;
+}
+
+.recipe__title {
+  width: 100%;
+  font-size: clamp(2rem, 10vw, 4.2rem);
+  text-align: center;
+}
+
+.recipe__container--image {
+  width: 100%;
+  height: 36rem;
+  display: flex;
+  justify-content: center;
+}
+
+.recipe__container--image span {
+  width: 100%;
+  height: 100%;
+}
+
+.recipe__container--section {
+  width: 100%;
+  margin-top: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.recipe__container--section h4 {
+  width: 18rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+.recipe__container--section ul,
+.recipe__container--section div {
+  margin-top: 1.8rem;
+  display: flex;
+}
+
+.recipe__list--ingredients {
+  flex-direction: column;
+  gap: 1.4rem;
+  letter-spacing: 0.6px;
+}
+
+.recipe__container--instructions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.2rem;
+}
+
+.recipe__btn-link--instruction {
+  width: 5.6rem;
+  padding: 1rem;
+}
+
+.recipe__container--instructions p {
+  width: 5.6rem;
+}
+
+.recipe__container--preparation {
+  width: 5.6rem;
+  width: 100%;
+  display: flex;
+}
+
+.recipe__list--nutrition {
+  align-self: center;
+  width: 100%;
+  max-width: 32rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recipe__list--nutrition p {
+  width: 6.4rem;
+  font-size: clamp(1.8rem, 5vw, 2.2rem);
+}
+
+.recipe__list--health-labels {
+  width: 100%;
+  max-width: 52rem;
+  margin-top: 1.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #f8f9fa;
+}
+
+.recipe__item--health-labels {
+  width: 3.2rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 100rem;
+}
+
+@media (min-width: 576px) {
+  .recipe__title {
+    text-align: left;
+  }
+  .recipe__container--image {
+    justify-content: flex-start;
+  }
+}

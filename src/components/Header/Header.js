@@ -20,8 +20,6 @@ const Header = () => {
     setShowNavModal(!showNavModal);
   };
 
-  showNavModal && console.log('Hi');
-
   return (
     <header className={styles.header}>
       <Logo />

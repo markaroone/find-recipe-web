@@ -1,7 +1,6 @@
 import React from 'react';
 import Skeleton from 'react-loading-skeleton';
 import styles from './RecipeCardSkeleton.module.css';
-import 'react-loading-skeleton/dist/skeleton.css';
 
 const RecipeCardSkeleton = () => {
   return (

@@ -74,6 +74,7 @@ const RecipeCard = ({ recipe, type }) => {
     navigate(`/recipe/${type.toLowerCase()}/${slug}/${recipeId}`, {
       replace: true,
     });
+    window.location.reload(false);
   };
 
   return (

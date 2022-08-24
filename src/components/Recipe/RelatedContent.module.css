@@ -1,0 +1,23 @@
+.recipe__container--related {
+  width: auto;
+  display: none;
+  margin: 6.4rem 0;
+}
+
+.recipe__container--related h2 {
+  text-transform: capitalize;
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+.recipe__list--related {
+  margin-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+}
+@media (min-width: 992px) {
+  .recipe__container--related {
+    display: inline-block;
+  }
+}
