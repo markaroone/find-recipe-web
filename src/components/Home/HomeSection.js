@@ -196,10 +196,10 @@ const Home = () => {
     <section className={styles.home}>
       <SearchBar food={recipes.search} searchRecipeHandler={getRecipes} />
       <RecipeCarousel searchRecipeHandler={getRecipes} />
-      {recipes.status === fetchRecipeStatus.FETCHING && 'Loading'}
-      {recipes.status === fetchRecipeStatus.LOADED && (
-        <RecipeList recipes={recipes} currentPage={pageNumber} />
-      )}
+      <RecipeList
+        recipes={recipes}
+        isLoading={recipes.status === fetchRecipeStatus.FETCHING}
+      />
       <Pagination
         currentPage={pageNumber}
         onNextPage={onNextPageHandler}

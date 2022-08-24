@@ -84,6 +84,7 @@ const RecipeCard = ({ recipe, type }) => {
       >
         <img src={image} alt={label} />
       </div>
+
       <div className={styles['recipe-card__container--texts']}>
         {renderDietLabels()}
 
