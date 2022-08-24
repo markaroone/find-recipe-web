@@ -1,7 +1,9 @@
 .recipe-list__container {
+  box-sizing: border-box;
   padding: 10.8rem 0 5.4rem 0;
+
   width: 100%;
-  max-width: 120rem;
+  max-width: 130rem;
   margin: 0 auto;
 }
 
@@ -11,9 +13,10 @@
 
 .recipe-list__list {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 3.2rem;
+  margin: 0 auto;
+  gap: 3.2rem;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  justify-items: center;
+  align-items: center;
 }

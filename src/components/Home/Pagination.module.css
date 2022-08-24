@@ -4,8 +4,9 @@
   margin: 0 auto;
   padding: 2.8rem 0 4.2rem 0;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-end;
+
   gap: 2.8rem;
 }
 
