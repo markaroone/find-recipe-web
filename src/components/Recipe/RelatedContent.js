@@ -4,19 +4,15 @@ import RecipeCard from '../Home/RecipeCard';
 import RecipeCardSkeleton from '../Home/RecipeCardSkeleton';
 import Skeleton from 'react-loading-skeleton';
 
-const RelatedContent = ({ relatedRecipes, type }) => {
+const RelatedContent = ({ relatedRecipes, type, isLoading }) => {
   return (
     <div className={styles['recipe__container--related']}>
-      {relatedRecipes.length > 0 ? (
-        <h2>More {type} Recipes</h2>
-      ) : (
-        <Skeleton width={156} />
-      )}
+      {!isLoading ? <h2>More {type} Recipes</h2> : <Skeleton width={156} />}
       <ul className={styles['recipe__list--related']}>
-        {relatedRecipes.length <= 0 &&
+        {isLoading &&
           [...new Array(3)].map((_, i) => <RecipeCardSkeleton key={i} />)}
 
-        {relatedRecipes.length > 0 &&
+        {!isLoading &&
           relatedRecipes
             .slice(0, 3)
             .map((el, i) => (

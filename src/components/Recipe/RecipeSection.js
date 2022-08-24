@@ -52,14 +52,20 @@ const RecipeSection = () => {
 
   useEffect(() => {
     getRecipeDetails();
-  }, [id]);
+  }, [slug]);
 
   return (
     <section className={styles.recipe}>
-      {recipe && <MainContent recipe={recipe} />}
-      {!recipe && <MainContentSkeleton />}
+      {!isLoading && <MainContent recipe={recipe} />}
+      {isLoading && <MainContentSkeleton />}
 
-      {<RelatedContent relatedRecipes={relatedRecipes} type={type} />}
+      {
+        <RelatedContent
+          relatedRecipes={relatedRecipes}
+          type={type}
+          isLoading={isLoading}
+        />
+      }
     </section>
   );
 };
