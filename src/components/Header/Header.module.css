@@ -1,6 +1,6 @@
 .header {
   /* width: 100%; */
-
+  position: relative;
   padding: 0 2rem;
   height: 6.8rem;
   display: flex;
@@ -25,9 +25,21 @@
 }
 
 .header__button--signin {
-  /* padding: 0.8rem 2.2rem;
-  background-color: #ebfbee; */
-  /* color: #ebfbee; */
+  color: #5c940d;
+}
+
+.header__button--signin:after {
+  content: '';
+  margin-top: 0.2rem;
+  width: 0;
+  height: 3px;
+  display: block;
+  background-color: #5c940d;
+  transition: 300ms;
+}
+
+.header__button--signin:hover:after {
+  width: 100%;
 }
 
 .header__button--signup {
@@ -43,4 +55,32 @@
 .header__button--signup:hover {
   /* color: #226025;
   color: #22331d; */
+}
+
+.header__container--user-info {
+  height: 100%;
+  padding-right: 2.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  cursor: pointer;
+}
+
+.header__container--user-photo {
+  width: 3.6rem;
+}
+
+.header__container--user-photo img {
+  width: 100%;
+}
+
+.header__label--user-name {
+  font-weight: 600;
+  color: #5c940d;
+}
+
+.header__button--user-modal ion-icon {
+  display: flex;
+  font-size: 2rem;
+  color: #868e96;
 }

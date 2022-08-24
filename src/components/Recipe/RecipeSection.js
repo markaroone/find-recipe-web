@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import RecipeCard from '../Home/RecipeCard';
 import styles from './RecipeSection.module.css';
 
 const baseUrl =
@@ -17,12 +18,26 @@ const RecipeSection = () => {
   const [recipe, setRecipe] = useState(null);
   const [relatedRecipes, setRelatedRecipes] = useState([]);
 
+  const getFiveRelatedRecipes = (array) => {
+    const output = [];
+
+    for (let i = 0; i < 5; i++) {
+      output.push(array[i]);
+    }
+
+    return output;
+  };
+
   const getRecipeDetails = async () => {
     try {
       setIsLoading(true);
       const url = baseUrl.replace('<ID>', id);
 
       const relatedUrl = baseUrlAll.replace('<TYPE>', type);
+
+      console.log(type);
+
+      console.log(relatedUrl);
 
       const {
         data: { recipe },
@@ -42,8 +57,12 @@ const RecipeSection = () => {
   };
 
   useEffect(() => {
-    // getRecipeDetails();
+    getRecipeDetails();
   }, []);
+
+  useEffect(() => {
+    getRecipeDetails();
+  }, [id]);
 
   useEffect(() => {
     recipe && console.log(recipe);
@@ -52,7 +71,7 @@ const RecipeSection = () => {
   return (
     <section className={styles.recipe}>
       {recipe && (
-        <div className={styles['recipe__content']}>
+        <div className={styles['recipe__container--content']}>
           <h1 className={styles['recipe__title']}>{recipe.label}</h1>
 
           <div className={styles['recipe__container--image']}>
@@ -131,14 +150,16 @@ const RecipeSection = () => {
         </div>
       )}
 
-      <button
-        className={styles['recipe__button--fetch-data']}
-        onClick={getRecipeDetails}
-      >
-        Get Recipe
-      </button>
-
-      {!recipe && 'No data'}
+      {relatedRecipes.length > 0 && (
+        <div className={styles['recipe__container--related']}>
+          <h2>More {type} Recipes</h2>
+          <ul className={styles['recipe__list--related']}>
+            {relatedRecipes.slice(0, 3).map((el, i) => (
+              <RecipeCard key={i} recipe={el.recipe} type={type} />
+            ))}
+          </ul>
+        </div>
+      )}
     </section>
   );
 };
