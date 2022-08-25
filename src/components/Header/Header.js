@@ -37,8 +37,6 @@ const Header = () => {
         <div
           className={styles['header__container--user-info']}
           ref={userInfoRef}
-          onMouseEnter={toggleNavModalHandler}
-          onMouseLeave={toggleNavModalHandler}
           onClick={toggleNavModalHandler}
         >
           {!isLoggedIn && (
