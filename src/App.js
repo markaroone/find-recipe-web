@@ -10,6 +10,7 @@ import UserContext from './context/UserProvider';
 import { userStatus } from './context/UserProvider';
 import RecipeSection from './components/Recipe/RecipeSection';
 import { userProfileUrl } from './api/findRecipeServer';
+import SomethingWentWrong from './components/UI/Message/SomethingWentWrong';
 
 function App() {
   const { user, setUser } = useContext(UserContext);
@@ -44,7 +45,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Content />}>
           <Route path='/' element={<HomeSection />} />
-          <Route path='/user-profile' element={<UserSection />} />
+          <Route path='/user-profile' element={<SomethingWentWrong />} />
           <Route path='/recipe/:type/:slug/:id' element={<RecipeSection />} />
         </Route>
 

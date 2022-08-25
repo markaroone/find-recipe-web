@@ -1,0 +1,29 @@
+.error-container {
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ced4da;
+}
+
+.error-container i {
+  display: flex;
+  font-size: clamp(3.2rem, 10vw, 16rem);
+  /* color: #adb5bd; */
+}
+
+.error-container h1 {
+  font-size: 4.2rem;
+}
+
+.error-container p {
+  font-size: 2rem;
+}
+
+.error-container button {
+  margin-top: 1.2rem;
+  color: #66a80f;
+  font-weight: 600;
+}

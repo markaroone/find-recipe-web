@@ -7,6 +7,7 @@ import RecipeList from './RecipeList';
 import edamamData from '../../assets/data/edamamData.json';
 import Pagination from './Pagination';
 import { multipleNonRandomRecipesUrl } from '../../api/edamam';
+import SomethingWentWrong from '../UI/Message/SomethingWentWrong';
 
 const firstFood = 'Sushi';
 
@@ -70,7 +71,7 @@ const Home = () => {
         recipes: { ...data },
       }));
     } catch (error) {
-      console.log(error);
+      setErrorMessage(error);
     }
   };
 
@@ -107,7 +108,7 @@ const Home = () => {
         recipes: { ...data },
       }));
     } catch (error) {
-      console.log(error);
+      setErrorMessage(error);
     }
   };
 
@@ -140,7 +141,7 @@ const Home = () => {
         recipes: { ...data },
       }));
     } catch (error) {
-      console.log(error);
+      setErrorMessage(error);
     }
   };
 
@@ -192,30 +193,33 @@ const Home = () => {
   };
 
   useEffect(() => {
-    (async () => {
-      // await initRecipes(firstFood);
-      await getRecipes(firstFood);
-    })();
+    return () => {
+      (async () => {
+        await getRecipes('Pasta');
+      })();
+    };
   }, []);
-
-  useEffect(() => {
-    // console.log(recipes);
-  }, [recipes]);
 
   return (
     <section className={styles.home}>
-      <SearchBar food={recipes.search} searchRecipeHandler={getRecipes} />
-      <RecipeCarousel searchRecipeHandler={getRecipes} />
-      <RecipeList
-        ref={recipeListRef}
-        recipes={recipes}
-        isLoading={recipes.status === fetchRecipeStatus.FETCHING}
-      />
-      <Pagination
-        currentPage={pageNumber}
-        onNextPage={onNextPageHandler}
-        onPreviousPage={onPrevPageHandler}
-      />
+      {!errorMessage && (
+        <>
+          <SearchBar food={recipes.search} searchRecipeHandler={getRecipes} />
+          <RecipeCarousel searchRecipeHandler={getRecipes} />
+          <RecipeList
+            ref={recipeListRef}
+            recipes={recipes}
+            isLoading={recipes.status === fetchRecipeStatus.FETCHING}
+          />
+          <Pagination
+            currentPage={pageNumber}
+            onNextPage={onNextPageHandler}
+            onPreviousPage={onPrevPageHandler}
+          />
+        </>
+      )}
+
+      {errorMessage && <SomethingWentWrong />}
     </section>
   );
 };

@@ -6,12 +6,7 @@ import styles from './RecipeSection.module.css';
 import RelatedContent from './RelatedContent';
 import useHttp from '../../hooks/useHttp';
 import { singleRecipeUrl, multipleRecipesUrl } from '../../api/edamam';
-
-const CODES = {
-  ERR_NETWORK: ['ERR_NETWORK', 'Network Error'],
-  _404: ['NO RECIPE FOUND'],
-  _429: ['TOO MANY REQUEST', 'Same as network error'],
-};
+import SomethingWentWrong from '../UI/Message/SomethingWentWrong';
 
 const RecipeSection = () => {
   const { type, id, slug } = useParams();
@@ -58,10 +53,15 @@ const RecipeSection = () => {
         />
       );
   };
+
+  const renderErrorMessage = () => {
+    if (singleRecipeError) return <SomethingWentWrong />;
+  };
   return (
     <section className={styles.recipe}>
       {renderSingleRecipe()}
       {renderRelatedRecipe()}
+      {renderErrorMessage()}
     </section>
   );
 };
