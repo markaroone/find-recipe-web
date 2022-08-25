@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+axios.defaults.withCredentials = true;
 
 const useHttp = (url, requestType = 'get', options) => {
   const [data, setData] = useState(null);
