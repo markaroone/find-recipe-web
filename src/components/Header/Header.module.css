@@ -25,6 +25,7 @@
 }
 
 .header__button--signin {
+  display: none;
   color: #5c940d;
 }
 
@@ -43,8 +44,8 @@
 }
 
 .header__button--signup {
+  display: none;
   padding: 0.8rem 2.2rem;
-  /* background-color: #ebfbee; */
   background-color: #5c940d;
   color: #f8f9fa;
   border-radius: 4px;
@@ -53,13 +54,20 @@
 }
 
 .header__button--signup:hover {
-  /* color: #226025;
-  color: #22331d; */
+  background-color: #66a80f;
+}
+
+.header__button--signin-mobile {
+  width: 3.6rem;
+}
+
+.header__button--signin-mobile img {
+  width: 100%;
 }
 
 .header__container--user-info {
   height: 100%;
-  padding-right: 2.2rem;
+  padding-right: 0.2rem;
   display: flex;
   align-items: center;
   gap: 1.6rem;
@@ -74,6 +82,11 @@
   width: 100%;
 }
 
+.header__label--user-name,
+.header__button--user-modal {
+  display: none;
+}
+
 .header__label--user-name {
   font-weight: 600;
   color: #5c940d;
@@ -83,4 +96,26 @@
   display: flex;
   font-size: 2rem;
   color: #868e96;
+}
+
+@media (min-width: 473px) {
+  .header__button--signin,
+  .header__button--signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header__container--user-info {
+    padding-right: 2.2rem;
+  }
+
+  .header__label--user-name,
+  .header__button--user-modal {
+    display: flex;
+  }
+
+  .header__button--signin-mobile {
+    display: none;
+  }
 }

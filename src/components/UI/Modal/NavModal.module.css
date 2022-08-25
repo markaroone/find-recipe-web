@@ -1,21 +1,23 @@
 .modal {
   position: absolute;
   width: 100%;
-  max-width: 26rem;
   top: 100%;
-  right: 0.4rem;
-  /* transform: translateX(-50%); */
+  right: 0;
 
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   background-color: #f8f9fa;
   border: 1.8px solid #dee2e6;
+
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 .modal .modal__link,
 .modal .modal__button {
-  padding: 1.2rem 2rem;
+  display: flex;
+  padding: 1.6rem 2rem;
   font-weight: 500;
 }
 
@@ -25,6 +27,28 @@
   color: #66a80f;
 }
 
+.header__label--user-name {
+  display: hidden;
+}
+
 .modal button {
   display: flex;
+}
+
+.modal__button.modal__button--signup {
+  font-weight: 600;
+  color: #66a80f;
+}
+
+@media (min-width: 473px) {
+  .modal {
+    width: 26rem;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+
+  .modal .modal__link,
+  .modal .modal__button {
+    width: 100%;
+  }
 }

@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 
 export const userStatus = {
   INITIALIZING: 'initializing',
@@ -14,8 +14,19 @@ export const UserProvider = ({ children }) => {
     user: {},
   });
 
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    user.status === userStatus.LOGGEDIN && setIsLoggedIn(true);
+    user.status === userStatus.LOGGEDOUT && setIsLoggedIn(false);
+  }, [user]);
+
+  const signoutUser = () => {
+    setUser({ status: userStatus.LOGGEDOUT, user: {} });
+  };
+
   return (
-    <UserContext.Provider value={{ user, setUser }}>
+    <UserContext.Provider value={{ user, setUser, signoutUser, isLoggedIn }}>
       {children}
     </UserContext.Provider>
   );

@@ -56,7 +56,7 @@ const RecipeSection = () => {
 
   return (
     <section className={styles.recipe}>
-      {!isLoading && <MainContent recipe={recipe} />}
+      {isLoading === false && <MainContent recipe={recipe} />}
       {isLoading && <MainContentSkeleton />}
 
       {
