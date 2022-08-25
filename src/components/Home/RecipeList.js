@@ -1,4 +1,4 @@
-import React, { forwardRef, useRef } from 'react';
+import React, { forwardRef } from 'react';
 import RecipeCard from './RecipeCard';
 import RecipeCardSkeleton from './RecipeCardSkeleton';
 import styles from './RecipeList.module.css';

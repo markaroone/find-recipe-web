@@ -3,19 +3,16 @@ import { Link } from 'react-router-dom';
 import UserContext from '../../../context/UserProvider';
 import axios from 'axios';
 import styles from './NavModal.module.css';
+import { signoutUrl } from '../../../api/findRecipeServer';
 axios.defaults.withCredentials = true;
-
-const baseUrl = 'http://localhost:8000/api/v1/users/logout';
 
 const NavModal = () => {
   const { signoutUser, isLoggedIn } = useContext(UserContext);
 
   const signoutHandler = async () => {
     try {
-      await axios.get(baseUrl);
+      await axios.get(signoutUrl);
       signoutUser();
-
-      // window.location.reload(false);
     } catch (error) {
       console.log(error);
     }

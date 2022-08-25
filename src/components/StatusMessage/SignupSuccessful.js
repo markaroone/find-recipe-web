@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import RingLoader from '../UI/Loader/RingLoader';
 import RingLoaderSlow from '../UI/Loader/RingLoaderSlow';
 import styles from './SignupSuccessful.module.css';
 

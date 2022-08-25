@@ -1,7 +1,5 @@
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './SearchBar.module.css';
-import axios from 'axios';
-import UserContext from '../../context/UserProvider';
 
 const SearchBar = ({ food, searchRecipeHandler }) => {
   const [recipeToFind, setRecipeToFind] = useState(food);

@@ -1,5 +1,4 @@
 .header {
-  /* width: 100%; */
   position: relative;
   padding: 0 2rem;
   height: 6.8rem;
@@ -7,9 +6,6 @@
   align-items: center;
   justify-content: space-between;
 
-  /* background-color: #226025;
-  background-color: #22331d;
-  color: #f8f9fa; */
   color: #212529;
   border-bottom: 1.8px solid #dee2e6;
 }

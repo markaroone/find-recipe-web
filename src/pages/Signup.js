@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import Logo from '../components/Logo/Logo';
 import Input from '../components/UI/Input/Input';
 import Modal from '../components/UI/Modal/Modal';
@@ -9,17 +9,6 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 const MIN_PASSWORD_LENGTH = 8;
-
-const checkEmail = async (email) => {
-  try {
-    const response = await axios.get(
-      `http://localhost:8000/api/v1/users?email=${email}`
-    );
-    return response;
-  } catch (error) {
-    return false;
-  }
-};
 
 const defaultUserInfo = {
   name: { value: '', isValid: null },
@@ -49,10 +38,6 @@ const Signup = () => {
       [`${id}`]: { ...prev[`${id}`], value, isValid },
     }));
   };
-
-  /* 
-  ! Add validator for duplicate emails 
-  */
 
   const inputValidator = (value, type) => {
     if (!value || !type) return false;
@@ -85,10 +70,6 @@ const Signup = () => {
     else if (!passwordIsValid) return passwordInputRef.current.focus();
 
     setIsFormSubmitted(true);
-
-    /* 
-    ! Fix error message not closing
-    */
 
     try {
       const {
@@ -135,10 +116,6 @@ const Signup = () => {
       )
     );
   };
-
-  // const renderErrorMessage = () => {
-  //   if
-  // }
 
   return (
     <section className={styles.signup}>

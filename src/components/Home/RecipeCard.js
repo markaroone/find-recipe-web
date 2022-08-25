@@ -6,17 +6,7 @@ import styles from './RecipeCard.module.css';
 const RecipeCard = ({ recipe, type }) => {
   const navigate = useNavigate();
 
-  const {
-    image,
-    label,
-    calories,
-    source,
-    url,
-    uri,
-    totalTime,
-    yield: servings,
-    ingredients,
-  } = recipe;
+  const { image, label, calories, uri, yield: servings, ingredients } = recipe;
 
   const recipeId = uri.slice(uri.indexOf('_') + 1);
 
@@ -74,7 +64,6 @@ const RecipeCard = ({ recipe, type }) => {
     navigate(`/recipe/${type.toLowerCase()}/${slug}/${recipeId}`, {
       replace: true,
     });
-    // window.location.reload(false);
   };
 
   return (

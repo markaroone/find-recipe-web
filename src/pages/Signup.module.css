@@ -44,7 +44,6 @@
 
 .signup__button--submit:focus {
   outline: auto;
-  /* border-color: #adb5bd; */
 }
 
 .signup__button--submit:hover {

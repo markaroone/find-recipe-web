@@ -4,12 +4,11 @@ import RecipeCarousel from './RecipeCarousel';
 import styles from './HomeSection.module.css';
 import axios from 'axios';
 import RecipeList from './RecipeList';
-import edamamData from '../../assets/data/edamamData.json';
 import Pagination from './Pagination';
 import { multipleNonRandomRecipesUrl } from '../../api/edamam';
 import SomethingWentWrong from '../UI/Message/SomethingWentWrong';
 
-const firstFood = 'Sushi';
+const FIRST_SEARCH = 'Pasta';
 
 const scrollTo = (ref) => {
   return ref.current.scrollIntoView({ behavior: 'smooth' });
@@ -21,24 +20,16 @@ export const fetchRecipeStatus = {
   ERROR_FETCH: 'error-fetch',
 };
 
-const simulateFetch = function (seconds) {
-  return new Promise(function (resolve) {
-    setTimeout(() => {
-      resolve(edamamData);
-    }, seconds * 1000);
-  });
-};
-
 const Home = () => {
   const [recipes, setRecipes] = useState({
     status: fetchRecipeStatus.FETCHING,
-    search: firstFood,
+    search: FIRST_SEARCH,
     recipes: {},
   });
   const [pageNumber, setPageNumber] = useState(1);
   const [previousLink, setPreviousLink] = useState(null);
   const [previousLinks, setPreviousLinks] = useState([]);
-  const [currentLink, setCurrentLink] = useState(`&q=${firstFood}`);
+  const [currentLink, setCurrentLink] = useState(`&q=${FIRST_SEARCH}`);
   const [nextLink, setNextLink] = useState(null);
   const [errorMessage, setErrorMessage] = useState(null);
   const recipeListRef = useRef();
@@ -54,7 +45,7 @@ const Home = () => {
 
     try {
       const { data } = await axios.get(
-        `${multipleNonRandomRecipesUrl}&q=${food}`
+        `${multipleNonRandomRecipesUrl}&q=${FIRST_SEARCH}`
       );
 
       setRecipes((prev) => ({
@@ -142,32 +133,6 @@ const Home = () => {
       }));
     } catch (error) {
       setErrorMessage(error);
-    }
-  };
-
-  const initRecipes = async (food) => {
-    setRecipes((prev) => ({
-      ...prev,
-      status: fetchRecipeStatus.FETCHING,
-      search: food,
-    }));
-
-    try {
-      const data = await simulateFetch(2);
-
-      setRecipes((prev) => ({
-        ...prev,
-        status: fetchRecipeStatus.LOADED,
-        recipes: { ...data },
-      }));
-
-      setPreviousLink(
-        pageNumber === 1 ? [`&q=${food}`] : previousLink[pageNumber + 1]
-      );
-
-      setNextLink(getShortenedNextUrl(data._links.next.href));
-    } catch (error) {
-      console.log(error);
     }
   };
 
