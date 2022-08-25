@@ -8,7 +8,7 @@ import Modal from '../components/UI/Modal/Modal';
 import SignupSuccessful from '../components/StatusMessage/SignupSuccessful';
 import UserContext from '../context/UserProvider';
 import { userStatus } from '../context/UserProvider';
-
+import { signinUrl } from '../api/findRecipeServer';
 import styles from './Signin.module.css';
 
 axios.defaults.withCredentials = true;
@@ -80,10 +80,7 @@ const Signin = () => {
           status,
           data: { user },
         },
-      } = await axios.post(
-        'http://localhost:8000/api/v1/users/signin',
-        newUser
-      );
+      } = await axios.post(signinUrl, newUser);
 
       setUser({
         status: userStatus.LOGGEDIN,
@@ -93,6 +90,7 @@ const Signin = () => {
         },
       });
       if (status === 'success') setUserInfo(defaultUserInfo);
+
       setIsSigninSuccessful(true);
     } catch (error) {
       if (error.response.status === 401)
@@ -151,6 +149,7 @@ const Signin = () => {
 
       <form className={styles['signin__form']} onSubmit={formSubmitHandler}>
         {renderErrorMessage()}
+
         <Input
           ref={emailInputRef}
           id='email'

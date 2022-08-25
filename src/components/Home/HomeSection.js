@@ -38,7 +38,6 @@ const Home = () => {
   });
   const [pageNumber, setPageNumber] = useState(1);
   const [previousLink, setPreviousLink] = useState(null);
-
   const [previousLinks, setPreviousLinks] = useState([]);
   const [currentLink, setCurrentLink] = useState(`&q=${firstFood}`);
   const [nextLink, setNextLink] = useState(null);

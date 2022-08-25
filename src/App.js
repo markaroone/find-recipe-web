@@ -9,6 +9,7 @@ import axios from 'axios';
 import UserContext from './context/UserProvider';
 import { userStatus } from './context/UserProvider';
 import RecipeSection from './components/Recipe/RecipeSection';
+import { userProfileUrl } from './api/findRecipeServer';
 
 function App() {
   const { user, setUser } = useContext(UserContext);
@@ -22,7 +23,7 @@ function App() {
         data: {
           data: { user },
         },
-      } = await axios.get('http://localhost:8000/api/v1/users/me');
+      } = await axios.get(userProfileUrl);
 
       setUser({ status: userStatus.LOGGEDIN, user: user });
     } catch (error) {
