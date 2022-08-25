@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { UserProvider } from './context/UserProvider';
 import { SkeletonTheme } from 'react-loading-skeleton';
+import ScrollToTop from './components/UI/Scroll/ScrollToTop';
 import 'react-loading-skeleton/dist/skeleton.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,7 +15,9 @@ root.render(
     <BrowserRouter>
       <UserProvider>
         <React.StrictMode>
-          <App />
+          <ScrollToTop>
+            <App />
+          </ScrollToTop>
         </React.StrictMode>
       </UserProvider>
     </BrowserRouter>

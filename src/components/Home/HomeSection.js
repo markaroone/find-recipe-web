@@ -6,15 +6,13 @@ import axios from 'axios';
 import RecipeList from './RecipeList';
 import edamamData from '../../assets/data/edamamData.json';
 import Pagination from './Pagination';
+import { multipleNonRandomRecipesUrl } from '../../api/edamam';
 
 const firstFood = 'Sushi';
 
 const scrollTo = (ref) => {
   return ref.current.scrollIntoView({ behavior: 'smooth' });
 };
-
-const edamamBaseUrl =
-  'https://api.edamam.com/api/recipes/v2?type=public&app_id=aa145f41&app_key=a8cc1865f185e28cb340c004b2b49d1e&field=label&field=image&field=calories&field=cuisineType&field=dietLabels&field=source&field=url&field=totalTime&field=uri&field=yield&field=ingredients';
 
 export const fetchRecipeStatus = {
   FETCHING: 'fetching',
@@ -54,7 +52,9 @@ const Home = () => {
     setPageNumber(1);
 
     try {
-      const { data } = await axios.get(`${edamamBaseUrl}&q=${food}`);
+      const { data } = await axios.get(
+        `${multipleNonRandomRecipesUrl}&q=${food}`
+      );
 
       setRecipes((prev) => ({
         ...prev,
@@ -174,7 +174,9 @@ const Home = () => {
     url.slice(url.indexOf('_cont'), url.indexOf('&type'));
 
   const onNextPageHandler = () => {
-    nextRecipes(`${edamamBaseUrl}&${nextLink}&q=${recipes.search}`);
+    nextRecipes(
+      `${multipleNonRandomRecipesUrl}&${nextLink}&q=${recipes.search}`
+    );
     setPageNumber((prev) => prev + 1);
     scrollTo(recipeListRef);
   };
@@ -182,7 +184,9 @@ const Home = () => {
   const onPrevPageHandler = () => {
     if (pageNumber - 1 <= 0) return;
 
-    prevRecipes(`${edamamBaseUrl}&${previousLink}&q=${recipes.search}`);
+    prevRecipes(
+      `${multipleNonRandomRecipesUrl}&${previousLink}&q=${recipes.search}`
+    );
     setPageNumber((prev) => prev - 1);
     scrollTo(recipeListRef);
   };
