@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import SearchBar from './SearchBar';
 import RecipeCarousel from './RecipeCarousel';
 import styles from './HomeSection.module.css';
@@ -8,6 +8,10 @@ import edamamData from '../../assets/data/edamamData.json';
 import Pagination from './Pagination';
 
 const firstFood = 'Sushi';
+
+const scrollTo = (ref) => {
+  return ref.current.scrollIntoView({ behavior: 'smooth' });
+};
 
 const edamamBaseUrl =
   'https://api.edamam.com/api/recipes/v2?type=public&app_id=aa145f41&app_key=a8cc1865f185e28cb340c004b2b49d1e&field=label&field=image&field=calories&field=cuisineType&field=dietLabels&field=source&field=url&field=totalTime&field=uri&field=yield&field=ingredients';
@@ -39,6 +43,7 @@ const Home = () => {
   const [currentLink, setCurrentLink] = useState(`&q=${firstFood}`);
   const [nextLink, setNextLink] = useState(null);
   const [errorMessage, setErrorMessage] = useState(null);
+  const recipeListRef = useRef();
 
   const getRecipes = async (food) => {
     setRecipes((prev) => ({
@@ -172,6 +177,7 @@ const Home = () => {
   const onNextPageHandler = () => {
     nextRecipes(`${edamamBaseUrl}&${nextLink}&q=${recipes.search}`);
     setPageNumber((prev) => prev + 1);
+    scrollTo(recipeListRef);
   };
 
   const onPrevPageHandler = () => {
@@ -179,6 +185,7 @@ const Home = () => {
 
     prevRecipes(`${edamamBaseUrl}&${previousLink}&q=${recipes.search}`);
     setPageNumber((prev) => prev - 1);
+    scrollTo(recipeListRef);
   };
 
   useEffect(() => {
@@ -197,6 +204,7 @@ const Home = () => {
       <SearchBar food={recipes.search} searchRecipeHandler={getRecipes} />
       <RecipeCarousel searchRecipeHandler={getRecipes} />
       <RecipeList
+        ref={recipeListRef}
         recipes={recipes}
         isLoading={recipes.status === fetchRecipeStatus.FETCHING}
       />

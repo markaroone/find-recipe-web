@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { forwardRef, useRef } from 'react';
 import RecipeCard from './RecipeCard';
 import RecipeCardSkeleton from './RecipeCardSkeleton';
 import styles from './RecipeList.module.css';
 
-const RecipeList = ({ recipes, isLoading }) => {
+const RecipeList = forwardRef(({ recipes, isLoading }, ref) => {
   const count = recipes.recipes.count?.toLocaleString();
 
   return (
-    <div className={styles['recipe-list__container']}>
+    <div ref={ref} className={styles['recipe-list__container']}>
       {!isLoading && (
         <p className={styles['recipe-list__title--search-status']}>
           {count} matching results for <i>"{recipes.search}"</i>
@@ -30,6 +30,6 @@ const RecipeList = ({ recipes, isLoading }) => {
       </ul>
     </div>
   );
-};
+});
 
 export default RecipeList;
