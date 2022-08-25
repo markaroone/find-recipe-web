@@ -1,71 +1,67 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import RecipeCard from '../Home/RecipeCard';
-import RecipeCardSkeleton from '../Home/RecipeCardSkeleton';
 import MainContent from './MainContent';
 import MainContentSkeleton from './MainContentSkeleton';
 import styles from './RecipeSection.module.css';
 import RelatedContent from './RelatedContent';
+import useHttp from '../../hooks/useHttp';
+import { singleRecipeUrl, multipleRecipesUrl } from '../../api/edamam';
 
-const baseUrl =
-  'https://api.edamam.com/api/recipes/v2/<ID>?type=public&app_id=aa145f41&app_key=a8cc1865f185e28cb340c004b2b49d1e';
-
-const baseUrlAll =
-  'https://api.edamam.com/api/recipes/v2?type=public&app_id=aa145f41&app_key=a8cc1865f185e28cb340c004b2b49d1e&field=label&field=image&field=calories&field=cuisineType&field=dietLabels&field=source&field=url&field=totalTime&field=uri&field=yield&field=ingredients&random=true&q=<TYPE>';
+const CODES = {
+  ERR_NETWORK: ['ERR_NETWORK', 'Network Error'],
+  _404: ['NO RECIPE FOUND'],
+  _429: ['TOO MANY REQUEST', 'Same as network error'],
+};
 
 const RecipeSection = () => {
   const { type, id, slug } = useParams();
+  const singleUrl = singleRecipeUrl.replace('<ID>', id);
+  const relatedUrl = multipleRecipesUrl.replace('<TYPE>', type);
 
-  const [isLoading, setIsLoading] = useState(null);
-  const [error, setError] = useState(null);
-  const [recipe, setRecipe] = useState(null);
-  const [relatedRecipes, setRelatedRecipes] = useState([]);
+  const {
+    data: singleRecipeData,
+    isLoading: singleRecipeIsLoading,
+    error: singleRecipeError,
+    requestData: requestSingleRecipe,
+  } = useHttp(singleUrl);
 
-  const getRecipeDetails = async () => {
-    try {
-      setIsLoading(true);
-      const url = baseUrl.replace('<ID>', id);
+  singleRecipeError && console.log(singleRecipeError);
 
-      const relatedUrl = baseUrlAll.replace('<TYPE>', type);
-
-      const {
-        data: { recipe },
-      } = await axios.get(url);
-
-      const {
-        data: { hits },
-      } = await axios.get(relatedUrl);
-
-      setRecipe(recipe);
-      setRelatedRecipes(hits);
-    } catch (error) {
-      console.log(error);
-    } finally {
-      setIsLoading(false);
-    }
-  };
+  const {
+    data: relatedRecipes,
+    isLoading: relatedRecipesIsLoading,
+    error: relatedRecipesError,
+    requestData: requestRelatedRecipes,
+  } = useHttp(relatedUrl);
 
   useEffect(() => {
-    getRecipeDetails();
-  }, []);
-
-  useEffect(() => {
-    getRecipeDetails();
+    requestSingleRecipe();
+    requestRelatedRecipes();
   }, [slug]);
 
+  const renderSingleRecipe = () => {
+    if (singleRecipeIsLoading === false && singleRecipeError === null)
+      return <MainContent recipe={singleRecipeData.data.recipe} />;
+
+    if (singleRecipeIsLoading) return <MainContentSkeleton />;
+  };
+
+  const renderRelatedRecipe = () => {
+    if (singleRecipeError === null && relatedRecipesError === null)
+      return (
+        <RelatedContent
+          relatedRecipes={relatedRecipes?.data?.hits}
+          type={type}
+          isLoading={
+            relatedRecipesIsLoading === null || relatedRecipesIsLoading
+          }
+        />
+      );
+  };
   return (
     <section className={styles.recipe}>
-      {isLoading === false && <MainContent recipe={recipe} />}
-      {isLoading && <MainContentSkeleton />}
-
-      {
-        <RelatedContent
-          relatedRecipes={relatedRecipes}
-          type={type}
-          isLoading={isLoading}
-        />
-      }
+      {renderSingleRecipe()}
+      {renderRelatedRecipe()}
     </section>
   );
 };

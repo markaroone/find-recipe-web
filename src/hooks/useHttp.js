@@ -8,6 +8,35 @@ const useHttp = (url, requestType = 'get', options) => {
 
   requestType = requestType.trim().toLowerCase();
 
+  useEffect(() => {
+    let isMounted_ = true;
+    setIsLoading(true);
+
+    const fetchData = async () => {
+      try {
+        const data = await axios[`${requestType}`](url, options);
+
+        if (isMounted_) {
+          setData(data);
+          setError(null);
+        }
+      } catch (error) {
+        if (isMounted_) {
+          setError(error);
+          setData(null);
+        }
+      } finally {
+        isMounted_ && setIsLoading(false);
+      }
+    };
+
+    fetchData();
+
+    return () => {
+      isMounted_ = false;
+    };
+  }, []);
+
   const requestData = () => {
     let isMounted = true;
     setIsLoading(true);

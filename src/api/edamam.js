@@ -1,9 +1,8 @@
-import edamamApiClient from './edamamApiClient';
+const APP_ID = process.env.REACT_APP_EDAMAM_APP_ID;
+const APP_KEY = process.env.REACT_APP_EDAMAM_APP_KEY;
 
-const getRecipes = () => {
-  edamamApiClient.get();
-};
+const baseUrl = 'https://api.edamam.com/api/recipes/v2';
 
-export default {
-  getRecipes,
-};
+export const singleRecipeUrl = `${baseUrl}/<ID>?type=public&app_id=${APP_ID}&app_key=${APP_KEY}`;
+
+export const multipleRecipesUrl = `${baseUrl}?type=public&app_id=${APP_ID}&app_key=${APP_KEY}&field=label&field=image&field=calories&field=cuisineType&field=dietLabels&field=source&field=url&field=totalTime&field=uri&field=yield&field=ingredients&random=true&q=<TYPE>`;
