@@ -45,7 +45,7 @@ const Home = () => {
 
     try {
       const { data } = await axios.get(
-        `${multipleNonRandomRecipesUrl}&q=${FIRST_SEARCH}`
+        `${multipleNonRandomRecipesUrl}&q=${food}`
       );
 
       setRecipes((prev) => ({
@@ -63,6 +63,7 @@ const Home = () => {
       }));
     } catch (error) {
       setErrorMessage(error);
+    } finally {
     }
   };
 
@@ -81,11 +82,12 @@ const Home = () => {
         recipes: { ...data },
       }));
 
-      setPreviousLinks((prev) => {
-        const previous = [...prev];
-        previous.push(currentLink);
-        return previous;
-      });
+      if (previousLinks.length === pageNumber - 1)
+        setPreviousLinks((prev) => {
+          const previous = [...prev];
+          previous.push(currentLink);
+          return previous;
+        });
 
       setPreviousLink(currentLink);
 
@@ -118,11 +120,11 @@ const Home = () => {
         recipes: { ...data },
       }));
 
-      setPreviousLink(previousLinks[pageNumber - 2]);
+      setPreviousLink(previousLinks[pageNumber - 3]);
 
       setCurrentLink(nextLink);
 
-      setNextLink(data._links.next.href);
+      setNextLink(getShortenedNextUrl(data._links.next.href));
 
       pageNumber >= previousLink.length && setPreviousLink();
 

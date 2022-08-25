@@ -65,3 +65,15 @@
 
   font-size: 1.2rem;
 }
+
+.signup__message--failed {
+  padding: 0.8rem;
+  border: 1.8px solid #c92a2a;
+  border-radius: 4px;
+  text-align: center;
+
+  font-weight: 600;
+
+  background-color: #ffe3e3;
+  color: #c92a2a;
+}

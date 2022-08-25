@@ -14,9 +14,9 @@ const SomethingWentWrong = () => {
             window.location.reload(false);
           }}
         >
-          Refresh
+          Reload
         </button>{' '}
-        the page or Try again later
+        the page or try again later
       </p>
     </div>
   );

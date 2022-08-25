@@ -87,9 +87,18 @@ const Signup = () => {
         setUserInfo(defaultUserInfo);
       }
     } catch (error) {
-      console.log(error.response);
-      setErrorMessage(error.response.data.message);
-      setIsSignupSuccess(false);
+      if (error.response.status === 400) {
+        setUserInfo((prev) => ({
+          ...prev,
+          email: { ...prev.email, isValid: false },
+        }));
+
+        setErrorMessage('Email already in use.');
+      } else {
+        console.log(error.response);
+        setErrorMessage(error.response.data.message);
+        setIsSignupSuccess(false);
+      }
       closeModalStatusHandler();
     }
   };
@@ -100,7 +109,8 @@ const Signup = () => {
 
   const renderUserSubmittedModal = () => {
     return (
-      isFormSubmitted && (
+      isFormSubmitted &&
+      isSignupSuccess && (
         <Modal>
           <SignupSuccessful
             isProcessing={isFormSubmitted}
@@ -117,6 +127,14 @@ const Signup = () => {
     );
   };
 
+  const renderErrorMessage = () => {
+    setTimeout(() => {
+      setErrorMessage(null);
+    }, 5000);
+
+    return <p className={styles['signup__message--failed']}>{errorMessage}</p>;
+  };
+
   return (
     <section className={styles.signup}>
       <div className={styles['signup__logo']}>
@@ -126,6 +144,7 @@ const Signup = () => {
       <h2 className={styles['signup__header']}>Create an Account</h2>
 
       <form className={styles['signup__form']} onSubmit={formSubmitHandler}>
+        {errorMessage && renderErrorMessage()}
         <Input
           ref={nameInputRef}
           id='name'

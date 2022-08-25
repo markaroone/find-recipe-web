@@ -16,9 +16,11 @@
 
 .modal .modal__link,
 .modal .modal__button {
+  width: 100%;
   display: flex;
   padding: 1.6rem 2rem;
   font-weight: 500;
+  justify-content: center;
 }
 
 .modal .modal__link:hover,
