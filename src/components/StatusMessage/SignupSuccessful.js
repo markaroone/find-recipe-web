@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import RingLoaderSlow from '../UI/Loader/RingLoaderSlow';
 import styles from './SignupSuccessful.module.css';
@@ -38,10 +38,12 @@ const SignupSuccessful = ({
     );
   };
 
-  const renderSuccessful = (message) => {
-    if (isProcessing && isSuccessful) {
-      redirectTimeoutHandler();
+  useEffect(() => {
+    isProcessing && isSuccessful && redirectTimeoutHandler();
+  }, [isProcessing, isSuccessful]);
 
+  const renderSuccessful = (message) => {
+    if (isProcessing && isSuccessful)
       return (
         isProcessing &&
         isSuccessful && (
@@ -63,7 +65,6 @@ const SignupSuccessful = ({
           </div>
         )
       );
-    }
   };
 
   const renderUnsuccessful = (message) => {

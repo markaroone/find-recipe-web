@@ -34,12 +34,21 @@ const Home = () => {
   const [errorMessage, setErrorMessage] = useState(null);
   const recipeListRef = useRef();
 
+  const clearCache = () => {
+    setPreviousLink(null);
+    setPreviousLinks([]);
+    setCurrentLink(null);
+    setNextLink(null);
+  };
+
   const getRecipes = async (food) => {
     setRecipes((prev) => ({
       ...prev,
       status: fetchRecipeStatus.FETCHING,
       search: food,
     }));
+
+    clearCache();
 
     setPageNumber(1);
 
@@ -53,6 +62,8 @@ const Home = () => {
         status: fetchRecipeStatus.LOADED,
         recipes: { ...data },
       }));
+
+      setCurrentLink(`&q=${food}`);
 
       setNextLink(getShortenedNextUrl(data._links.next.href));
 
@@ -162,7 +173,7 @@ const Home = () => {
   useEffect(() => {
     return () => {
       (async () => {
-        await getRecipes('Pasta');
+        await getRecipes(FIRST_SEARCH);
       })();
     };
   }, []);

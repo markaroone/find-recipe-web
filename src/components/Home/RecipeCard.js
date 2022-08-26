@@ -60,9 +60,9 @@ const RecipeCard = ({ recipe, type }) => {
     </div>
   );
 
-  const onClickRecipe = (e) => {
+  const onClickRecipe = () => {
     navigate(`/recipe/${type.toLowerCase()}/${slug}/${recipeId}`, {
-      replace: true,
+      replace: false,
     });
   };
 

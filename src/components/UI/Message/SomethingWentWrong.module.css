@@ -10,11 +10,12 @@
 
 .error-container i {
   display: flex;
-  font-size: clamp(3.2rem, 10vw, 16rem);
+  font-size: clamp(8rem, 20vw, 16rem);
 }
 
 .error-container h1 {
   font-size: 4.2rem;
+  text-align: center;
 }
 
 .error-container p {

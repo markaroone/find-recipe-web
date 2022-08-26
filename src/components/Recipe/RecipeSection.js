@@ -20,8 +20,6 @@ const RecipeSection = () => {
     requestData: requestSingleRecipe,
   } = useHttp(singleUrl);
 
-  singleRecipeError && console.log(singleRecipeError);
-
   const {
     data: relatedRecipes,
     isLoading: relatedRecipesIsLoading,
@@ -45,7 +43,7 @@ const RecipeSection = () => {
     if (singleRecipeError === null && relatedRecipesError === null)
       return (
         <RelatedContent
-          relatedRecipes={relatedRecipes?.data?.hits}
+          relatedRecipes={relatedRecipes?.data?.hits.slice(17, 20)}
           type={type}
           isLoading={
             relatedRecipesIsLoading === null || relatedRecipesIsLoading

@@ -12,7 +12,7 @@
 
 .error img {
   margin-top: -2.8rem;
-  width: 48rem;
+  width: clamp(24rem, 50vw, 48rem);
 }
 
 .error h1 {

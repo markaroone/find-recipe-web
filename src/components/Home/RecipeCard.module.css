@@ -33,7 +33,7 @@
 }
 
 .recipe-card__item--diet-label {
-  padding: 0.3rem 0.6rem;
+  padding: 0.3rem 0.6rem 0.2rem;
   font-size: 1rem;
   font-weight: 700;
   color: #f8f9fa;
