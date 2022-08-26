@@ -2,6 +2,7 @@ import React, { useEffect, useContext } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import { Initialize, Content, Signin, Signup, NotFound } from './pages';
+import ProtectedRoutes from './components/Routes/ProtectedRoutes';
 import HomeSection from './components/Home/HomeSection';
 import UserSection from './components/User/UserSection';
 import axios from 'axios';
@@ -43,7 +44,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Content />}>
           <Route path='/' element={<HomeSection />} />
-          <Route path='/user-profile' element={<UserSection />} />
+          <Route element={<ProtectedRoutes />}>
+            <Route path='/user-profile' element={<UserSection />} />
+          </Route>
           <Route path='/recipe/:type/:slug/:id' element={<RecipeSection />} />
         </Route>
 

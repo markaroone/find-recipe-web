@@ -29,6 +29,7 @@ const MainContent = ({ recipe }) => {
         <div className={styles['recipe__container--instructions']}>
           <a
             href={recipe.url}
+            target='_blank'
             className={styles['recipe__btn-link--instruction']}
           >
             Instructions
@@ -37,6 +38,7 @@ const MainContent = ({ recipe }) => {
             by{' '}
             <a
               href={recipe.url}
+              target='_blank'
               className={styles['recipe__link--instructions']}
             >
               {recipe.source}
