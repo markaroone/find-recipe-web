@@ -7,6 +7,7 @@ import styles from './Signup.module.css';
 import validator from 'validator';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import RingLoaderSlow from '../components/UI/Loader/RingLoaderSlow';
 
 const MIN_PASSWORD_LENGTH = 8;
 
@@ -96,7 +97,7 @@ const Signup = () => {
         setErrorMessage('Email already in use.');
       } else {
         console.log(error.response);
-        setErrorMessage(error.response.data.message);
+        setErrorMessage(error?.response?.data?.message || 'Server error');
         setIsSignupSuccess(false);
       }
       closeModalStatusHandler();
@@ -185,7 +186,9 @@ const Signup = () => {
           placeholder='Password must contain at least 8 characters.'
         />
 
-        <button className={styles['signup__button--submit']}>Sign Up</button>
+        <button className={styles['signup__button--submit']}>
+          {isFormSubmitted && !isSignupSuccess ? 'Processing...' : 'Sign Up'}
+        </button>
       </form>
 
       <p className={styles['signup__link--redirect']}>

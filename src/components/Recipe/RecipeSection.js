@@ -5,13 +5,12 @@ import MainContentSkeleton from './MainContentSkeleton';
 import styles from './RecipeSection.module.css';
 import RelatedContent from './RelatedContent';
 import useHttp from '../../hooks/useHttp';
-import { singleRecipeUrl, multipleRecipesUrl } from '../../api/edamam';
+import { singleRecipeUrl } from '../../api/edamam';
 import SomethingWentWrong from '../UI/Message/SomethingWentWrong';
 
 const RecipeSection = () => {
-  const { type, id, slug } = useParams();
+  const { id, slug } = useParams();
   const singleUrl = singleRecipeUrl.replace('<ID>', id);
-  const relatedUrl = multipleRecipesUrl.replace('<TYPE>', type);
 
   const {
     data: singleRecipeData,
@@ -20,16 +19,8 @@ const RecipeSection = () => {
     requestData: requestSingleRecipe,
   } = useHttp(singleUrl);
 
-  const {
-    data: relatedRecipes,
-    isLoading: relatedRecipesIsLoading,
-    error: relatedRecipesError,
-    requestData: requestRelatedRecipes,
-  } = useHttp(relatedUrl);
-
   useEffect(() => {
     requestSingleRecipe();
-    requestRelatedRecipes();
   }, [slug]);
 
   const renderSingleRecipe = () => {
@@ -40,16 +31,7 @@ const RecipeSection = () => {
   };
 
   const renderRelatedRecipe = () => {
-    if (singleRecipeError === null && relatedRecipesError === null)
-      return (
-        <RelatedContent
-          relatedRecipes={relatedRecipes?.data?.hits.slice(17, 20)}
-          type={type}
-          isLoading={
-            relatedRecipesIsLoading === null || relatedRecipesIsLoading
-          }
-        />
-      );
+    if (singleRecipeError === null) return <RelatedContent />;
   };
 
   const renderErrorMessage = () => {
