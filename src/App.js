@@ -10,6 +10,7 @@ import UserContext from './context/UserProvider';
 import { userStatus } from './context/UserProvider';
 import RecipeSection from './components/Recipe/RecipeSection';
 import { userProfileUrl } from './api/findRecipeServer';
+import { useCallback } from 'react';
 
 function App() {
   const { user, setUser } = useContext(UserContext);
@@ -17,7 +18,7 @@ function App() {
   const isDoneInitializing =
     user.status === userStatus.LOGGEDIN || user.status === userStatus.LOGGEDOUT;
 
-  const getUser = async () => {
+  const getUser = useCallback(async () => {
     try {
       const {
         data: {
@@ -33,11 +34,11 @@ function App() {
           status: userStatus.LOGGEDOUT,
         }));
     }
-  };
+  }, [setUser]);
 
   useEffect(() => {
     getUser();
-  }, []);
+  }, [getUser]);
 
   const renderApp = () => {
     return (
